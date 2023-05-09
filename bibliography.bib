@@ -1,0 +1,372 @@
+
+% Introduction References
+
+% SLIPS IDS
+@misc{garcia_2015_slips,
+  author = {Garcia, Sebastian and Gomaa, Alya and Babayeva, Kamila},
+  month = {12},
+  publisher = {The Stratosphere Laboratory},
+  title = {Slips, behavioral machine learning-based Python IPS},
+  url = {https://www.stratosphereips.org/stratosphere-ips-suite},
+  urldate = {2022-09-29},
+  year = {2015},
+  organization = {Stratosphere IPS}
+}
+
+@online{thomasdotreppe_2011_openwipsng,
+  author = {Thomas d’Otreppe},
+  month = {11},
+  title = {OpenWIPS-ng},
+  url = {https://openwips-ng.org},
+  howpublished = {OpenWIPS-ng},
+  urldate = {2022-10-01},
+  year = {2011},
+  organization = {OpenWIPS-ng}
+}
+
+@online{roundy_iot_nodate,
+	title = {{IoT} Security: {IoT} Device Security Challenges \& Solutions},
+	howpublished = {https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions},
+	shorttitle = {{IoT} Security},
+    urldate = {2022-11-21},
+	abstract = {The use of {IoT} devices is skyrocketing, but many organizations are failing to adequately secure them. Make sure {IoT} security is at the top of your list.},
+	titleaddon = {Verizon Enterprise},
+	author = {Roundy, Jacob},
+	month = {05},
+    year = {2021},
+	langid = {english}
+}
+
+% DragonFLY WPA3
+@INPROCEEDINGS{vanhoef-sp2020-dragonblood,
+  author={Vanhoef, Mathy and Ronen, Eyal},
+  booktitle={2020 IEEE Symposium on Security and Privacy (SP)}, 
+  title={Dragonblood: Analyzing the Dragonfly Handshake of WPA3 and EAP-pwd}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={517-533},
+  doi={10.1109/SP40000.2020.00031}}
+  
+% WPA 3 Standard
+@techreport{wifialliance_2022_wpa3,
+  month = {11},
+  institution = {Wi-Fi Alliance},
+  howpublished = {Wi-Fi Alliance},
+  title = {WPA3 Specification Version 3.1},
+  url = {https://www.wi-fi.org/file/wpa3-specification},
+  urldate = {2022-10-03},
+  year = {2022},
+  organization = {www.wi-fi.org}
+}
+
+% KISMET
+@INPROCEEDINGS{10.4108/eai.27-11-2021.2315535,
+    author={Gede Arna Jude  Saskara and I Made Edy  Listarta and Gede Saindra  Santyadiputra and Putu Bayu  Megawanta and Putu Agus Wahyu Adi Perdana  Giri},
+    title={Performance of Kismet Wireless Intrusion Detection System on Raspberry Pi},
+    proceedings={Proceedings of the 4th International Conference on Vocational Education and Technology, IConVET 2021, 27 November 2021, Singaraja, Bali, Indonesia},
+    publisher={EAI},
+    proceedings_a={ICONVET},
+    year={2022},
+    month={2},
+    keywords={wireless intrusion detection system kismet raspberry pi},
+    doi={10.4108/eai.27-11-2021.2315535}
+}
+
+@online{kismet_2002_kismet,
+  author = {Kismet},
+  month = {07},
+  title = {Kismet},
+  url = {https://www.kismetwireless.net},
+  year = {2002},
+  urldate = {2022-09-30},
+  howpublished = {Kismet Wireless}
+}
+
+
+% WIDS
+@ARTICLE{5278657,
+  author={IEEE},
+  journal={IEEE Std 802.11w-2009 (Amendment to IEEE Std 802.11-2007 as amended by IEEE Std 802.11k-2008, IEEE Std 802.11r-2008, and IEEE Std 802.11y-2008)}, 
+  title={IEEE Standard for Information technology - Telecommunications and information exchange between systems - Local and metropolitan area networks - Specific requirements. Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications Amendment 4: Protected Management Frames}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={1-111},
+  doi={10.1109/IEEESTD.2009.5278657}}
+
+@ARTICLE{9249426,
+  author={Satam, Pratik and Hariri, Salim},
+  journal={IEEE Transactions on Network and Service Management}, 
+  title={WIDS: An Anomaly Based Intrusion Detection System for Wi-Fi (IEEE 802.11) Protocol}, 
+  year={2021},
+  volume={18},
+  number={1},
+  pages={1077-1091},
+  doi={10.1109/TNSM.2020.3036138}}
+  
+  
+% KRACK Attack
+@inproceedings{krack,
+author = {Vanhoef, Mathy and Piessens, Frank},
+title = {Key Reinstallation Attacks: Forcing Nonce Reuse in WPA2},
+year = {2017},
+isbn = {9781450349468},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3133956.3134027},
+doi = {10.1145/3133956.3134027},
+abstract = {We introduce the key reinstallation attack. This attack abuses design or implementation flaws in cryptographic protocols to reinstall an already-in-use key. This resets the key's associated parameters such as transmit nonces and receive replay counters. Several types of cryptographic Wi-Fi handshakes are affected by the attack. All protected Wi-Fi networks use the 4-way handshake to generate a fresh session key. So far, this 14-year-old handshake has remained free from attacks, and is even proven secure. However, we show that the 4-way handshake is vulnerable to a key reinstallation attack. Here, the adversary tricks a victim into reinstalling an already-in-use key. This is achieved by manipulating and replaying handshake messages. When reinstalling the key, associated parameters such as the incremental transmit packet number (nonce) and receive packet number (replay counter) are reset to their initial value. Our key reinstallation attack also breaks the PeerKey, group key, and Fast BSS Transition (FT) handshake. The impact depends on the handshake being attacked, and the data-confidentiality protocol in use. Simplified, against AES-CCMP an adversary can replay and decrypt (but not forge) packets. This makes it possible to hijack TCP streams and inject malicious data into them. Against WPA-TKIP and GCMP the impact is catastrophic: packets can be replayed, decrypted, and forged. Because GCMP uses the same authentication key in both communication directions, it is especially affected. Finally, we confirmed our findings in practice, and found that every Wi-Fi device is vulnerable to some variant of our attacks. Notably, our attack is exceptionally devastating against Android 6.0: it forces the client into using a predictable all-zero encryption key.},
+booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1313–1328},
+numpages = {16},
+keywords = {wpa2, security protocols, nonce reuse, network security, initialization vector, packet number, key reinstallation, handshake, attacks},
+location = {Dallas, Texas, USA},
+series = {CCS '17}
+}
+
+% RFC 7664
+@techreport{rfc7664,
+    series =    {Request for Comments},
+    number =    7664,
+    howpublished =  {RFC 7664},
+    publisher = {RFC Editor},
+    doi =       {10.17487/RFC7664},
+    url =       {https://www.rfc-editor.org/info/rfc7664},
+        author =    {Dan Harkins},
+    title =     {{Dragonfly Key Exchange}},
+    pagetotal = 18,
+    year =      2015,
+    month =     nov,
+    urldate = {2022-09-30},
+    abstract =  {This document specifies a key exchange using discrete logarithm cryptography that is authenticated using a password or passphrase. It is resistant to active attack, passive attack, and offline dictionary attack. This document is a product of the Crypto Forum Research Group (CFRG).},
+}
+
+% Datasets paper
+
+@INPROCEEDINGS{9664737,  author={Hnamte, Vanlalruata and Hussain, Jamal},  booktitle={2021 3rd International Conference on Electrical, Control and Instrumentation Engineering (ICECIE)},   title={An Extensive Survey on Intrusion Detection Systems: Datasets and Challenges for Modern Scenario},   year={2021},  volume={},  number={},  pages={1-10},  abstract={Cyberattacks are becoming more and more advanced, making it more difficult to identity suspicious activities on network traffic. Weaponizing the data in the line between network attacks and data breaches continues and the number rises upward even during the recent year with a massive increase in the attack type. Many consider Intrusion Detection System (IDS) datasets publicly available are becoming outdated and inadequate due to the availability of newer attack techniques. Therefore, it is a concern that the extensive usage of these available datasets in the current attack scenario to evaluate IDS models. This paper lists 37 datasets available for testing the IDS models and discusses those publicly accessible datasets, describing the characteristics and limitations for researchers who use such datasets. Finally, based on the dataset characteristics and usage survey, we conclude with a summary of the problems and provide our insights and suggestions for the use of network-based datasets for the Deep Learning approach for further improvement.},  keywords={},  doi={10.1109/ICECIE52348.2021.9664737},  ISSN={},  month={Nov},}
+
+
+% AWID3
+
+@article{kolias2015intrusion, 
+	title={Intrusion detection in 802.11 networks: empirical evaluation of threats and a public dataset}, 
+	author={Kolias, Constantinos and Kambourakis, Georgios and Stavrou, Angelos and Gritzalis, Stefanos},
+	journal={IEEE Communications Surveys \& Tutorials},
+	volume={18},
+	number={1},
+	pages={184-208},
+	year={2016},
+	publisher={IEEE}}
+
+
+@ARTICLE{9360747, 
+	author={E. {Chatzoglou} and G. {Kambourakis} and C. {Kolias}},
+	journal={IEEE Access}, 
+	title={Empirical evaluation of attacks against IEEE 802.11 enterprise networks: The AWID3 dataset}, 
+	year={2021}, 
+	volume={9}, 
+	number={}, 
+	pages={34188-34205}, 
+	doi={10.1109/ACCESS.2021.3061609}}
+
+% Pick Quality Over Quantity
+@ARTICLE{pick_quality_over,
+  author={Chatzoglou, Efstratios and Kambourakis, Georgios and Kolias, Constantinos and Smiliotopoulos, Christos},
+  journal={IEEE Access}, 
+  title={Pick Quality Over Quantity: Expert Feature Selection and Data Preprocessing for 802.11 Intrusion Detection Systems}, 
+  year={2022},
+  volume={10},
+  number={},
+  pages={64761-64784},
+  doi={10.1109/ACCESS.2022.3183597}}
+  
+% Detecting Application Layer Attacks 
+@Article{s22155633,
+AUTHOR = {Chatzoglou, Efstratios and Kambourakis, Georgios and Smiliotopoulos, Christos and Kolias, Constantinos},
+TITLE = {Best of Both Worlds: Detecting Application Layer Attacks through 802.11 and Non-802.11 Features},
+JOURNAL = {Sensors},
+VOLUME = {22},
+YEAR = {2022},
+NUMBER = {15},
+ARTICLE-NUMBER = {5633},
+URL = {https://www.mdpi.com/1424-8220/22/15/5633},
+PubMedID = {35957190},
+ISSN = {1424-8220},
+ABSTRACT = {Intrusion detection in wireless and, more specifically, Wi-Fi networks is lately increasingly under the spotlight of the research community. However, the literature currently lacks a comprehensive assessment of the potential to detect application layer attacks based on both 802.11 and non-802.11 network protocol features. The investigation of this capacity is of paramount importance since Wi-Fi domains are often used as a stepping stone by threat actors for unleashing an ample variety of application layer assaults. In this setting, by exploiting the contemporary AWID3 benchmark dataset along with both shallow and deep learning machine learning techniques, this work attempts to provide concrete answers to a dyad of principal matters. First, what is the competence of 802.11-specific and non-802.11 features when used separately and in tandem in detecting application layer attacks, say, website spoofing? Second, which network protocol features are the most informative to the machine learning model for detecting application layer attacks? Without relying on any optimization or dimensionality reduction technique, our experiments, indicatively exploiting an engineered feature, demonstrate a detection performance up to 96.7\% in terms of the Area under the ROC Curve (AUC) metric.},
+DOI = {10.3390/s22155633}
+}
+
+% 5G Networks Machine Learning
+@Article{Mughaid2022,
+author={Mughaid, Ala
+and AlZu'bi, Shadi
+and Alnajjar, Asma
+and AbuElsoud, Esraa
+and Salhi, Subhieh El
+and Igried, Bashar
+and Abualigah, Laith},
+title={Improved dropping attacks detecting system in 5g networks using machine learning and deep learning approaches},
+journal={Multimedia Tools and Applications},
+year={2022},
+month={Sep},
+day={27},
+abstract={Non Orthogonal Multiple Access (NOMA) successfully drew attention to the deployment of 5th Generation (5G) wireless communication systems, and it is now considered a significant technology in 5G communications. The primary enhancement in 5G is the speed, which may be 100 times faster than 4G. Due to the rising number of internal or external attacks on the Network, wireless intrusion detection systems are a vital aspect of any system connected to the Internet, and 5G will demand considerable improvements in data rate and security. In this paper, we have built a simulator for NOMA and applied a dropping attack to extract a dataset from the simulation model. The accuracy for detecting dropping attacks using the extracted data after applying ML algorithms was 95.7{\%} for LR. Furthermore, this work suggests a methodology for wireless cyberattack detection in 5G networks based on applying several ML and DL techniques such as Decision Trees, KNN, Multi-class Decision Jungle, Multi-class Decision Forest, and Multi-class Neural Network. The proposed work is implemented and tested using a comprehensive Wi-Fi network benchmark dataset. The conducted experiments resulted in an outstanding performance with an accuracy of 99{\%} for the KNN algorithm and 93{\%} for DF and Neural Network.},
+issn={1573-7721},
+doi={10.1007/s11042-022-13914-9},
+url={https://doi.org/10.1007/s11042-022-13914-9}
+}
+
+@article{DBLP:journals/corr/abs-2110-04259,
+  author    = {Neil Dalal and
+               Nadeem Akhtar and
+               Anubhav Gupta and
+               Nikhil Karamchandani and
+               Gaurav S. Kasbekar and
+               Jatin Parekh},
+  title     = {A Wireless Intrusion Detection System for 802.11 {WPA3} Networks},
+  journal   = {CoRR},
+  volume    = {abs/2110.04259},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2110.04259},
+  eprinttype = {arXiv},
+  eprint    = {2110.04259},
+  timestamp = {Thu, 21 Oct 2021 16:20:08 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2110-04259.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+% Software Libraries
+
+@misc{anaconda,
+  author = {Anaconda Software Distribution},
+  title = {Anacoda},
+  url = {https://anaconda.com},
+  urldate = {2022-12-15},
+  year = {2016},
+  organization = {Anaconda Software Distribution}
+}
+
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@misc{tensorflow2015-whitepaper,
+title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+url={https://www.tensorflow.org/},
+note={Software available from tensorflow.org},
+author={
+    Mart\'{i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
+% Models
+
+@inproceedings{XGBoost,
+ author = {Chen, Tianqi and Guestrin, Carlos},
+ title = {{XGBoost}: A Scalable Tree Boosting System},
+ booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD '16},
+ year = {2016},
+ isbn = {978-1-4503-4232-2},
+ location = {San Francisco, California, USA},
+ pages = {785--794},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2939672.2939785},
+ doi = {10.1145/2939672.2939785},
+ acmid = {2939785},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {large-scale machine learning},
+}
+
+% Metrics
+
+@InProceedings{pmlr-v29-Koco13,
+  title = 	 {On multi-class classification through the minimization of the confusion matrix norm},
+  author = 	 {Koço, Sokol and Capponi, Cécile},
+  booktitle = 	 {Proceedings of the 5th Asian Conference on Machine Learning},
+  pages = 	 {277--292},
+  year = 	 {2013},
+  editor = 	 {Ong, Cheng Soon and Ho, Tu Bao},
+  volume = 	 {29},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Australian National University, Canberra, Australia},
+  month = 	 {13--15 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v29/Koco13.pdf},
+  url = 	 {https://proceedings.mlr.press/v29/Koco13.html},
+  abstract = 	 {In imbalanced multi-class classification problems, the misclassification rate as an error measure may not be a relevant choice. Several methods have been developed where the performance measure retained richer information than the mere misclassification rate: misclassification costs, ROC-based information, etc. Following this idea of dealing with alternate measures of performance, we propose to address imbalanced classification problems by using a new measure to be optimized: the norm of the confusion matrix. Indeed, recent results show that using the norm of the confusion matrix as an error measure can be quite interesting due to the fine-grain informations contained in the matrix,  especially in the case of imbalanced classes. Our first contribution then consists in showing that optimizing criterion based on the confusion matrix gives rise to a common background for cost-sensitive methods aimed at dealing with imbalanced classes learning problems. As our second contribution, we propose an extension of a recent multi-class boosting method — namely AdaBoost.MM — to the imbalanced class problem, by greedily minimizing  the empirical norm of the confusion matrix. A theoretical analysis of the properties of the proposed method is presented, while experimental results illustrate the behavior of the algorithm and show the relevancy of the approach compared to other methods.}
+}
+
+@article{FAWCETT2006861,
+title = {An introduction to ROC analysis},
+journal = {Pattern Recognition Letters},
+volume = {27},
+number = {8},
+pages = {861-874},
+year = {2006},
+note = {ROC Analysis in Pattern Recognition},
+issn = {0167-8655},
+doi = {https://doi.org/10.1016/j.patrec.2005.10.010},
+url = {https://www.sciencedirect.com/science/article/pii/S016786550500303X},
+author = {Tom Fawcett},
+keywords = {ROC analysis, Classifier evaluation, Evaluation metrics},
+abstract = {Receiver operating characteristics (ROC) graphs are useful for organizing classifiers and visualizing their performance. ROC graphs are commonly used in medical decision making, and in recent years have been used increasingly in machine learning and data mining research. Although ROC graphs are apparently simple, there are some common misconceptions and pitfalls when using them in practice. The purpose of this article is to serve as an introduction to ROC graphs and as a guide for using them in research.}
+}
+
+@misc{grandini2020metrics,
+      title={Metrics for Multi-Class Classification: an Overview}, 
+      author={Margherita Grandini and Enrico Bagli and Giorgio Visani},
+      year={2020},
+      eprint={2008.05756},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}

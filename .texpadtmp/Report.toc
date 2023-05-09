@@ -1,0 +1,63 @@
+\contentsline {section}{Abstract}{ii}{section*.1}%
+\contentsline {section}{Abbreviations}{iii}{section*.2}%
+\contentsline {section}{List of Figures}{vi}{section*.4}%
+\contentsline {section}{List of Tables}{vi}{section*.5}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsubsection}{\numberline {1.0.1}Wireless Networks And Attacks}{1}{subsubsection.1.0.1}%
+\contentsline {subsubsection}{\numberline {1.0.2}Intrusion Detection Systems}{1}{subsubsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.1}Research Questions and Objectives}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Literature Review}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Intrusion Detection Systems}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Datasets}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Detecting Network Attacks}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Machine Learning Algorithms}{6}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Random Forest}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}K-Nearest Neighbor}{7}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}XGBoost}{7}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Neural Networks}{7}{subsubsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.5}Summary}{7}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Methodology}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Code Environment}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Libraries}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Feature Selection}{10}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Application Layer Features}{10}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}802.11 Features}{12}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Non-802.11 Features}{12}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Dataset Manipulation}{14}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Pre-Processing Methods}{17}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Encoding}{17}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Normalisation}{17}{subsubsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.6}Data Balancing}{17}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Cross Validation}{18}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Machine Learning Algorithms}{19}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Evaluation Metrics}{20}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Experiments}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Initial Modelling}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Classifiers}{23}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Random Forest (RF)}{24}{subsubsection.4.2.1}%
+\contentsline {paragraph}{Confusion Matrix}{25}{figure.caption.26}%
+\contentsline {subsubsection}{\numberline {4.2.2}XGBoost}{26}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Neural Networks}{27}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Multi-Layer Perceptron (MLP)}{27}{subsubsection.4.3.1}%
+\contentsline {section}{\numberline {5}Analysis Of Results}{30}{section.5}%
+\contentsline {section}{Bibliography}{31}{section*.33}%
+\contentsline {section}{Appendices}{34}{section*.33}%
+\contentsline {section}{\numberline {A}Data-set Manipulation}{34}{appendix.a.A}%
+\contentsline {subsection}{\numberline {A.1}CSV Combiner Script}{34}{subsection.a.A.1}%
+\contentsline {subsection}{\numberline {A.2}Feature Extraction \& Reduction}{35}{subsection.a.A.2}%
+\contentsline {section}{\numberline {B}Conda Environments}{38}{appendix.a.B}%
+\contentsline {subsection}{\numberline {B.1}Neural Networks - Apple Silicon}{38}{subsection.a.B.1}%
+\contentsline {subsection}{\numberline {B.2}Classifiers}{38}{subsection.a.B.2}%
+\contentsline {section}{\numberline {C}Data Preprocessing}{39}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.1}MinMax Scaling}{39}{subsection.a.C.1}%
+\contentsline {subsection}{\numberline {C.2}OHE Encoding}{39}{subsection.a.C.2}%
+\contentsline {subsection}{\numberline {C.3}Label Encoding}{40}{subsection.a.C.3}%
+\contentsline {subsection}{\numberline {C.4}Loading Dataset}{40}{subsection.a.C.4}%
+\contentsline {section}{\numberline {D}Classifiers}{42}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.1}Base K-Nearest Neighbor (KNN)}{42}{subsection.a.D.1}%
+\contentsline {subsection}{\numberline {D.2}XGBoost}{43}{subsection.a.D.2}%
+\contentsline {subsubsection}{\numberline {D.2.1}Base XGBoost CF}{43}{subsubsection.a.D.2.1}%
+\contentsline {subsubsection}{\numberline {D.2.2}Base XGBoost Classification Report}{44}{subsubsection.a.D.2.2}%
+\contentsline {section}{\numberline {E}Neural Networks}{45}{appendix.a.E}%
+\contentsline {subsection}{\numberline {E.1}MLP NN v1}{45}{subsection.a.E.1}%
+\contentsline {subsubsection}{\numberline {E.1.1}MLP Neural Network}{45}{subsubsection.a.E.1.1}%

@@ -1,0 +1,125 @@
+% REPORT.TEX - University of Warwick Reports / Dissertations / Projects
+% 
+% Author - Chris Quinn 28/06/2020
+% 
+%
+% A template for students and masters dissertations, flexible for your
+% needs.
+%
+% This is the main .tex which will tell the compiler to include everything, 
+% each chapter/section is then in folders for convenience, as you include more awid
+% images it can get harder and harder to manage.
+%
+% First things first, declaration of the document class along with the packages % we need.
+
+
+\documentclass[pdftex,11pt,a4paper,oneside]{article}
+%Can change the pt, papersize etc.
+
+\usepackage{amsmath} %For both in-line and equation mode
+\numberwithin{equation}{section} %Numbering of our equations per section
+\usepackage{algorithm}
+\usepackage{algorithmic} %Algorithm styles, need to be nested for the example shown
+\usepackage{fancyhdr} %For our headers
+\usepackage{graphicx} %Inserting images
+\usepackage{setspace} %Spacing on the front page for crest and titles
+\usepackage[]{fncychap} % Styles can be Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
+\usepackage[hyphens]{url} %Deals with hyphens in urls to make them clickable
+\usepackage{xcolor} %Great if you want coloured text
+\usepackage{tabularx}
+\usepackage{appendix} %Take a wild guess slick
+\usepackage{caption}
+\usepackage{booktabs} % Used for the classification report table
+\usepackage{listings}
+\usepackage{color}
+
+% Bibliography
+\usepackage[backend=biber,style=authoryear-ibid]{biblatex}
+\setlength\bibitemsep{\baselineskip}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+%KEEP THIS ONE LAST it's quite buggy, it allows you to click on links within the pdf and web links without changing the colour. The mouse cursor simply changes its icon to indicate to the user. Great tool - still awkward
+\usepackage[hidelinks]{hyperref}
+
+
+%This will tell the compiler to do the header style, page and spacing between the header and text
+\fancyhf{}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.2pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT STARTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addbibresource{bibliography.bib}
+
+%Lets begin the document, some chapters have examples in to give you an idea 
+\begin{document}
+
+\include{Preamble/Frontpage}
+\include{Preamble/Abstract}
+\include{Preamble/Acknowledgements}
+\include{Preamble/Abbreviations}
+\include{Preamble/Contents}
+\include{Preamble/Lists}
+\include{Preamble/ChapterMods}
+
+
+\include{Chapter1/Chapter1}
+\include{Chapter2/Chapter2}
+
+\include{Chapter3/Chapter3}
+\include{Chapter3/FeatureSelection}
+\include{Chapter3/DataSplit}
+\include{Chapter3/PreProcessing}
+\include{Chapter3/Models}
+\include{Chapter3/Metrics}
+
+\include{Chapter4/Chapter4}
+\include{Chapter4/ShallowClassifiers}
+\include{Chapter4/NeuralNetworks}
+\include{Chapter5/Chapter5}
+\include{Chapter6/Chapter6}
+\include{Chapter7/Chapter7}
+\include{Chapter8/Chapter8}
+\include{Chapter9/Chapter9}
+%Keep adding folders as to your desires
+
+% \bibliographystyle{abbrv}
+\nocite{*}
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+\include{Appendices/Appendices}
+
+\end{document}

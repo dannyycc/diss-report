@@ -1,0 +1,1349 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{9360747}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=acd18a327d3504adfd07f2b8b380744b}{%
+           family={{Chatzoglou}},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
+           family={{Kambourakis}},
+           familyi={K\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=e2472652241dc9c0b900531f6cfd6fab}{%
+           family={{Kolias}},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{114f417b2fd1df0195de0b8e74557167}
+      \strng{fullhash}{114f417b2fd1df0195de0b8e74557167}
+      \strng{bibnamehash}{114f417b2fd1df0195de0b8e74557167}
+      \strng{authorbibnamehash}{114f417b2fd1df0195de0b8e74557167}
+      \strng{authornamehash}{114f417b2fd1df0195de0b8e74557167}
+      \strng{authorfullhash}{114f417b2fd1df0195de0b8e74557167}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Empirical evaluation of attacks against IEEE 802.11 enterprise networks: The AWID3 dataset}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{34188\bibrangedash 34205}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2021.3061609
+      \endverb
+    \endentry
+    \entry{pick_quality_over}{article}{}
+      \name{author}{4}{ul=3}{%
+        {{un=2,uniquepart=given,hash=d7eafb66deb2d3e3688753848df2ef24}{%
+           family={Chatzoglou},
+           familyi={C\bibinitperiod},
+           given={Efstratios},
+           giveni={E\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
+           family={Kambourakis},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
+           family={Kolias},
+           familyi={K\bibinitperiod},
+           given={Constantinos},
+           giveni={C\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=e751509604a79a6b468a0960055757bf}{%
+           family={Smiliotopoulos},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
+      \strng{fullhash}{660a67211b435a81b51d5e3a629065bc}
+      \strng{bibnamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
+      \strng{authorbibnamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
+      \strng{authornamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
+      \strng{authorfullhash}{660a67211b435a81b51d5e3a629065bc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Pick Quality Over Quantity: Expert Feature Selection and Data Preprocessing for 802.11 Intrusion Detection Systems}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{64761\bibrangedash 64784}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3183597
+      \endverb
+    \endentry
+    \entry{s22155633}{article}{}
+      \name{author}{4}{ul=3}{%
+        {{un=2,uniquepart=given,hash=d7eafb66deb2d3e3688753848df2ef24}{%
+           family={Chatzoglou},
+           familyi={C\bibinitperiod},
+           given={Efstratios},
+           giveni={E\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
+           family={Kambourakis},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=e751509604a79a6b468a0960055757bf}{%
+           family={Smiliotopoulos},
+           familyi={S\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
+           family={Kolias},
+           familyi={K\bibinitperiod},
+           given={Constantinos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1775af3134bd9ec05a5196a7c7f82b70}
+      \strng{fullhash}{602aee23097005ec7c825a6fd0ac92ab}
+      \strng{bibnamehash}{1775af3134bd9ec05a5196a7c7f82b70}
+      \strng{authorbibnamehash}{1775af3134bd9ec05a5196a7c7f82b70}
+      \strng{authornamehash}{1775af3134bd9ec05a5196a7c7f82b70}
+      \strng{authorfullhash}{602aee23097005ec7c825a6fd0ac92ab}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intrusion detection in wireless and, more specifically, Wi-Fi networks is lately increasingly under the spotlight of the research community. However, the literature currently lacks a comprehensive assessment of the potential to detect application layer attacks based on both 802.11 and non-802.11 network protocol features. The investigation of this capacity is of paramount importance since Wi-Fi domains are often used as a stepping stone by threat actors for unleashing an ample variety of application layer assaults. In this setting, by exploiting the contemporary AWID3 benchmark dataset along with both shallow and deep learning machine learning techniques, this work attempts to provide concrete answers to a dyad of principal matters. First, what is the competence of 802.11-specific and non-802.11 features when used separately and in tandem in detecting application layer attacks, say, website spoofing? Second, which network protocol features are the most informative to the machine learning model for detecting application layer attacks? Without relying on any optimization or dimensionality reduction technique, our experiments, indicatively exploiting an engineered feature, demonstrate a detection performance up to 96.7\% in terms of the Area under the ROC Curve (AUC) metric.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{15}
+      \field{title}{Best of Both Worlds: Detecting Application Layer Attacks through 802.11 and Non-802.11 Features}
+      \field{volume}{22}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/s22155633
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/15/5633
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/15/5633
+      \endverb
+    \endentry
+    \entry{XGBoost}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=48461ccdf50ba5a54e29a354aa734c0b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Tianqi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ab8ac486d7f85ac914b1a8e51e512b}{%
+           family={Guestrin},
+           familyi={G\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, California, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{fullhash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{bibnamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authorbibnamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authornamehash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \strng{authorfullhash}{f79ceb030bcf791e5521f87ac6ada03b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{isbn}{978-1-4503-4232-2}
+      \field{series}{KDD '16}
+      \field{title}{{XGBoost}: A Scalable Tree Boosting System}
+      \field{year}{2016}
+      \field{pages}{785\bibrangedash 794}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2939672.2939785
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/2939672.2939785
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/2939672.2939785
+      \endverb
+      \keyw{large-scale machine learning}
+    \endentry
+    \entry{thomasdotreppe_2011_openwipsng}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07244c2922cc0cb89bf6a697b80869cc}{%
+           family={d’Otreppe},
+           familyi={d\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {OpenWIPS-ng}%
+      }
+      \strng{namehash}{07244c2922cc0cb89bf6a697b80869cc}
+      \strng{fullhash}{07244c2922cc0cb89bf6a697b80869cc}
+      \strng{bibnamehash}{07244c2922cc0cb89bf6a697b80869cc}
+      \strng{authorbibnamehash}{07244c2922cc0cb89bf6a697b80869cc}
+      \strng{authornamehash}{07244c2922cc0cb89bf6a697b80869cc}
+      \strng{authorfullhash}{07244c2922cc0cb89bf6a697b80869cc}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{OpenWIPS-ng}
+      \field{month}{11}
+      \field{title}{OpenWIPS-ng}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://openwips-ng.org
+      \endverb
+      \verb{url}
+      \verb https://openwips-ng.org
+      \endverb
+    \endentry
+    \entry{DBLP:journals/corr/abs-2110-04259}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=a151f7081df042d5d3e0ad363a1f00bb}{%
+           family={Dalal},
+           familyi={D\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad28952bef2ae8f288b77c8c0633350d}{%
+           family={Akhtar},
+           familyi={A\bibinitperiod},
+           given={Nadeem},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94851b5cd878df2b2b25c3835a4598a3}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Anubhav},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af2e7747a83c4b9e3e83b7f8fb89b647}{%
+           family={Karamchandani},
+           familyi={K\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e2c67f61236ff3672b7749fcb35a6cf}{%
+           family={Kasbekar},
+           familyi={K\bibinitperiod},
+           given={Gaurav\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e8f907985a08506832c6a88d418d161}{%
+           family={Parekh},
+           familyi={P\bibinitperiod},
+           given={Jatin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ace385026b721201dc0e4124f2dae39f}
+      \strng{fullhash}{cec352b72f92a1d4d719fb0cd8b08b6e}
+      \strng{bibnamehash}{ace385026b721201dc0e4124f2dae39f}
+      \strng{authorbibnamehash}{ace385026b721201dc0e4124f2dae39f}
+      \strng{authornamehash}{ace385026b721201dc0e4124f2dae39f}
+      \strng{authorfullhash}{cec352b72f92a1d4d719fb0cd8b08b6e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{A Wireless Intrusion Detection System for 802.11 {WPA3} Networks}
+      \field{volume}{abs/2110.04259}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2110.04259
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2110.04259
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2110.04259
+      \endverb
+    \endentry
+    \entry{anaconda}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e124327e463ed2c04da9724ae0bf19a}{%
+           family={Distribution},
+           familyi={D\bibinitperiod},
+           given={Anaconda\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Anaconda Software Distribution}%
+      }
+      \strng{namehash}{0e124327e463ed2c04da9724ae0bf19a}
+      \strng{fullhash}{0e124327e463ed2c04da9724ae0bf19a}
+      \strng{bibnamehash}{0e124327e463ed2c04da9724ae0bf19a}
+      \strng{authorbibnamehash}{0e124327e463ed2c04da9724ae0bf19a}
+      \strng{authornamehash}{0e124327e463ed2c04da9724ae0bf19a}
+      \strng{authorfullhash}{0e124327e463ed2c04da9724ae0bf19a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Anacoda}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://anaconda.com
+      \endverb
+      \verb{url}
+      \verb https://anaconda.com
+      \endverb
+    \endentry
+    \entry{FAWCETT2006861}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c15aa0b2a7683cefeaa12c991d0b1c2}{%
+           family={Fawcett},
+           familyi={F\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \strng{fullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \strng{bibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \strng{authorbibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \strng{authornamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \strng{authorfullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Receiver operating characteristics (ROC) graphs are useful for organizing classifiers and visualizing their performance. ROC graphs are commonly used in medical decision making, and in recent years have been used increasingly in machine learning and data mining research. Although ROC graphs are apparently simple, there are some common misconceptions and pitfalls when using them in practice. The purpose of this article is to serve as an introduction to ROC graphs and as a guide for using them in research.}
+      \field{issn}{0167-8655}
+      \field{journaltitle}{Pattern Recognition Letters}
+      \field{note}{ROC Analysis in Pattern Recognition}
+      \field{number}{8}
+      \field{title}{An introduction to ROC analysis}
+      \field{volume}{27}
+      \field{year}{2006}
+      \true{nocite}
+      \field{pages}{861\bibrangedash 874}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.patrec.2005.10.010
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S016786550500303X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S016786550500303X
+      \endverb
+      \keyw{ROC analysis,Classifier evaluation,Evaluation metrics}
+    \endentry
+    \entry{garcia_2015_slips}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=87573fbf3ba13f29fabdfbb8398b93ba}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bd31293669db193c713d992cda907d4}{%
+           family={Gomaa},
+           familyi={G\bibinitperiod},
+           given={Alya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1992c1770dbd436b6924da547272478c}{%
+           family={Babayeva},
+           familyi={B\bibinitperiod},
+           given={Kamila},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Stratosphere IPS}%
+      }
+      \list{publisher}{1}{%
+        {The Stratosphere Laboratory}%
+      }
+      \strng{namehash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \strng{fullhash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \strng{bibnamehash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \strng{authorbibnamehash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \strng{authornamehash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \strng{authorfullhash}{697c7d9ab7085731dbc70dc9d20f3ba9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Slips, behavioral machine learning-based Python IPS}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.stratosphereips.org/stratosphere-ips-suite
+      \endverb
+      \verb{url}
+      \verb https://www.stratosphereips.org/stratosphere-ips-suite
+      \endverb
+    \endentry
+    \entry{grandini2020metrics}{misc}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c8c1c1396f97f41792e7bb0d0577137a}{%
+           family={Grandini},
+           familyi={G\bibinitperiod},
+           given={Margherita},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf2519048095256e237b859ec49c164f}{%
+           family={Bagli},
+           familyi={B\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bd1e08972a524bcff90700e59b881b0}{%
+           family={Visani},
+           familyi={V\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \strng{fullhash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \strng{bibnamehash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \strng{authorbibnamehash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \strng{authornamehash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \strng{authorfullhash}{6221934c6fbf1b66ad11c3f44ba13304}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{title}{Metrics for Multi-Class Classification: an Overview}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2008.05756
+      \endverb
+    \endentry
+    \entry{rfc7664}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59ebac22f1240d59eb19407b2659473e}{%
+           family={Harkins},
+           familyi={H\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {RFC Editor}%
+      }
+      \strng{namehash}{59ebac22f1240d59eb19407b2659473e}
+      \strng{fullhash}{59ebac22f1240d59eb19407b2659473e}
+      \strng{bibnamehash}{59ebac22f1240d59eb19407b2659473e}
+      \strng{authorbibnamehash}{59ebac22f1240d59eb19407b2659473e}
+      \strng{authornamehash}{59ebac22f1240d59eb19407b2659473e}
+      \strng{authorfullhash}{59ebac22f1240d59eb19407b2659473e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document specifies a key exchange using discrete logarithm cryptography that is authenticated using a password or passphrase. It is resistant to active attack, passive attack, and offline dictionary attack. This document is a product of the Crypto Forum Research Group (CFRG).}
+      \field{howpublished}{RFC 7664}
+      \field{month}{11}
+      \field{number}{7664}
+      \field{pagetotal}{18}
+      \field{series}{Request for Comments}
+      \field{title}{{Dragonfly Key Exchange}}
+      \field{type}{techreport}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7664
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc7664
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc7664
+      \endverb
+    \endentry
+    \entry{9664737}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=61cef13dd976d239cb412fb32c4d7232}{%
+           family={Hnamte},
+           familyi={H\bibinitperiod},
+           given={Vanlalruata},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb53f0fea247f0df04cf0dfa374e764a}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Jamal},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \strng{fullhash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \strng{bibnamehash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \strng{authorbibnamehash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \strng{authornamehash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \strng{authorfullhash}{4aacad7b0d5dad006b559f0d8157e34b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cyberattacks are becoming more and more advanced, making it more difficult to identity suspicious activities on network traffic. Weaponizing the data in the line between network attacks and data breaches continues and the number rises upward even during the recent year with a massive increase in the attack type. Many consider Intrusion Detection System (IDS) datasets publicly available are becoming outdated and inadequate due to the availability of newer attack techniques. Therefore, it is a concern that the extensive usage of these available datasets in the current attack scenario to evaluate IDS models. This paper lists 37 datasets available for testing the IDS models and discusses those publicly accessible datasets, describing the characteristics and limitations for researchers who use such datasets. Finally, based on the dataset characteristics and usage survey, we conclude with a summary of the problems and provide our insights and suggestions for the use of network-based datasets for the Deep Learning approach for further improvement.}
+      \field{booktitle}{2021 3rd International Conference on Electrical, Control and Instrumentation Engineering (ICECIE)}
+      \field{month}{11}
+      \field{title}{An Extensive Survey on Intrusion Detection Systems: Datasets and Challenges for Modern Scenario}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICECIE52348.2021.9664737
+      \endverb
+    \endentry
+    \entry{5278657}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={IEEE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Std 802.11w-2009 (Amendment to IEEE Std 802.11-2007 as amended by IEEE Std 802.11k-2008, IEEE Std 802.11r-2008, and IEEE Std 802.11y-2008)}
+      \field{title}{IEEE Standard for Information technology - Telecommunications and information exchange between systems - Local and metropolitan area networks - Specific requirements. Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications Amendment 4: Protected Management Frames}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 111}
+      \range{pages}{111}
+      \verb{doi}
+      \verb 10.1109/IEEESTD.2009.5278657
+      \endverb
+    \endentry
+    \entry{kismet_2002_kismet}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c800abdbb10755d62c4ce0d841649782}{%
+           family={Kismet},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{c800abdbb10755d62c4ce0d841649782}
+      \strng{fullhash}{c800abdbb10755d62c4ce0d841649782}
+      \strng{bibnamehash}{c800abdbb10755d62c4ce0d841649782}
+      \strng{authorbibnamehash}{c800abdbb10755d62c4ce0d841649782}
+      \strng{authornamehash}{c800abdbb10755d62c4ce0d841649782}
+      \strng{authorfullhash}{c800abdbb10755d62c4ce0d841649782}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Kismet Wireless}
+      \field{month}{07}
+      \field{title}{Kismet}
+      \field{urlday}{30}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kismetwireless.net
+      \endverb
+      \verb{url}
+      \verb https://www.kismetwireless.net
+      \endverb
+    \endentry
+    \entry{pmlr-v29-Koco13}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6bf19787d8a456fc81d03a49ec01c17b}{%
+           family={Koço},
+           familyi={K\bibinitperiod},
+           given={Sokol},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43822a41adb3d949ff64d1d7e93c2cb5}{%
+           family={Capponi},
+           familyi={C\bibinitperiod},
+           given={Cécile},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=25aead4b15ea1d822aac07a7de816978}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Cheng\bibnamedelima Soon},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=426ae2c513b9523be4eb8c150b4b99e2}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Tu\bibnamedelima Bao},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Australian National University, Canberra, Australia}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{fullhash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{bibnamehash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{authorbibnamehash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{authornamehash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{authorfullhash}{9943fc76c5367f7dea4178363fd3c6ff}
+      \strng{editorbibnamehash}{c51d08199f9433e97e028d22117b2af4}
+      \strng{editornamehash}{c51d08199f9433e97e028d22117b2af4}
+      \strng{editorfullhash}{c51d08199f9433e97e028d22117b2af4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In imbalanced multi-class classification problems, the misclassification rate as an error measure may not be a relevant choice. Several methods have been developed where the performance measure retained richer information than the mere misclassification rate: misclassification costs, ROC-based information, etc. Following this idea of dealing with alternate measures of performance, we propose to address imbalanced classification problems by using a new measure to be optimized: the norm of the confusion matrix. Indeed, recent results show that using the norm of the confusion matrix as an error measure can be quite interesting due to the fine-grain informations contained in the matrix, especially in the case of imbalanced classes. Our first contribution then consists in showing that optimizing criterion based on the confusion matrix gives rise to a common background for cost-sensitive methods aimed at dealing with imbalanced classes learning problems. As our second contribution, we propose an extension of a recent multi-class boosting method — namely AdaBoost.MM — to the imbalanced class problem, by greedily minimizing the empirical norm of the confusion matrix. A theoretical analysis of the properties of the proposed method is presented, while experimental results illustrate the behavior of the algorithm and show the relevancy of the approach compared to other methods.}
+      \field{booktitle}{Proceedings of the 5th Asian Conference on Machine Learning}
+      \field{month}{13--15 Nov}
+      \field{series}{Proceedings of Machine Learning Research}
+      \field{title}{On multi-class classification through the minimization of the confusion matrix norm}
+      \field{volume}{29}
+      \field{year}{2013}
+      \field{pages}{277\bibrangedash 292}
+      \range{pages}{16}
+      \verb{file}
+      \verb http://proceedings.mlr.press/v29/Koco13.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v29/Koco13.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v29/Koco13.html
+      \endverb
+    \endentry
+    \entry{kolias2015intrusion}{article}{}
+      \name{author}{4}{}{%
+        {{un=2,uniquepart=given,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
+           family={Kolias},
+           familyi={K\bibinitperiod},
+           given={Constantinos},
+           giveni={C\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
+           family={Kambourakis},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a60826786eea1e72364eecd44bd4dff7}{%
+           family={Stavrou},
+           familyi={S\bibinitperiod},
+           given={Angelos},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47540ae2d02cd791312926fa15602cc8}{%
+           family={Gritzalis},
+           familyi={G\bibinitperiod},
+           given={Stefanos},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{716dde99b28c6248d6a1789e5114eee1}
+      \strng{fullhash}{7b042a8e5899d64f4930b680c1733925}
+      \strng{bibnamehash}{716dde99b28c6248d6a1789e5114eee1}
+      \strng{authorbibnamehash}{716dde99b28c6248d6a1789e5114eee1}
+      \strng{authornamehash}{716dde99b28c6248d6a1789e5114eee1}
+      \strng{authorfullhash}{7b042a8e5899d64f4930b680c1733925}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{number}{1}
+      \field{title}{Intrusion detection in 802.11 networks: empirical evaluation of threats and a public dataset}
+      \field{volume}{18}
+      \field{year}{2016}
+      \field{pages}{184\bibrangedash 208}
+      \range{pages}{25}
+    \endentry
+    \entry{tensorflow2015-whitepaper}{misc}{}
+      \name{author}{40}{}{%
+        {{un=0,uniquepart=base,hash=396d6419316ec52f4c63b2f85912b61b}{%
+           family={Martín\bibnamedelima Abadi},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f337a7c116835c22bb206d2f0d7c70e0}{%
+           family={Ashish\bibnamedelima Agarwal},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=84ac9fcb6c15dcd79c092bc8e20586ba}{%
+           family={Paul\bibnamedelima Barham},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d8574748e3086e0b279a58cdba71763d}{%
+           family={Eugene\bibnamedelima Brevdo},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c0b56f741b5a5bddfe77f1881c3cc67a}{%
+           family={Zhifeng\bibnamedelima Chen},
+           familyi={Z\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8b8dd2e01366c855f42e47027cf23e98}{%
+           family={Craig\bibnamedelima Citro},
+           familyi={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=978a7d9601bf09e03d1bb3f6cce7a0ce}{%
+           family={Greg\bibnamedelima S.\bibnamedelimi Corrado},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3b500b0dfd88e6e151d29108fdcb82f0}{%
+           family={Andy\bibnamedelima Davis},
+           familyi={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=2fd376ea3b3a3da11704c0ee86753dcf}{%
+           family={Jeffrey\bibnamedelima Dean},
+           familyi={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5b34e641dd8a00f97c6242ae0353eb90}{%
+           family={Matthieu\bibnamedelima Devin},
+           familyi={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5b4490947d4e91359646ce3c93cbd2f7}{%
+           family={Sanjay\bibnamedelima Ghemawat},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1fdef10b94ee122ef6136197f99e3df3}{%
+           family={Ian\bibnamedelima Goodfellow},
+           familyi={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=166ae8a0b435eded68e39e9e2d2a1ee8}{%
+           family={Andrew\bibnamedelima Harp},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=7e9f7006151cf312bc133568336c68c6}{%
+           family={Geoffrey\bibnamedelima Irving},
+           familyi={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=08c1890e1c33279b8c63c71fa8f19263}{%
+           family={Michael\bibnamedelima Isard},
+           familyi={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9fce03efe6b3331a1b93ed2e7c0da9d5}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Yangqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0c0eea5379268c0c5b68732c90984b6}{%
+           family={Rafal\bibnamedelima Jozefowicz},
+           familyi={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=cff46cb4603a73d83b11ea7a9ded9d79}{%
+           family={Lukasz\bibnamedelima Kaiser},
+           familyi={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d088e0f635523b8b5b18662331e4f44a}{%
+           family={Manjunath\bibnamedelima Kudlur},
+           familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1c24291ae15b979c82aa09a33790cb62}{%
+           family={Josh\bibnamedelima Levenberg},
+           familyi={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=796a3a98ff7545fe10f6a4c17ba016fa}{%
+           family={Dandelion\bibnamedelima Mané},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1ee98d232eb1fc1208a8f8ca649e970b}{%
+           family={Rajat\bibnamedelima Monga},
+           familyi={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b2a15ec3d90955ece50ea26d31100b9a}{%
+           family={Sherry\bibnamedelima Moore},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1494c573fadad736c58cf1119ac59239}{%
+           family={Derek\bibnamedelima Murray},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=ecf58eb1684af6cba2c1f126405eedab}{%
+           family={Chris\bibnamedelima Olah},
+           familyi={C\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9f43befd94cd09a9aaa7ea8489405a83}{%
+           family={Mike\bibnamedelima Schuster},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=4712800a228b1179529b9f6e0d1b1838}{%
+           family={Jonathon\bibnamedelima Shlens},
+           familyi={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=41ad6ff6c026d5a3730269072b31caf1}{%
+           family={Benoit\bibnamedelima Steiner},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b02f7871db6fc5524cec4ce38e104410}{%
+           family={Ilya\bibnamedelima Sutskever},
+           familyi={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=63288446e47b1d383f522ede84aa6fcc}{%
+           family={Kunal\bibnamedelima Talwar},
+           familyi={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1dec75595b55bf77971f6a932d146b81}{%
+           family={Paul\bibnamedelima Tucker},
+           familyi={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b6680dbb0176cb9bd87a3b26fa6f5cfb}{%
+           family={Vincent\bibnamedelima Vanhoucke},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e030c9d199c66657e26138be29814d81}{%
+           family={Vijay\bibnamedelima Vasudevan},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=04426b798803cfaf3e8aa9280a5d0a58}{%
+           family={Fernanda\bibnamedelima Viégas},
+           familyi={F\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=fa7242e11c7d955de2ac1be94ca29073}{%
+           family={Oriol\bibnamedelima Vinyals},
+           familyi={O\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8c9ee8f70a3c3d97f85efd01c4e9cbe6}{%
+           family={Pete\bibnamedelima Warden},
+           familyi={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8e4243c228c72a5e5279e31252887b32}{%
+           family={Martin\bibnamedelima Wattenberg},
+           familyi={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c6a6eb2597f23589fc9141bdda275996}{%
+           family={Martin\bibnamedelima Wicke},
+           familyi={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=3ea39e6dc6ef47029ae996c7e63f1a48}{%
+           family={Yuan\bibnamedelima Yu},
+           familyi={Y\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b69feb3a3d59a312b20dbef0b1d2d6de}{%
+           family={Xiaoqiang\bibnamedelima Zheng},
+           familyi={X\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{fullhash}{9b332dc9b33a2f6316d71d525269bd0f}
+      \strng{bibnamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authorbibnamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authornamehash}{7fdd865be502254047a3b2638dc0cfeb}
+      \strng{authorfullhash}{9b332dc9b33a2f6316d71d525269bd0f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Software available from tensorflow.org}
+      \field{title}{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{Mughaid2022}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=bab0c2b5126e3453473daad18d4c9616}{%
+           family={Mughaid},
+           familyi={M\bibinitperiod},
+           given={Ala},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a14a9412165d6c6cc59c1dd6d430971}{%
+           family={AlZu'bi},
+           familyi={A\bibinitperiod},
+           given={Shadi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99deaa62450dcaab72e8567cbcb4caa9}{%
+           family={Alnajjar},
+           familyi={A\bibinitperiod},
+           given={Asma},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8349ae42924322421378654e6906fdb7}{%
+           family={AbuElsoud},
+           familyi={A\bibinitperiod},
+           given={Esraa},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d966ed7c021ed47bcd289946ea3bbc6}{%
+           family={Salhi},
+           familyi={S\bibinitperiod},
+           given={Subhieh\bibnamedelima El},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51a557d2c21d0f7fc3c45497092e5eec}{%
+           family={Igried},
+           familyi={I\bibinitperiod},
+           given={Bashar},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61b325a50c18a490fd21f80291e071af}{%
+           family={Abualigah},
+           familyi={A\bibinitperiod},
+           given={Laith},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b342f9f9cae460f8a5bb99bb803ffe4}
+      \strng{fullhash}{eab6483ea08a9a74ed091a207f961c37}
+      \strng{bibnamehash}{7b342f9f9cae460f8a5bb99bb803ffe4}
+      \strng{authorbibnamehash}{7b342f9f9cae460f8a5bb99bb803ffe4}
+      \strng{authornamehash}{7b342f9f9cae460f8a5bb99bb803ffe4}
+      \strng{authorfullhash}{eab6483ea08a9a74ed091a207f961c37}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Non Orthogonal Multiple Access (NOMA) successfully drew attention to the deployment of 5th Generation (5G) wireless communication systems, and it is now considered a significant technology in 5G communications. The primary enhancement in 5G is the speed, which may be 100 times faster than 4G. Due to the rising number of internal or external attacks on the Network, wireless intrusion detection systems are a vital aspect of any system connected to the Internet, and 5G will demand considerable improvements in data rate and security. In this paper, we have built a simulator for NOMA and applied a dropping attack to extract a dataset from the simulation model. The accuracy for detecting dropping attacks using the extracted data after applying ML algorithms was 95.7{\%} for LR. Furthermore, this work suggests a methodology for wireless cyberattack detection in 5G networks based on applying several ML and DL techniques such as Decision Trees, KNN, Multi-class Decision Jungle, Multi-class Decision Forest, and Multi-class Neural Network. The proposed work is implemented and tested using a comprehensive Wi-Fi network benchmark dataset. The conducted experiments resulted in an outstanding performance with an accuracy of 99{\%} for the KNN algorithm and 93{\%} for DF and Neural Network.}
+      \field{issn}{1573-7721}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{9}
+      \field{title}{Improved dropping attacks detecting system in 5g networks using machine learning and deep learning approaches}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1007/s11042-022-13914-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11042-022-13914-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11042-022-13914-9
+      \endverb
+    \endentry
+    \entry{scikit-learn}{article}{}
+      \name{author}{16}{}{%
+        {{un=0,uniquepart=base,hash=6e96fec0d63277626bb324bd28cdecb7}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b99c2df2144dc5ee09317a7833dea42d}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=955f19cea89ae97bb7936078898e6255}{%
+           family={Gramfort},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2787869c9954c1d4e9891098995feb75}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86d47ab9ca1a9dae108b4d4a0418c679}{%
+           family={Thirion},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d42f9e9cec95da1dad2232eac74982ab}{%
+           family={Grisel},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bd8ef25258dd2311f92df23fe71ecf7}{%
+           family={Blondel},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5ee41fa92b9e425806e1773853f1932}{%
+           family={Prettenhofer},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c808557734e8929976d1f06f99c4ff2}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9662a6ea01596c6dd450817ccac81c4a}{%
+           family={Dubourg},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39e81a3e2193b954680a0ab847a0bb55}{%
+           family={Vanderplas},
+           familyi={V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14c4a498c032f77d0b83f86c710dd50e}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc075b18fb4710a1a37b258804c57efe}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67ec0e8add781665a43010c9559111e9}{%
+           family={Brucher},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcb3918f09eb8785e6b212a907cc37cf}{%
+           family={Perrot},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab20fcf381cd45daa82417c6fc595051}{%
+           family={Duchesnay},
+           familyi={D\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{fullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \strng{bibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authorbibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authornamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authorfullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Scikit-learn: Machine Learning in {P}ython}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2825\bibrangedash 2830}
+      \range{pages}{6}
+    \endentry
+    \entry{roundy_iot_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f3450870a72da675a05b49d564e927d5}{%
+           family={Roundy},
+           familyi={R\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3450870a72da675a05b49d564e927d5}
+      \strng{fullhash}{f3450870a72da675a05b49d564e927d5}
+      \strng{bibnamehash}{f3450870a72da675a05b49d564e927d5}
+      \strng{authorbibnamehash}{f3450870a72da675a05b49d564e927d5}
+      \strng{authornamehash}{f3450870a72da675a05b49d564e927d5}
+      \strng{authorfullhash}{f3450870a72da675a05b49d564e927d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The use of {IoT} devices is skyrocketing, but many organizations are failing to adequately secure them. Make sure {IoT} security is at the top of your list.}
+      \field{howpublished}{https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions}
+      \field{langid}{english}
+      \field{month}{05}
+      \field{shorttitle}{{IoT} Security}
+      \field{title}{{IoT} Security: {IoT} Device Security Challenges \& Solutions}
+      \field{titleaddon}{Verizon Enterprise}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{10.4108/eai.27-11-2021.2315535}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1d10f9c8ee3975083cae9c302ec17353}{%
+           family={Saskara},
+           familyi={S\bibinitperiod},
+           given={Gede\bibnamedelimb Arna\bibnamedelima Jude},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af882eb6dba3f1808b6258c05e6d7672}{%
+           family={Listarta},
+           familyi={L\bibinitperiod},
+           given={I\bibnamedelima Made\bibnamedelima Edy},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ea6b8911d3e158571e85060bef396ef}{%
+           family={Santyadiputra},
+           familyi={S\bibinitperiod},
+           given={Gede\bibnamedelima Saindra},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71b3155551a3de5d2775bf2e4ac1b60c}{%
+           family={Megawanta},
+           familyi={M\bibinitperiod},
+           given={Putu\bibnamedelima Bayu},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52c16e650f6623aa8819c0265dbae51}{%
+           family={Giri},
+           familyi={G\bibinitperiod},
+           given={Putu\bibnamedelimb Agus\bibnamedelimb Wahyu\bibnamedelimb Adi\bibnamedelima Perdana},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {EAI}%
+      }
+      \strng{namehash}{b8f1759b9d38d932e900771545495a98}
+      \strng{fullhash}{83a5ac2b3e164841ca3b20596033486c}
+      \strng{bibnamehash}{b8f1759b9d38d932e900771545495a98}
+      \strng{authorbibnamehash}{b8f1759b9d38d932e900771545495a98}
+      \strng{authornamehash}{b8f1759b9d38d932e900771545495a98}
+      \strng{authorfullhash}{83a5ac2b3e164841ca3b20596033486c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Performance of Kismet Wireless Intrusion Detection System on Raspberry Pi}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.4108/eai.27-11-2021.2315535
+      \endverb
+      \keyw{wireless intrusion detection system kismet raspberry pi}
+    \endentry
+    \entry{9249426}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a18c394ebade1e46b683c754c12bd067}{%
+           family={Satam},
+           familyi={S\bibinitperiod},
+           given={Pratik},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abeb6cd48bc2b468f54b1c8eb2aedb47}{%
+           family={Hariri},
+           familyi={H\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \strng{fullhash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \strng{bibnamehash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \strng{authorbibnamehash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \strng{authornamehash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \strng{authorfullhash}{ce7ee8e9a1cd5cceb30e97f8a450f80b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Network and Service Management}
+      \field{number}{1}
+      \field{title}{WIDS: An Anomaly Based Intrusion Detection System for Wi-Fi (IEEE 802.11) Protocol}
+      \field{volume}{18}
+      \field{year}{2021}
+      \field{pages}{1077\bibrangedash 1091}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TNSM.2020.3036138
+      \endverb
+    \endentry
+    \entry{krack}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d73842ad18b41dbf01789b49e6b6b35}{%
+           family={Vanhoef},
+           familyi={V\bibinitperiod},
+           given={Mathy},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4d66bba00377abcfc59991fe739ed13}{%
+           family={Piessens},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dallas, Texas, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3ae29e197effc38afe0545562a1ef0f8}
+      \strng{fullhash}{3ae29e197effc38afe0545562a1ef0f8}
+      \strng{bibnamehash}{3ae29e197effc38afe0545562a1ef0f8}
+      \strng{authorbibnamehash}{3ae29e197effc38afe0545562a1ef0f8}
+      \strng{authornamehash}{3ae29e197effc38afe0545562a1ef0f8}
+      \strng{authorfullhash}{3ae29e197effc38afe0545562a1ef0f8}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce the key reinstallation attack. This attack abuses design or implementation flaws in cryptographic protocols to reinstall an already-in-use key. This resets the key's associated parameters such as transmit nonces and receive replay counters. Several types of cryptographic Wi-Fi handshakes are affected by the attack. All protected Wi-Fi networks use the 4-way handshake to generate a fresh session key. So far, this 14-year-old handshake has remained free from attacks, and is even proven secure. However, we show that the 4-way handshake is vulnerable to a key reinstallation attack. Here, the adversary tricks a victim into reinstalling an already-in-use key. This is achieved by manipulating and replaying handshake messages. When reinstalling the key, associated parameters such as the incremental transmit packet number (nonce) and receive packet number (replay counter) are reset to their initial value. Our key reinstallation attack also breaks the PeerKey, group key, and Fast BSS Transition (FT) handshake. The impact depends on the handshake being attacked, and the data-confidentiality protocol in use. Simplified, against AES-CCMP an adversary can replay and decrypt (but not forge) packets. This makes it possible to hijack TCP streams and inject malicious data into them. Against WPA-TKIP and GCMP the impact is catastrophic: packets can be replayed, decrypted, and forged. Because GCMP uses the same authentication key in both communication directions, it is especially affected. Finally, we confirmed our findings in practice, and found that every Wi-Fi device is vulnerable to some variant of our attacks. Notably, our attack is exceptionally devastating against Android 6.0: it forces the client into using a predictable all-zero encryption key.}
+      \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{isbn}{9781450349468}
+      \field{series}{CCS '17}
+      \field{title}{Key Reinstallation Attacks: Forcing Nonce Reuse in WPA2}
+      \field{year}{2017}
+      \field{pages}{1313\bibrangedash 1328}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1145/3133956.3134027
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3133956.3134027
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3133956.3134027
+      \endverb
+      \keyw{wpa2,security protocols,nonce reuse,network security,initialization vector,packet number,key reinstallation,handshake,attacks}
+    \endentry
+    \entry{vanhoef-sp2020-dragonblood}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d73842ad18b41dbf01789b49e6b6b35}{%
+           family={Vanhoef},
+           familyi={V\bibinitperiod},
+           given={Mathy},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fd7e4eea16cc4fefb8c0f4661fb7d1f}{%
+           family={Ronen},
+           familyi={R\bibinitperiod},
+           given={Eyal},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f288bfb966d358d460c6ffe1b8388f16}
+      \strng{fullhash}{f288bfb966d358d460c6ffe1b8388f16}
+      \strng{bibnamehash}{f288bfb966d358d460c6ffe1b8388f16}
+      \strng{authorbibnamehash}{f288bfb966d358d460c6ffe1b8388f16}
+      \strng{authornamehash}{f288bfb966d358d460c6ffe1b8388f16}
+      \strng{authorfullhash}{f288bfb966d358d460c6ffe1b8388f16}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
+      \field{title}{Dragonblood: Analyzing the Dragonfly Handshake of WPA3 and EAP-pwd}
+      \field{year}{2020}
+      \field{pages}{517\bibrangedash 533}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/SP40000.2020.00031
+      \endverb
+    \endentry
+    \entry{wifialliance_2022_wpa3}{report}{}
+      \list{institution}{1}{%
+        {Wi-Fi Alliance}%
+      }
+      \list{organization}{1}{%
+        {www.wi-fi.org}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Wi-Fi Alliance}
+      \field{month}{11}
+      \field{title}{WPA3 Specification Version 3.1}
+      \field{type}{techreport}
+      \field{urlday}{3}
+      \field{urlmonth}{10}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.wi-fi.org/file/wpa3-specification
+      \endverb
+      \verb{url}
+      \verb https://www.wi-fi.org/file/wpa3-specification
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

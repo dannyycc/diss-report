@@ -1,0 +1,56 @@
+% !TEX root =  ../Report.tex
+
+\section{Introduction}
+\label{sec:Introduction} 
+
+The ongoing increase in IoT devices in homes and enterprise environments has seen a rise in the utilisation of wireless networks such as IEEE 802.11 networks, more commonly known as WiFi. As businesses and consumers seek to try out new devices and technologies, these manufacturers tend to focus more on improving performance and features and neglect security \parencite{roundy_iot_nodate}. As a result, this may weaken the security posture of an organisation or home to be more susceptible to attacks from malicious threat actors taking advantage of vulnerable devices in the network.
+
+
+
+
+\subsubsection{Wireless Networks And Attacks}
+\smallskip
+
+The 802.11 standards have advanced and improved since their inception in 1997 in terms of security, however, despite this, Wi-Fi networks are still vulnerable to well-known attacks such as de-authentication attacks to disconnect all devices from a network, leading to more advanced attacks such as Man-in-the-middle attacks (MITM) or Denial Of Service attacks. The introduction of Protected Management Frames (PMF) in 2009 \parencite{5278657} helped to increase the security of management frames by using cryptography and integrity protection on de-authentication, disassociation and action management frames \parencite{9249426}. 
+
+The introduction of WPA3 in 2018 \parencite{wifialliance_2022_wpa3}, aimed to succeed WPA2, bringing new features and fixes to strengthen the security of wireless networks. More notably, Simultaneous Authentication of Equals (SAE) was introduced to provide a secure key negotiation and key exchange method based on the Dragonfly key exchange protocol in RFC 7664 \parencite{rfc7664}, preventing dictionary or brute-forcing attacks as well as the (KRACK) Key-Reinstallation attack \parencite{krack} by providing perfect forward secrecy, ensuring that even if the private key is obtained, the data packets cannot be decrypted. 
+
+Research into WPA3 networks indicates that even features such as Protected Management Frames (PMF) and Simultaneous Authentication of Equals (SAE) methods of authentication have their shortcomings including being vulnerable to denial-of-service, side-channel, and downgrade attacks \parencite{vanhoef-sp2020-dragonblood}.
+
+
+% \subsection{Background}
+% \label{sec:Background}
+
+\subsubsection{Intrusion Detection Systems}
+
+\smallskip
+
+Intrusion Detection Systems (IDS) are a common mechanism to defend against these attacks by analysing network traffic and determining if they are malicious or benign. There are typically two types of intrusion detection: signature-based and anomaly-based. Signature-based IDS monitors the network traffic for any suspicious patterns within data packets that match a known signature for an intrusion. This is usually via a database holding known intrusion attack patterns. Anomaly-based IDS creates an organisational benchmark of 'normal' as a baseline to help determine whether an activity is considered unusual or suspicious. This involves feeding the system with a large amount of data to learn an environment's regular usage patterns initially. 
+
+External tools such as Stratosphere IPS (SLIPS) developed by \cite{garcia_2015_slips} at the Stratosphere Lab at CTU University of Prague seek to utilise a combination of behaviour patterns and machine learning such as Markov Chain models to detect malicious network traffic. Open-source implementations of wireless IDS such as Kismet \parencite{kismet_2002_kismet} and OpenWIPS-ng \parencite{thomasdotreppe_2011_openwipsng} also exist and serve a usage for both consumers and businesses.
+
+\medskip
+Significant work and research have been seen recently into investigating and developing wireless intrusion detection systems using Machine Learning based algorithms utilising supervised, unsupervised and deep learning approaches in both wired and wireless networks. However, research on Intrusion Detection Systems utilising 802.11 and other network protocol features e.g. ARP, TCP \& UDP, including application layer features such as HTTP, DNS, SMB etc lacks sufficient research.
+
+This research seeks to investigate and evaluate different machine learning algorithms in detecting and classifying application-level attacks on 802.11 wireless networks for a proposed intrusion detection system. 
+
+\subsection{Research Questions and Objectives}
+\label{sec:Research Question}
+
+The objectives for the project are as follows:
+\begin{itemize}
+\item To explore and analyse current literature and academic research utilising ML for intrusion detection systems for IEEE 802.11 networks.
+\end{itemize}
+\begin{itemize}
+\item To examine and identify common machine learning algorithms used for the classification in the context of network attacks.
+\end{itemize}
+\begin{itemize}
+% \item To utilise the AWID3 published data set to compare the performance of various machine learning models to provide a recommendation based on accuracy, efficiency and suitability to be used in a Wireless Intrusion Detection System (WIDS).
+\item To compare the performance of various machine learning models in detecting application layer-based network attacks on an 802.11 dataset, proving a recommendation for a proposed Wireless Intrusion Detection System (WIDS)
+\item How does combining 802.11 specific and non-802.11 with application layer features affect the detection of application layer attacks?
+%\item To utilise a published data set to create machine learning models to help classify network attacks.
+\end{itemize}
+
+%\begin{itemize}
+%\item To compare and evaluate the performance of the machine learning models to provide a recommendation based on accuracy, efficiency and suitability to help develop an Intrusion Detection System (IDS).
+%\end{itemize}
