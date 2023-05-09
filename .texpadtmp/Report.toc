@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {2.2}Datasets}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Detecting Network Attacks}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Machine Learning Algorithms}{6}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Random Forest}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1}Random Forest}{7}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}K-Nearest Neighbor}{7}{subsubsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.3}XGBoost}{7}{subsubsection.2.4.3}%
 \contentsline {subsubsection}{\numberline {2.4.4}Neural Networks}{7}{subsubsection.2.4.4}%
@@ -37,27 +37,28 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Random Forest (RF)}{24}{subsubsection.4.2.1}%
 \contentsline {paragraph}{Confusion Matrix}{25}{figure.caption.26}%
 \contentsline {subsubsection}{\numberline {4.2.2}XGBoost}{26}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}K-Nearest Neighbor}{26}{subsubsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.3}Neural Networks}{27}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Multi-Layer Perceptron (MLP)}{27}{subsubsection.4.3.1}%
 \contentsline {section}{\numberline {5}Analysis Of Results}{30}{section.5}%
 \contentsline {section}{Bibliography}{31}{section*.33}%
-\contentsline {section}{Appendices}{34}{section*.33}%
-\contentsline {section}{\numberline {A}Data-set Manipulation}{34}{appendix.a.A}%
-\contentsline {subsection}{\numberline {A.1}CSV Combiner Script}{34}{subsection.a.A.1}%
-\contentsline {subsection}{\numberline {A.2}Feature Extraction \& Reduction}{35}{subsection.a.A.2}%
-\contentsline {section}{\numberline {B}Conda Environments}{38}{appendix.a.B}%
-\contentsline {subsection}{\numberline {B.1}Neural Networks - Apple Silicon}{38}{subsection.a.B.1}%
-\contentsline {subsection}{\numberline {B.2}Classifiers}{38}{subsection.a.B.2}%
-\contentsline {section}{\numberline {C}Data Preprocessing}{39}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.1}MinMax Scaling}{39}{subsection.a.C.1}%
-\contentsline {subsection}{\numberline {C.2}OHE Encoding}{39}{subsection.a.C.2}%
-\contentsline {subsection}{\numberline {C.3}Label Encoding}{40}{subsection.a.C.3}%
-\contentsline {subsection}{\numberline {C.4}Loading Dataset}{40}{subsection.a.C.4}%
-\contentsline {section}{\numberline {D}Classifiers}{42}{appendix.a.D}%
-\contentsline {subsection}{\numberline {D.1}Base K-Nearest Neighbor (KNN)}{42}{subsection.a.D.1}%
-\contentsline {subsection}{\numberline {D.2}XGBoost}{43}{subsection.a.D.2}%
-\contentsline {subsubsection}{\numberline {D.2.1}Base XGBoost CF}{43}{subsubsection.a.D.2.1}%
-\contentsline {subsubsection}{\numberline {D.2.2}Base XGBoost Classification Report}{44}{subsubsection.a.D.2.2}%
-\contentsline {section}{\numberline {E}Neural Networks}{45}{appendix.a.E}%
-\contentsline {subsection}{\numberline {E.1}MLP NN v1}{45}{subsection.a.E.1}%
-\contentsline {subsubsection}{\numberline {E.1.1}MLP Neural Network}{45}{subsubsection.a.E.1.1}%
+\contentsline {section}{Appendices}{35}{section*.33}%
+\contentsline {section}{\numberline {A}Data-set Manipulation}{35}{appendix.a.A}%
+\contentsline {subsection}{\numberline {A.1}CSV Combiner Script}{35}{subsection.a.A.1}%
+\contentsline {subsection}{\numberline {A.2}Feature Extraction \& Reduction}{36}{subsection.a.A.2}%
+\contentsline {section}{\numberline {B}Conda Environments}{39}{appendix.a.B}%
+\contentsline {subsection}{\numberline {B.1}Neural Networks - Apple Silicon}{39}{subsection.a.B.1}%
+\contentsline {subsection}{\numberline {B.2}Classifiers}{39}{subsection.a.B.2}%
+\contentsline {section}{\numberline {C}Data Preprocessing}{40}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.1}MinMax Scaling}{40}{subsection.a.C.1}%
+\contentsline {subsection}{\numberline {C.2}OHE Encoding}{40}{subsection.a.C.2}%
+\contentsline {subsection}{\numberline {C.3}Label Encoding}{41}{subsection.a.C.3}%
+\contentsline {subsection}{\numberline {C.4}Loading Dataset}{41}{subsection.a.C.4}%
+\contentsline {section}{\numberline {D}Classifiers}{43}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.1}Base K-Nearest Neighbor (KNN)}{43}{subsection.a.D.1}%
+\contentsline {subsection}{\numberline {D.2}XGBoost}{44}{subsection.a.D.2}%
+\contentsline {subsubsection}{\numberline {D.2.1}Base XGBoost CF}{44}{subsubsection.a.D.2.1}%
+\contentsline {subsubsection}{\numberline {D.2.2}Base XGBoost Classification Report}{45}{subsubsection.a.D.2.2}%
+\contentsline {section}{\numberline {E}Neural Networks}{46}{appendix.a.E}%
+\contentsline {subsection}{\numberline {E.1}MLP NN v1}{46}{subsection.a.E.1}%
+\contentsline {subsubsection}{\numberline {E.1.1}MLP Neural Network}{46}{subsubsection.a.E.1.1}%

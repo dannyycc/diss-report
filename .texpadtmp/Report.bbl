@@ -610,6 +610,72 @@
       \verb 10.1109/IEEESTD.2009.5278657
       \endverb
     \endentry
+    \entry{10.1007/978-3-030-98457-1_1}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=73129519945e021914663ea30e7ee821}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Tariqul},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6272f8ee8c3388b5973200dd344efc7b}{%
+           family={Allayear},
+           familyi={A\bibinitperiod},
+           given={Shaikh\bibnamedelima Muhammad},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=125b623efff995a00b66b26292b81e90}{%
+           family={Brito-Loeza},
+           familyi={B\bibinithyphendelim L\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6c73142218a74f9533b3b17d77974b4d}{%
+           family={Martin-Gonzalez},
+           familyi={M\bibinithyphendelim G\bibinitperiod},
+           given={Anabel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=89ee554a0f9286b38c95a2ef248fb8f0}{%
+           family={Castañeda-Zeman},
+           familyi={C\bibinithyphendelim Z\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=ccd7d07bf14cad9f5faa367c5f9b8066}{%
+           family={Safi},
+           familyi={S\bibinitperiod},
+           given={Asad},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{fullhash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{bibnamehash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{authorbibnamehash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{authornamehash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{authorfullhash}{eb4cd8ad26214e1aad9975eb46e4045a}
+      \strng{editorbibnamehash}{b9b570edb3d0c38dc3d7d101daf25de0}
+      \strng{editornamehash}{b9b570edb3d0c38dc3d7d101daf25de0}
+      \strng{editorfullhash}{ba8eed4be3e0585ff974eb127de7004b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A wireless attack is a malicious action against wireless systems and wireless networks. In the last decade of years, wireless attacks are increasing day by day and it is now a very big problem for modern wireless communication systems. In this paper, the author's used the Aegean Wi-Fi Intrusion Dataset (AWID3). There are two versions of this dataset, one is over 200 million tuples of full data and one is 1.8 million tuples of reduced data. As our dataset has millions of tuples and over 100 columns, it is easy to become overwhelmed because of its size. The authors used the reduced version and predicted if an attack was one of four types using the k-nearest-neighbors classifier. All of the attack types we used had a distribution that highly favored the non-attack class. Our best results were for the attack ``arp'' type where we attained the best accuracy with recall. The author's primary goal of the paper was to attain the highest accuracy possible when creating a model that is capable of classifying the 4 attack types and detecting and classifying wireless attacks using Machine Learning models on the AWID3 dataset. One of the goals that supported this main objective was determining a way to avoid the curse of dimensionality.}
+      \field{booktitle}{Intelligent Computing Systems}
+      \field{isbn}{978-3-030-98457-1}
+      \field{title}{Capable of Classifying the Tuples with Wireless Attacks Detection Using Machine Learning}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+    \endentry
     \entry{kismet_2002_kismet}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c800abdbb10755d62c4ce0d841649782}{%
@@ -1341,6 +1407,62 @@
       \endverb
       \verb{url}
       \verb https://www.wi-fi.org/file/wpa3-specification
+      \endverb
+    \endentry
+    \entry{Wu2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=250ea0bffb0ef6027842b51f294e93b0}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yirui},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cf92b7a62bf66c0bea1e7ece6a80fd9}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dabao},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58e213debd273dafd58ad6e415150d51}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi}%
+      }
+      \strng{namehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \strng{fullhash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \strng{bibnamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \strng{authorbibnamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \strng{authornamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \strng{authorfullhash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the development of the fifth-generation networks and artificial intelligence technologies, new threats and challenges have emerged to wireless communication system, especially in cybersecurity. In this paper, we offer a review on attack detection methods involving strength of deep learning techniques. Specifically, we firstly summarize fundamental problems of network security and attack detection and introduce several successful related applications using deep learning structure. On the basis of categorization on deep learning methods, we pay special attention to attack detection methods built on different kinds of architectures, such as autoencoders, generative adversarial network, recurrent neural network, and convolutional neural network. Afterwards, we present some benchmark datasets with descriptions and compare the performance of representing approaches to show the current working state of attack detection methods with deep learning structures. Finally, we summarize this paper and discuss some ways to improve the performance of attack detection under thoughts of utilizing deep learning structures.}
+      \field{issn}{1939-0114}
+      \field{journaltitle}{Security and Communication Networks}
+      \field{month}{8}
+      \field{title}{Network Attacks Detection Methods Based on Deep Learning Techniques: A Survey}
+      \field{volume}{2020}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{8872923}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1155/2020/8872923
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1155/2020/8872923
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1155/2020/8872923
       \endverb
     \endentry
   \enddatalist

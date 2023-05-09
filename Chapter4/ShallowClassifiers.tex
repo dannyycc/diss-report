@@ -6,8 +6,6 @@
 
 Basically existing research doesn't have any models or research using a random forest ensemble classifier, only decision trees in \parencite{9360747}
 
-
-
 \begin{table}[h]
 \centering
 \caption{Parameters for Random Forest Classifier}
@@ -104,3 +102,8 @@ Optimised & GPU & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
 Optimised & GPU & 100\% & 1.00 & 99.7 & 99.6 & 99.7 & 99.6 \\ \hline
 \end{tabular}
 \end{table}
+
+\subsubsection{K-Nearest Neighbor}
+
+During our initial experimentation, we found that KNN took over 24 hours to predict on our test data set. This was deemed too long for real-world applications where detecting network attacks would be time-sensitive. As network attacks can occur quickly, an IDS using ML algorithms need to have a quick response to detecting these attacks.
+Whilst KNN has advantages, such as being easy to implement and interpret, given the limitations in hardware, we ultimately prioritised speed and accuracy for this work and decided not to continue with using this classifier.
