@@ -1,5 +1,8 @@
- %!TEX root =  ../Report.tex
+%!TEX root =  ../Report.tex
 % %Here are some subsections so that they will appear on the contents
+\subsection{Classifiers}
+
+%Classification on the combined set of features was conducted against three classifier models, Random Forest (RF), XGBoost and K-Nearest Neighbour (KNN).
 
 \subsubsection{Random Forest (RF)}
 \label{sec:RF}
@@ -65,45 +68,6 @@ GPU & Optimised & 100\% & 99.99 & 99.66 & 99.67 & 99.67 & 99.66 \\ \hline
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{Appendices/NN Confusion Matrix 3-04-23.png}
-    \caption{Confusion Matrix}
+    \caption{RF Confusion Matrix}
     \label{fig:rf_confusion_matrix}
 \end{figure}
-
-\newpage
-
-\subsubsection{XGBoost}
-\label{sec:xgboost}
-
-% \begin{table}[h]
-% \centering
-% \caption{XGB Model Metrics}
-% \label{tab:xgb-metrics}
-% \begin{tabular}{|l|l|l|l|l|l|l|l|}
-% \hline
-% \textbf{Model} & \textbf{Device} & \textbf{Size} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Time} \\ \hline
-% Base & M2 & 80\% & 0.997 & 0.955 & 0.882 & 0.915 & 00:05:13:55 \\ \hline
-% Base & GPU & 80\% & 0.996 & 0.949 & 0.878 & 0.910 & 00:00:28:37 \\ \hline
-% Base & GPU & 100\% & 0.997 & 0.997 & 0.997 & 0.996 & 00:02:19:35 \\ \hline
-% \end{tabular}
-% \end{table}
-
-\begin{table}[h]
-\centering
-\caption{XGB Model Metrics}
-\label{tab:xgb-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model} & \textbf{Device} & \textbf{Dataset} & \textbf{AUC} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}  \\ \hline
-Base & M2 & 80\% & ? & 99.7 & 95.5 & 88.2 & 91.5 \\ \hline
-Base & GPU & 60\% & ? & 99.6 & 95.0 & 88.4 & 91.4 \\ \hline
-Base & GPU & 80\% & 1.00 & 99.6 & 94.9 & 87.8 & 91.0 \\ \hline
-Base & GPU & 100\% & ? & 99.7 & 99.7 & 99.7 & 99.6 \\ \hline
-Optimised & GPU & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
-Optimised & GPU & 100\% & 1.00 & 99.7 & 99.6 & 99.7 & 99.6 \\ \hline
-\end{tabular}
-\end{table}
-
-\subsubsection{K-Nearest Neighbor}
-
-During our initial experimentation, we found that KNN took over 24 hours to predict on our test data set. This was deemed too long for real-world applications where detecting network attacks would be time-sensitive. As network attacks can occur quickly, an IDS using ML algorithms need to have a quick response to detecting these attacks.
-Whilst KNN has advantages, such as being easy to implement and interpret, given the limitations in hardware, we ultimately prioritised speed and accuracy for this work and decided not to continue with using this classifier.

@@ -11,6 +11,7 @@ This work aims to combine the (16) 802.11 and (17) non-802.11 features from \par
 The AWID3 dataset contains 254 features within each of its attack CSV files, including application layer features in a decrypted format; provided by the decryption keys. While this may not be readily available in most cases, within an organization's internal network in the context of an IDS, some application layer features will be accessible, such as any unencrypted DNS, HTTP, SMB, and NBNS traffic since the keys to protected 802.11 wireless networks would be available. However, to ensure data privacy and avoid bias from information specific to the AWID3 environment or containing identifiable information such as URLs and IP addresses, these features were not selected for this study. Therefore, the selected application layer features can be seen in Table~\ref{tab:application_features}. By combining these selected application layer features, this study aims to develop a machine learning classifier capable of accurately distinguishing between the different types of wireless network attacks.
 
 \begin{table}[H]
+\centering
 \begin{tabular}{lcc}
 \hline
 \multicolumn{3}{c}{\textbf{Application Layer Features (19)}} \\ \hline
@@ -105,6 +106,6 @@ tcp.option\_len & OHE & int64 \\
 ip.ttl & Min-Max & int64 \\
 udp.length & Min-Max & int64 \\ \hline
 \end{tabular}
-\caption{The selected features}
+\caption{Non-802.11 Features}
 \label{tab:non80211}
 \end{table}

@@ -4,8 +4,9 @@
 \label{sec: Experiments}
 
 \subsection{Initial Modelling}
-In order to speed up initial training and testing for each machine learning algorithm, a multitude of subsets of the original combined data were created using sklearn's train\_test\_split to create a stratified split resulting in reduced data sets. Varying levels of data splits were created, including a 50\%, 60\% and 80\% data split from the original ~12 million rows of data as seen in Table \ref{tab:split_data}. Furthermore, due to the limitations in hardware and training time, the majority of models were optimised on a trial and error methodology to find the optimal parameters, with some instances where GridSearchCV was used. We did not use 10 fold Stratified Cross Validation during initial experiments, this was justified under the pretense that the best found parameters would undergo cross validation training at a later stage. 
+In order to speed up initial training and testing for each machine learning algorithm, a multitude of subsets of the original combined data were created using sklearn's train\_test\_split to create a stratified split resulting in reduced data sets. Varying levels of data splits were created, including a 50\%, 60\% and 80\% data split from the original ~12 million rows of data as seen in Table \ref{tab:split_data}. 
 
-\subsection{Classifiers}
 
-Classification on the combined set of features was conducted against three classifier models, Random Forest (RF), XGBoost and K-Nearest Neighbour (KNN).
+\subsection{Parameter Tuning}
+Due to the limitations in hardware and training time, the majority of models were optimised on a trial and error methodology to find the optimal parameters, with some instances where GridSearchCV and RandomisedSearchCV was used. We did not use 10-fold Stratified Cross Validation during initial experiments, this was justified under the pretence that the best found parameters would undergo cross validation training afterwards.
+

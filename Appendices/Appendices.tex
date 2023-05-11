@@ -6,12 +6,31 @@
 %\includegraphics[width=\textwidth]{Report/Appendices/flux_sketch.jpg}
 %\label{appx: Flux Sketch}
 
+\section{Ethical Approval}
+\begin{lstlisting}[language={}]
+Dear 2054584,
 
-\section{Data-set Manipulation}
+Warwick ID Number: 2054584 
+
+This is to confirm that your Supervisor's Delegated Approval form has been received by the WMG Full-time Student Office, Detecting IEEE 802.11 Attacks using Machine Learning does NOT require ethical approval.
+
+You are reminded that you must now adhere to the answers and detail given in the completed WMG SDA ethical approval form (and associated documentation) within your research project. If anything changes in your research such that any of your answers change, then you must contact us to check if you need to reapply for or update your ethical approval before you proceed.
+
+If your data collection strategy, including the detail of any interview/ survey questions that you drafted changes substantially prior to or during data collection, then you must reapply for ethical approval before your changes are implemented. 
+
+When you submit your project please write N/A against the ethical approval field in the submission pro-forma and include a copy of this email in the appendices of your project.
+
+Kind regards
+
+Jade Barrett
+\end{lstlisting}
+
+\newpage
+\section{Dataset Manipulation}
 
 \subsection{CSV Combiner Script}
 \label{appx: CSV Combiner Script}
-\begin{lstlisting}
+\begin{lstlisting}[language=bash, literate={-}{-}1]
 #!/bin/bash
 
 # Input Directory
@@ -38,7 +57,7 @@ do
     # Print a status message
     echo "Combining $file..."
 
-    # If this is the first file, copy the header to the output file
+# If this is the first file, copy the header to the output file
     if [ ! -f "$output_file" ]; then
       head -n 1 "$file" > "$output_file"
     fi
@@ -56,21 +75,28 @@ echo "Done."
 \subsection{Feature Extraction \& Reduction}
 \label{appx: Feature Extraction}
 
-\begin{lstlisting}
-# Define the columns you want to keep
-cols_to_use = ['frame.len', 'radiotap.dbm_antsignal', 'radiotap.length', 'wlan.duration',
-                   'wlan_radio.duration', 'wlan_radio.signal_dbm', 'radiotap.present.tsft',
-                   'wlan.fc.type', 'wlan.fc.subtype', 'wlan.fc.ds', 'wlan.fc.frag',
-                   'wlan.fc.moredata', 'wlan.fc.protected', 'wlan.fc.pwrmgt', 'wlan.fc.retry',
-                   'wlan_radio.phy', 'udp.length', 'ip.ttl', 'arp', 'arp.proto.type',
-                   'arp.hw.size', 'arp.proto.size', 'arp.hw.type', 'arp.opcode',
-                   'tcp.analysis', 'tcp.analysis.retransmission', 'tcp.option_len',
-                   'tcp.checksum.status', 'tcp.flags.ack', 'tcp.flags.fin', 'tcp.flags.push',
-                   'tcp.flags.reset', 'tcp.flags.syn', 'dns', 'dns.count.queries', 'dns.count.answers',
-                   'dns.resp.len', 'dns.resp.ttl', 'http.request.method', 'http.response.code',
-                   'http.content_type', 'ssh.message_code', 'ssh.packet_length', 'nbns',
-                   'nbss.length', 'nbss.type', 'ldap', 'smb2.cmd', 'smb.flags.response',
-                   'smb.access.generic_read', 'smb.access.generic_write', 'smb.access.generic_execute','Label']
+\begin{lstlisting}[language=Python]
+# Define the columns to extract
+cols_to_use = [
+	'frame.len','radiotap.dbm_antsignal','radiotap.length', 
+	'wlan.duration','wlan_radio.duration','wlan_radio.signal_dbm', 
+	'radiotap.present.tsft','wlan.fc.type','wlan.fc.subtype', 
+	'wlan.fc.ds','wlan.fc.frag','wlan.fc.moredata',
+	'wlan.fc.protected','wlan.fc.pwrmgt','wlan.fc.retry',
+	'wlan_radio.phy','udp.length','ip.ttl',
+	'arp','arp.proto.type','arp.hw.size',
+	'arp.proto.size','arp.hw.type','arp.opcode',
+  'tcp.analysis','tcp.analysis.retransmission','tcp.option_len',
+  'tcp.checksum.status','tcp.flags.ack','tcp.flags.fin',
+  'tcp.flags.push','tcp.flags.reset','tcp.flags.syn',
+  'dns','dns.count.queries','dns.count.answers',
+  'dns.resp.len','dns.resp.ttl','http.request.method',
+  'http.response.code','http.content_type','ssh.message_code',
+  'ssh.packet_length','nbns','nbss.length',
+  'nbss.type','ldap','smb2.cmd',
+  'smb.flags.response','smb.access.generic_read',
+  'smb.access.generic_write','smb.access.generic_execute',
+  'Label']
 
 # Define the chunk size you want to read in each iteration
 batch_size = 1000000
@@ -85,8 +111,7 @@ for chunk in pd.read_csv('botnet_combined.csv', chunksize=batch_size, usecols=co
     combined_df = pd.concat([combined_df, chunk])
 \end{lstlisting}
 
-\newpage
-\begin{lstlisting}
+\begin{lstlisting}[language=Python,linewidth=\textwidth]
 # Drop all missing rows that contain only nan values
 combined_df = combined_df.dropna(how='all')
 
@@ -98,6 +123,7 @@ combined_df = combined_df.dropna(subset=['Label'])
 combined_df = combined_df.fillna(0)
 \end{lstlisting}
 
+\newpage
 \begin{lstlisting}
 # Duplicate the dataframe
 df = combined_df.copy()
@@ -354,7 +380,7 @@ plt.show()
 
 \subsubsection{Base XGBoost Classification Report}
 \begin{lstlisting}
-                  precision    recall  f1-score   support
+               precision    recall  f1-score   support
 
            0       0.96      0.75      0.84     13648
            1       0.86      0.86      0.86     31581
@@ -382,7 +408,7 @@ weighted avg       1.00      1.00      1.00   5123667
 \subsection{MLP NN v1}
 \label{appx: MLP NN v1}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 # Create a sequential model
 model = Sequential()
 input_shape = (X_train_ohe.shape[1],)
@@ -407,7 +433,7 @@ print('Test accuracy:', test_acc)
 \subsubsection{MLP Neural Network}
 \label{appx: MLP NN}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, BatchNormalization
 from keras.optimizers import SGD
@@ -463,6 +489,7 @@ test_loss, test_auc = model.evaluate(X_test_ohe, y_test_ohe)
 \end{lstlisting}
 
 
+\newpage
 
 \end{appendices}
 
