@@ -1,12 +1,12 @@
 \subsection{Evaluation Metrics}
 
-A key area of the work was deciding the specific metrics use to evaluate the performance of the models. Metrics are vital to determine if models were under or over-fitting on our data and helps to provide context into steps and modifications needed to improve the performances of our models. 
+A key area of the work was deciding the specific metrics use to evaluate the performance of the models. Metrics are vital to determine if models were under or over-fitting on our data and helps to provide context into steps and modifications needed to improve the performances of the models. 
 As a multi-class classification problem, we concerned on primarily two main metrics of evaluation: 
 
 
 \subsubsection*{AUC-ROC}
 
-The Area Under the Receiver Operating Characteristic Curve (AUC-ROC) measures the ability for a model to correctly distinguish between positive and negative classes. AUC-ROC is also insensitive to class imbalances. Similarly in the works carried in \parencite{s22155633};\parencite{pick_quality_over} AUC was used as one of the primary evaluation metrics.
+The Area Under the Receiver Operating Characteristic Curve (AUC-ROC) measures the ability for a model to correctly distinguish between positive and negative classes. AUC-ROC is also insensitive to class imbalances. Similarly in the works carried in \parencite{s22155633, pick_quality_over} AUC was used as one of the primary evaluation metrics.
 
 \medskip
 
@@ -20,7 +20,7 @@ As our problem is multi-class, the AUC will be calculated by computing the one-v
 
 The F1 score is a weighted average of both precision and recall. Precision is the fraction of correctly predicted positive instances out of all total predicted positive instances. Recall is the fraction of correctly predicted positive instances out of the total actual positive instances.
 
-The F1-score was chosen due to its representation in an imbalanced dataset; as it considers both precision and recall. Accuracy can be a misleading metric %(\citealp[]{FAWCETT2006861}; \citealp[]{grandini2020metrics}). A model can predict the majority class i.e 'Normal' in most cases and still receive high accuracy, but in reality it poorly represents the minority classes.
+The F1-score was chosen due to its representation in an imbalanced dataset; as it considers both precision and recall. Accuracy can be a misleading metric \parencite{FAWCETT2006861, grandini2020metrics}. A model can predict the majority class i.e 'Normal' in most cases and still receive high accuracy, but in reality it poorly represents the minority classes. In the context for detecting network attacks, A high precision would result in a lower number of false positives, but would also decrease overall recall and may result in missing attacks being detected. Therefore, we cannot focus primarily on either Precision or Recall, F1 can allow us to tune the model to achieve a balance between false positives and false negatives.
 
 \subsubsection*{Equations for Precision, Recall \& F1} 
 
@@ -46,8 +46,8 @@ Therefore, the weighted averaging method was chosen, leading to robust scores th
 
 \subsubsection*{Classification Report}
 
-In addition to viewing the averaged metrics across all classes, the classification report provides a comprehensive summary of detailing the metrics for Precision, Recall, Accuracy and F1 across each class. 
+In addition to viewing the averaged metrics across all classes, the classification report provides a comprehensive summary of detailing the metrics for Precision, Recall, Accuracy and F1 across each class. This is important for understanding the underlying performance of the model, we can easily identify specific classes the model may be underperforming on, allowing for better tweaking and modifications to improve performance.
 
 \subsubsection*{Confusion Matrix}
 
-The Confusion Matrix is a table that displays the performance of a model by showing the number of true positives, false positives, true negatives and false negatives for each class. In other words, how accurate the classifier is on each class and how it tends to wrong predict each class for another (confusion). By examining the confusion matrix, we can identify any specific classes that may require additional tuning or changes to the model to improve its performance. Works by \citeauthor{pmlr-v29-Koco13} introduced a new method using confusion matrices to measure and analyse the performance of cost-sensitive methods showing the importance of the confusion matrix in imbalanced data sets.
+The Confusion Matrix is a table that displays the performance of a model by showing the number of true positives, false positives, true negatives and false negatives for each class. In other words, how accurate the classifier is on each class and how it tends to wrong predict each class for another (confusion). By examining the confusion matrix, we can identify any specific classes that may require additional tuning or changes to the model to improve its performance. Works by \textcite{pmlr-v29-Koco13} introduced a new method using confusion matrices to measure and analyse the performance of cost-sensitive methods showing the importance of the confusion matrix in imbalanced data sets.

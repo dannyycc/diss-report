@@ -389,7 +389,6 @@
       \field{title}{An introduction to ROC analysis}
       \field{volume}{27}
       \field{year}{2006}
-      \true{nocite}
       \field{pages}{861\bibrangedash 874}
       \range{pages}{14}
       \verb{doi}
@@ -493,7 +492,6 @@
       \field{eprinttype}{arXiv}
       \field{title}{Metrics for Multi-Class Classification: an Overview}
       \field{year}{2020}
-      \true{nocite}
       \verb{eprint}
       \verb 2008.05756
       \endverb
@@ -759,7 +757,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{In imbalanced multi-class classification problems, the misclassification rate as an error measure may not be a relevant choice. Several methods have been developed where the performance measure retained richer information than the mere misclassification rate: misclassification costs, ROC-based information, etc. Following this idea of dealing with alternate measures of performance, we propose to address imbalanced classification problems by using a new measure to be optimized: the norm of the confusion matrix. Indeed, recent results show that using the norm of the confusion matrix as an error measure can be quite interesting due to the fine-grain informations contained in the matrix, especially in the case of imbalanced classes. Our first contribution then consists in showing that optimizing criterion based on the confusion matrix gives rise to a common background for cost-sensitive methods aimed at dealing with imbalanced classes learning problems. As our second contribution, we propose an extension of a recent multi-class boosting method — namely AdaBoost.MM — to the imbalanced class problem, by greedily minimizing the empirical norm of the confusion matrix. A theoretical analysis of the properties of the proposed method is presented, while experimental results illustrate the behavior of the algorithm and show the relevancy of the approach compared to other methods.}
       \field{booktitle}{Proceedings of the 5th Asian Conference on Machine Learning}
-      \field{month}{13--15 Nov}
+      \field{month}{13-15 Nov}
       \field{series}{Proceedings of Machine Learning Research}
       \field{title}{On multi-class classification through the minimization of the confusion matrix norm}
       \field{volume}{29}
@@ -1187,7 +1185,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The use of {IoT} devices is skyrocketing, but many organizations are failing to adequately secure them. Make sure {IoT} security is at the top of your list.}
-      \field{howpublished}{https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions}
       \field{langid}{english}
       \field{month}{05}
       \field{shorttitle}{{IoT} Security}
@@ -1198,6 +1195,12 @@
       \field{urlyear}{2022}
       \field{year}{2021}
       \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions
+      \endverb
+      \verb{url}
+      \verb https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions
+      \endverb
     \endentry
     \entry{10.4108/eai.27-11-2021.2315535}{inproceedings}{}
       \name{author}{5}{}{%

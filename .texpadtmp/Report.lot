@@ -7,10 +7,10 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Parameters for Random Forest Classifier\relax }}{24}{table.caption.22}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces RF Model Metrics\relax }}{24}{table.caption.23}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces RF Model v2\relax }}{24}{table.caption.24}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces XGBoost RGS Parameters\relax }}{26}{table.caption.28}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces XGBoost RGS Classification Report\relax }}{26}{table.caption.29}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces XGB Model Metrics\relax }}{27}{table.caption.30}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces MLP v1 Specifications\relax }}{29}{table.caption.31}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces MLP v1 Classification Report\relax }}{29}{table.caption.32}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces MLP v2 Specifications\relax }}{30}{table.caption.33}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces MLP v3 Specifications\relax }}{31}{table.caption.34}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces XGB Model Metrics\relax }}{26}{table.caption.27}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces XGBoost RGS Parameters\relax }}{27}{table.caption.29}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces XGBoost RGS Classification Report\relax }}{27}{table.caption.30}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces MLP v1 Specifications\relax }}{29}{table.caption.32}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces MLP v1 Classification Report\relax }}{29}{table.caption.33}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces MLP v2 Specifications\relax }}{30}{table.caption.34}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces MLP v3 Specifications\relax }}{31}{table.caption.35}%
