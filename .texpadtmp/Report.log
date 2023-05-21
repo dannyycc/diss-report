@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  17 MAY 2023 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  21 MAY 2023 18:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -663,7 +663,7 @@ Package hyperref Info: Link coloring OFF on input line 119.
 \openout2 = `Preamble/Frontpage.aux'.
 
  (./Preamble/Frontpage.tex
-<Preamble/WarwickCrest.pdf, id=280, 261.97874pt x 368.37625pt>
+<Preamble/WarwickCrest.pdf, id=284, 261.97874pt x 368.37625pt>
 File: Preamble/WarwickCrest.pdf Graphic file (type pdf)
 <use Preamble/WarwickCrest.pdf>
 Package pdftex.def Info: Preamble/WarwickCrest.pdf  used on input line 7.
@@ -708,11 +708,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--32
 
 
 
-])
+] [5])
 \tf@toc=\write5
 \openout5 = `Report.toc'.
 
-) [5] [6]
+) [6]
 \openout2 = `Preamble/Lists.aux'.
 
  (./Preamble/Lists.tex (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.lof)
@@ -761,8 +761,8 @@ Overfull \hbox (0.7145pt too wide) in paragraph at lines 50--51
 \openout2 = `Chapter3/Chapter3.aux'.
 
  (./Chapter3/Chapter3.tex
-Overfull \hbox (1.98221pt too wide) in paragraph at lines 17--19
-\OT1/cmr/m/n/12 Ten-sor-flow ([]Mart^^S^^Pn Abadi et al. []2015[]) and XG-boost ([]Chen and Guestrin
+Overfull \hbox (3.44887pt too wide) in paragraph at lines 17--19
+\OT1/cmr/m/n/12 Ten-sor-flow ([]Mart^^S^^Pn Abadi et al. []2015[]) and XG-Boost ([]Chen and Guestrin
  []
 
 ) [9
@@ -850,45 +850,49 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \openout2 = `Chapter4/XGBoost.aux'.
 
  (./Chapter4/XGBoost.tex
-Overfull \hbox (40.10196pt too wide) in paragraph at lines 33--45
- [][] 
+Overfull \hbox (2.2104pt too wide) in paragraph at lines 33--34
+[]\OT1/cmr/m/n/12 RandomizedSearchCV uses a sub-set of pa-ram-e-ter com-bi-na-tions sam-
  []
 
-(/usr/local/texlive/2023basic/texmf-dist/tex/latex/listings/lstlang1.sty
+[26
+
+
+
+] (/usr/local/texlive/2023basic/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 51.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 52.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 35.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 36.
  (/usr/local/texlive/2023basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+
+Overfull \hbox (40.10196pt too wide) in paragraph at lines 99--111
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [26
-
-
-
-] [27]
+) [27] [28]
 \openout2 = `Chapter4/KNN.aux'.
 
  (./Chapter4/KNN.tex
-<Appendices/Images/knn_predict-2023-04-15.png, id=663, 488.82625pt x 153.57375pt>
+<Appendices/Images/knn_predict-2023-04-15.png, id=673, 488.82625pt x 153.57375pt>
 File: Appendices/Images/knn_predict-2023-04-15.png Graphic file (type png)
 <use Appendices/Images/knn_predict-2023-04-15.png>
 Package pdftex.def Info: Appendices/Images/knn_predict-2023-04-15.png  used on input line 13.
 (pdftex.def)             Requested size: 360.0pt x 113.10147pt.
-) [28
+) [29
 
 
 
  <./Appendices/Images/knn_predict-2023-04-15.png>]
 \openout2 = `Chapter4/NeuralNetworks.aux'.
 
- (./Chapter4/NeuralNetworks.tex [29
+ (./Chapter4/NeuralNetworks.tex [30
 
 
 
@@ -902,10 +906,10 @@ Overfull \hbox (82.26878pt too wide) in paragraph at lines 112--130
 [][] 
  []
 
-) [30] [31]
+) [31] [32]
 \openout2 = `Chapter5/Analysis.aux'.
 
- (./Chapter5/Analysis.tex) [32
+ (./Chapter5/Analysis.tex) [33
 
 
 
@@ -926,7 +930,7 @@ Overfull \hbox (3.38474pt too wide) in paragraph at lines 156--156
 [][]\OT1/cmr/m/n/10.95 d'Otreppe, Thomas (Nov. 2011). \OT1/cmr/m/it/10.95 OpenWIPS-ng\OT1/cmr/m/n/10.95 . OpenWIPS-ng. \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https :
  []
 
-[33
+[34
 
 
 
@@ -950,7 +954,7 @@ Overfull \hbox (1.75618pt too wide) in paragraph at lines 156--156
 Package biblatex Warning: Month out of range
 (biblatex)                at entry 'pmlr-v29-Koco13' on input line 156.
 
-[34]
+[35]
 Overfull \hbox (14.05644pt too wide) in paragraph at lines 156--156
 \OT1/cmr/m/it/10.95 Het-ero-ge-neous Sys-tems\OT1/cmr/m/n/10.95 . Soft-ware avail-able from ten-sor-flow.org. \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https :
  []
@@ -960,10 +964,10 @@ Overfull \hbox (7.37868pt too wide) in paragraph at lines 156--156
 \OT1/cmr/m/n/10.95 Forc-ing Nonce Reuse in WPA2''. In: \OT1/cmr/m/it/10.95 Pro-ceed-ings of the 2017 ACM SIGSAC
  []
 
-[35] [36]
+[36] [37]
 \openout2 = `Appendices/Appendices.aux'.
 
- (./Appendices/Appendices.tex [37
+ (./Appendices/Appendices.tex [38
 
 ] (/usr/local/texlive/2023basic/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -976,58 +980,5 @@ File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 62.
- [38] [39] [40] [41] [42] [43] [44] [45] [46]
-<Appendices/Images/RF/rf_stock_cm.png, id=1109, 578.16pt x 578.16pt>
-File: Appendices/Images/RF/rf_stock_cm.png Graphic file (type png)
-<use Appendices/Images/RF/rf_stock_cm.png>
-Package pdftex.def Info: Appendices/Images/RF/rf_stock_cm.png  used on input line 421.
-(pdftex.def)             Requested size: 520.33919pt x 520.33919pt.
-
-Overfull \hbox (160.33919pt too wide) in paragraph at lines 421--422
- [] 
- []
-
-[47]
-<Appendices/Images/RF/rf_stock_feature_imp.png, id=1154, 1084.05pt x 1084.05pt>
-File: Appendices/Images/RF/rf_stock_feature_imp.png Graphic file (type png)
-<use Appendices/Images/RF/rf_stock_feature_imp.png>
-Package pdftex.def Info: Appendices/Images/RF/rf_stock_feature_imp.png  used on input line 426.
-(pdftex.def)             Requested size: 360.0pt x 360.00375pt.
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 426--427
-[][] 
- []
-
-[48 <./Appendices/Images/RF/rf_stock_cm.png>] [49 <./Appendices/Images/RF/rf_stock_feature_imp.png>] [50] [51]
-<Appendices/Base_XGB_CF.png, id=1256, 471.2004pt x 583.9416pt>
-File: Appendices/Base_XGB_CF.png Graphic file (type png)
-<use Appendices/Base_XGB_CF.png>
-Package pdftex.def Info: Appendices/Base_XGB_CF.png  used on input line 522.
-(pdftex.def)             Requested size: 360.0pt x 446.14362pt.
- [52 <./Appendices/Base_XGB_CF.png>] [53] [54] [55])
-\openout2 = `Appendices/Metrics.aux'.
-
- (./Appendices/Metrics.tex) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.aux (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Frontpage.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Abstract.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Acknowledgements.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Abbreviations.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Contents.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/Lists.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Preamble/ChapterMods.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter1/Chapter1.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter2/Chapter2.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/Chapter3.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/FeatureSelection.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/DataSplit.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/PreProcessing.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/Models.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter3/Metrics.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter4/Chapter4.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter4/RandomForest.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter4/XGBoost.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter4/KNN.aux)
-(/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter4/NeuralNetworks.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter5/Analysis.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter6/Conclusion.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter7/Chapter7.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter8/Chapter8.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Chapter9/Chapter9.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Appendices/Appendices.aux) (/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Appendices/Metrics.aux))
-Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: BBBDA9F844FB0534BE1E0FA9501F39B9;10281.
-Package logreq Info: Writing requests to 'Report.run.xml'.
-\openout1 = `Report.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 23548 strings out of 477476
- 426220 string characters out of 5824244
- 2395388 words of memory out of 5000000
- 42610 multiletter control sequences out of 15000+600000
- 521420 words of font info for 63 fonts, out of 8000000 for 9000
- 319 hyphenation exceptions out of 8191
- 63i,12n,68p,1873b,2098s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/vivid/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/vivid/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.pdf (62 pages, 592860 bytes).
-PDF statistics:
- 1591 PDF objects out of 1728 (max. 8388607)
- 1465 compressed objects within 15 object streams
- 714 named destinations out of 1000 (max. 500000)
- 578 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ [39] [40] [41] [42] [43] [44] [45] [46] [47]
+<Appendices/Images/RF/rf_stock_cm.png, id=1115, 578.16pt x 578.

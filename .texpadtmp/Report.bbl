@@ -1412,62 +1412,6 @@
       \verb https://www.wi-fi.org/file/wpa3-specification
       \endverb
     \endentry
-    \entry{Wu2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=250ea0bffb0ef6027842b51f294e93b0}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Yirui},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6cf92b7a62bf66c0bea1e7ece6a80fd9}{%
-           family={Wei},
-           familyi={W\bibinitperiod},
-           given={Dabao},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=58e213debd273dafd58ad6e415150d51}{%
-           family={Feng},
-           familyi={F\bibinitperiod},
-           given={Jun},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Hindawi}%
-      }
-      \strng{namehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \strng{fullhash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \strng{bibnamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \strng{authorbibnamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \strng{authornamehash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \strng{authorfullhash}{2a7ab53f7e9a11c28253ea99ddfa55e9}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{With the development of the fifth-generation networks and artificial intelligence technologies, new threats and challenges have emerged to wireless communication system, especially in cybersecurity. In this paper, we offer a review on attack detection methods involving strength of deep learning techniques. Specifically, we firstly summarize fundamental problems of network security and attack detection and introduce several successful related applications using deep learning structure. On the basis of categorization on deep learning methods, we pay special attention to attack detection methods built on different kinds of architectures, such as autoencoders, generative adversarial network, recurrent neural network, and convolutional neural network. Afterwards, we present some benchmark datasets with descriptions and compare the performance of representing approaches to show the current working state of attack detection methods with deep learning structures. Finally, we summarize this paper and discuss some ways to improve the performance of attack detection under thoughts of utilizing deep learning structures.}
-      \field{issn}{1939-0114}
-      \field{journaltitle}{Security and Communication Networks}
-      \field{month}{8}
-      \field{title}{Network Attacks Detection Methods Based on Deep Learning Techniques: A Survey}
-      \field{volume}{2020}
-      \field{year}{2020}
-      \true{nocite}
-      \field{pages}{8872923}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1155/2020/8872923
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1155/2020/8872923
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1155/2020/8872923
-      \endverb
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

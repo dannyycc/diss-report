@@ -3,9 +3,9 @@
 \subsubsection{XGBoost}
 \label{sec:xgboost}
 
-As we discussed earlier, with XGBoost we focused on training initial models with default settings across a range of subsets of data before attempting to optimise parameters using 10 Fold Stratified Cross Validation to verify results across the training set. Finally, the test set (30\% of the overall data) was used to evaluate each model on a series of unseen data.
+As discussed earlier, with XGBoost we focused on training initial models with default settings across a range of subsets of data before attempting to optimise parameters using 10 Fold Stratified Cross Validation to verify results across the training set. Finally, the test set (30\% of the overall data) was used to evaluate each model on a series of unseen data.
 
-In our initial experiments, even without tuning parameters, the models achieved a high performance across all metrics
+In the initial experiments, even without tuning parameters, the models achieved a high performance across all metrics.
 
 
 %\begin{table}[h]
@@ -26,29 +26,13 @@ In our initial experiments, even without tuning parameters, the models achieved 
 %\end{tabular}
 %\end{table}
 
-\begin{table}[h]
-\centering
-\caption{XGB Model Metrics}
-\label{tab:xgb-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model} & \textbf{Device} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy} \\ \hline
-Stock & M2 & 80\% & ? & 91.5 & 95.5 & 88.2 & 99.7 \\ \hline
-Stock & M2 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
-Stock & VM & 60\% & ? & 91.4 & 95.0 & 88.4 & 99.6 \\ \hline
-Stock & VM & 80\% & 1.00 & 91.0 & 94.9 & 87.8 & 99.6 \\ \hline
-Stock & VM & 100\% & ? & 99.6 & 99.7 & 99.7 & 99.7 \\ \hline
-Optimised & VM & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
-Optimised & VM & 100\% & 1.00 & 99.6 & 99.6 & 99.7 & 99.7 \\ \hline
-RGS & VM & 100\% & 99.99 & 99.65 & 99.65 & 99.66 & 99.66 \\ \hline
-\end{tabular}
-\end{table}
-
-
-
 \subsubsection*{Randomised GridSearch}
 
-\begin{lstlisting}[language=Python, caption={Grid Search Parameters For XGBoost}]
+An attempt was made to utilise GridSearchCV for parameter optimization; significant setbacks were encountered in achieving a successful execution due to numerous errors and system crashes, along with exceptionally high grid search time. In light of the difficulties faced with GridSearchCV, RandomizedSearchCV was utilised instead, This decision was justified by several factors:
+
+RandomizedSearchCV uses a subset of parameter combinations sampled from a defined grid. This approach heavily reduces the computational power required compared to the exhaustive search needed for GridSearchCV. Moreover, RandomizedSearchCV enables striking a balance between computational resources and search comprehensiveness by defining the number of iterations to evaluate. See Listing \ref{lst:param_grid_xgb} for the parameter grid used.
+\newpage
+\begin{lstlisting}[language=Python, caption={Grid Search Parameters For XGBoost}, label= lst:param_grid_xgb]
 param_grid = {
     'learning_rate': [0.01, 0.1, 0.3],
     'max_depth': [3, 6, 9],
@@ -106,6 +90,25 @@ N Estimators & 200 \\ \hline
     \end{tabular}%
 \end{table}%
 
+
+
+\begin{table}[h]
+\centering
+\caption{XGBoost Evaluation Metrics}
+\label{tab:xgb-eval-metrics}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Model} & \textbf{Device} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy} \\ \hline
+Stock & M2 & 80\% & ? & 91.5 & 95.5 & 88.2 & 99.7 \\ \hline
+Stock & M2 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
+Stock & VM & 60\% & ? & 91.4 & 95.0 & 88.4 & 99.6 \\ \hline
+Stock & VM & 80\% & 1.00 & 91.0 & 94.9 & 87.8 & 99.6 \\ \hline
+Stock & VM & 100\% & ? & 99.6 & 99.7 & 99.7 & 99.7 \\ \hline
+Optimised & VM & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
+Optimised & VM & 100\% & 1.00 & 99.6 & 99.6 & 99.7 & 99.7 \\ \hline
+RGS & VM & 100\% & 99.99 & 99.65 & 99.65 & 99.66 & 99.66 \\ \hline
+\end{tabular}
+\end{table}
 
 % \begin{table}[h]
 % \centering

@@ -2,7 +2,7 @@
 
 \subsection{Feature Selection}
 
-Similar to the work carried out by \textcite{s22155633}, we concentrated on six attacks out of the 21 from AWID3, namely Botnet, Malware, SSH, SQL Injection, SSDP Amplification and Website Spoofing, these are attacks that originate from the application layer and forms a good scope of research for this project. 
+Similar to the work carried out by \textcite{s22155633}, six attacks out of the 21 from AWID3 were concentrated, namely Botnet, Malware, SSH, SQL Injection, SSDP Amplification and Website Spoofing, these are attacks that originate from the application layer and forms a good scope of research for this project. 
 
 This work aims to combine the (16) 802.11 and (17) non-802.11 features from \cite{s22155633} with a set of chosen application layer features with the aim to detect and classify the different application layer attacks. As previously established, existing research determined a high degree of accuracy and performance when combing both the 802.11 and non-802.11 features together, but a lack of research into determining if including additional application layer features would provide grounds for a further context into developing a machine learning model and affect its overall performance.
 
@@ -54,6 +54,7 @@ SMB (Server Message Block) is a client-server communication protocol used for sh
 The works by \cite{pick_quality_over} 
 
 \begin{table}[hp]
+\centering
 \begin{tabular}{lcc}
 \hline
 \multicolumn{3}{c}{\textbf{802.11 Features (16)}} \\ \hline
@@ -84,6 +85,7 @@ wlan\_radio.signal\_dbm & Min-Max & int64 \\ \hline
 Table~\ref{tab:non80211} shows the non-802.11 features used in the analysis. It consists of Transport layer (TCP \& UDP) protocols features responsible for data transfer and ARP features that operate on the Data-link layer to resolve Mac addresses. By analysing 
 
 \begin{table}[H]
+\centering
 \begin{tabular}{lcc}
 \hline
 \multicolumn{3}{c}{\textbf{Non-802.11 Features (17)}} \\ \hline
@@ -106,6 +108,6 @@ tcp.option\_len & OHE & int64 \\
 ip.ttl & Min-Max & int64 \\
 udp.length & Min-Max & int64 \\ \hline
 \end{tabular}
-\caption{Non-802.11 Features}
+\caption{The selected set of Non-802.11 Features}
 \label{tab:non80211}
 \end{table}

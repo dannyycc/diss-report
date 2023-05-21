@@ -422,7 +422,6 @@ weighted avg       1.00      1.00      1.00   6404584
 \end{center}
 
 
-
 \includegraphics[width=\textwidth]{Appendices/Images/RF/rf_stock_feature_imp.png}
 
 
@@ -518,29 +517,50 @@ Website_spoofing       0.61      0.98      0.75    121533
 \newpage
 \subsection{XGBoost}
 
-\subsubsection{Base XGBoost CF}
-\includegraphics[width=\textwidth]{Appendices/Base_XGB_CF.png}
-\newpage
+\subsubsection{Stock 100\% - XGBoost Raw Metrics}
+\begin{lstlisting}[escapechar=!]
+!\textbf{Final Test Results}!
 
-\subsubsection{Base XGBoost Classification Report}
-\begin{lstlisting}
-               precision    recall  f1-score   support
+Weighted AUC: 99.99
+Weighted F1: 99.65
+Weighted Precision: 99.65
+Weighted Recall: 99.65
+Accuracy: 99.65
 
-           0       0.96      0.75      0.84     13648
-           1       0.86      0.86      0.86     31581
-           2       1.00      1.00      1.00   3657765
-           3       0.94      0.84      0.89       631
-           4       1.00      1.00      1.00   1319964
-           5       0.95      0.76      0.84      2852
-           6       0.99      0.97      0.98     97226
+!\textbf{Classification Report}!
 
-    accuracy                           1.00   5123667
-   macro avg       0.96      0.88      0.91   5123667
-weighted avg       1.00      1.00      1.00   5123667
+              precision    recall  f1-score   support
+
+           0       0.96      0.74      0.84     17060
+           1       0.86      0.85      0.86     39476
+           2       1.00      1.00      1.00   4572206
+           3       0.93      0.88      0.90       789
+           4       1.00      1.00      1.00   1649955
+           5       0.95      0.79      0.86      3565
+           6       0.99      0.97      0.98    121533
+
+    accuracy                           1.00   6404584
+   macro avg       0.95      0.89      0.92   6404584
+weighted avg       1.00      1.00      1.00   6404584
+    
+    
+!\textbf{Confusion Matrix}!
+
+[[  12703      31    4320       0       0       2       4]
+ [     17   33596    5857       0       0       6       0]
+ [    539    5289 4564546      56       0     144    1632]
+ [      0       0      91     698       0       0       0]
+ [      0       0       0       0 1649955       0       0]
+ [      5      15     745       0       0    2800       0]
+ [      1       4    3344       0       0       0  118184]]
 \end{lstlisting}
 
-\newpage
+\subsubsection{Stock 100\% - XGBoost CM}
+\includegraphics[width=\textwidth]{Appendices/Images/XGB/xgb_stock_100_cm.png}
 
+
+\subsubsection{Stock 100\% - XGBoost Feature Importance}
+\includegraphics[width=\textwidth]{Appendices/Images/XGB/xgb_stock_100_feature_importance.png}
 \newpage
 
 
