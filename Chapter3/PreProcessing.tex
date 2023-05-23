@@ -4,7 +4,7 @@
 
 One of the main decisions when building a model for a classification problem is the choice of encoding such as label, ordinal and one-hot encoding.
 
-We decided to use one-hot encoding to encode the categorical data for our models, a binary vector is created for each category, and at once only one element is set to 1 (referred to as 'Hot' i.e True) and the rest set to 0 (referred to as 'Cold' i.e. False). This approach will avoid assigning arbitrary numerical values to each variable that the model may interpret as having a weighting depending on its value. 
+One-hot encoding was chosen to encode the categorical data for our models, a binary vector is created for each category, and at once only one element is set to 1 (referred to as 'Hot' i.e True) and the rest set to 0 (referred to as 'Cold' i.e. False). This approach will avoid assigning arbitrary numerical values to each variable that the model may interpret as having a weighting depending on its value. 
 
 Ensemble Classifiers such as Random Forest do not require the target variable i.e. Labels to be encoded and can be interpreted as a string e.g. Normal, SSH, Malware etc. However, for deep learning, K-Nearest Neighbor and XGBoost we also utilised One-Hot Encoding to encode the target variable. Refer to \ref{appx:OHE Encoding} for the code used to One-Hot Encode the categorical features. 
 
@@ -16,6 +16,11 @@ Scaling was performed on the dataset for normalisation to help normalise all num
 \subsection{Data Balancing}
 
 At its core, the dataset is imbalanced, with a majority of 'Normal' data with varying ranges of available malicious data from each attack class. Consideration was taken to utilise data balancing methods such as SMOTE and Random under/oversampling to help distribute the data. However, in a normal environment one would expect an overwhelming majority of Normal network traffic, therefore to best represent a real-life scenario, the data was kept imbalanced, ensuring changes were not made to the underlying distribution of the dataset. Refer to Table \ref{tab:split_data} for the distribution of each class respectively before and after splitting into the train and test sets.
+
+
+\subsection{Data Split}
+
+A stratified train-test split was performed on the dataset by splitting the entire dataset into training and testing sets to ensure the distribution of the target variable i.e. Label is the same in both sets. When training a machine learning model, the testing set is used to evaluate the performance of the model to help prevent overfitting. Overfitting can occur when the model learns all of the features and relationships of the training data; almost memorising the data. Subsequently, it struggles to predict new, unseen data.
 
 \begin{table}[H]
 \begin{tabular}{llll}

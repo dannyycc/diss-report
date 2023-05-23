@@ -360,47 +360,44 @@
       \verb https://anaconda.com
       \endverb
     \endentry
-    \entry{FAWCETT2006861}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9c15aa0b2a7683cefeaa12c991d0b1c2}{%
-           family={Fawcett},
-           familyi={F\bibinitperiod},
-           given={Tom},
-           giveni={T\bibinitperiod},
+    \entry{5278657}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3b4f0f3fbf57a67f138dbb29074557ff}{%
+           family={Electrical},
+           familyi={E\bibinitperiod},
+           given={Institute},
+           giveni={I\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=4b130cfa309b2ff17cea51cb7fb7d85f}{%
+           family={Engineers},
+           familyi={E\bibinitperiod},
+           given={Electronics},
+           giveni={E\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{fullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{bibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authorbibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authornamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authorfullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \strng{namehash}{bbcfa0997876af8df433758706aa3923}
+      \strng{fullhash}{bbcfa0997876af8df433758706aa3923}
+      \strng{bibnamehash}{bbcfa0997876af8df433758706aa3923}
+      \strng{authorbibnamehash}{bbcfa0997876af8df433758706aa3923}
+      \strng{authornamehash}{bbcfa0997876af8df433758706aa3923}
+      \strng{authorfullhash}{bbcfa0997876af8df433758706aa3923}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Receiver operating characteristics (ROC) graphs are useful for organizing classifiers and visualizing their performance. ROC graphs are commonly used in medical decision making, and in recent years have been used increasingly in machine learning and data mining research. Although ROC graphs are apparently simple, there are some common misconceptions and pitfalls when using them in practice. The purpose of this article is to serve as an introduction to ROC graphs and as a guide for using them in research.}
-      \field{issn}{0167-8655}
-      \field{journaltitle}{Pattern Recognition Letters}
-      \field{note}{ROC Analysis in Pattern Recognition}
-      \field{number}{8}
-      \field{title}{An introduction to ROC analysis}
-      \field{volume}{27}
-      \field{year}{2006}
-      \field{pages}{861\bibrangedash 874}
-      \range{pages}{14}
+      \field{journaltitle}{IEEE Std 802.11w-2009 (Amendment to IEEE Std 802.11-2007 as amended by IEEE Std 802.11k-2008, IEEE Std 802.11r-2008, and IEEE Std 802.11y-2008)}
+      \field{title}{IEEE Standard for Information technology - Telecommunications and information exchange between systems - Local and metropolitan area networks - Specific requirements. Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications Amendment 4: Protected Management Frames}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 111}
+      \range{pages}{111}
       \verb{doi}
-      \verb https://doi.org/10.1016/j.patrec.2005.10.010
+      \verb 10.1109/IEEESTD.2009.5278657
       \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S016786550500303X
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S016786550500303X
-      \endverb
-      \keyw{ROC analysis,Classifier evaluation,Evaluation metrics}
     \endentry
     \entry{garcia_2015_slips}{misc}{}
       \name{author}{3}{}{%
@@ -453,47 +450,6 @@
       \endverb
       \verb{url}
       \verb https://www.stratosphereips.org/stratosphere-ips-suite
-      \endverb
-    \endentry
-    \entry{grandini2020metrics}{misc}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=c8c1c1396f97f41792e7bb0d0577137a}{%
-           family={Grandini},
-           familyi={G\bibinitperiod},
-           given={Margherita},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cf2519048095256e237b859ec49c164f}{%
-           family={Bagli},
-           familyi={B\bibinitperiod},
-           given={Enrico},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7bd1e08972a524bcff90700e59b881b0}{%
-           family={Visani},
-           familyi={V\bibinitperiod},
-           given={Giorgio},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \strng{fullhash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \strng{bibnamehash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \strng{authorbibnamehash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \strng{authornamehash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \strng{authorfullhash}{6221934c6fbf1b66ad11c3f44ba13304}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{stat.ML}
-      \field{eprinttype}{arXiv}
-      \field{title}{Metrics for Multi-Class Classification: an Overview}
-      \field{year}{2020}
-      \verb{eprint}
-      \verb 2008.05756
       \endverb
     \endentry
     \entry{rfc7664}{report}{}
@@ -579,33 +535,6 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1109/ICECIE52348.2021.9664737
-      \endverb
-    \endentry
-    \entry{5278657}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=472abfae8142fdb6f39d081303e8af85}{%
-           family={IEEE},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
-      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Std 802.11w-2009 (Amendment to IEEE Std 802.11-2007 as amended by IEEE Std 802.11k-2008, IEEE Std 802.11r-2008, and IEEE Std 802.11y-2008)}
-      \field{title}{IEEE Standard for Information technology - Telecommunications and information exchange between systems - Local and metropolitan area networks - Specific requirements. Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications Amendment 4: Protected Management Frames}
-      \field{year}{2009}
-      \field{pages}{1\bibrangedash 111}
-      \range{pages}{111}
-      \verb{doi}
-      \verb 10.1109/IEEESTD.2009.5278657
       \endverb
     \endentry
     \entry{10.1007/978-3-030-98457-1_1}{inproceedings}{}
@@ -1294,6 +1223,41 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1109/TNSM.2020.3036138
+      \endverb
+    \endentry
+    \entry{10150/666297}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c104bbe7e742c4a8aa34638459015195}{%
+           family={Torrres},
+           familyi={T\bibinitperiod},
+           given={Anibal},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Foundation for Telemetering}%
+      }
+      \strng{namehash}{c104bbe7e742c4a8aa34638459015195}
+      \strng{fullhash}{c104bbe7e742c4a8aa34638459015195}
+      \strng{bibnamehash}{c104bbe7e742c4a8aa34638459015195}
+      \strng{authorbibnamehash}{c104bbe7e742c4a8aa34638459015195}
+      \strng{authornamehash}{c104bbe7e742c4a8aa34638459015195}
+      \strng{authorfullhash}{c104bbe7e742c4a8aa34638459015195}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1546-2188}
+      \field{journaltitle}{International Telemetering Conference Proceedings}
+      \field{title}{WiFi Anomaly Behavior Analysis Based Intrusion Detection Using Online Learning}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://hdl.handle.net/10150/666297
+      \endverb
+      \verb{url}
+      \verb http://hdl.handle.net/10150/666297
       \endverb
     \endentry
     \entry{krack}{inproceedings}{}
