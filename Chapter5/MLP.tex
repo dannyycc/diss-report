@@ -1,0 +1,106 @@
+\subsection{MLP}
+
+In exploring Neural Networks, a series of MLP models were created with a varying number of parameters and was tested with different subsets of the dataset. Each model consisted of a different number of hidden layers and neurons, optimisers (Adam \& SGD), regularisation techniques (Dropout and Early Stopping), learning rates etc. The primary metrics for evaluating the models were AUC and F1, but the classification and confusion matrices were considered and used to form a detailed picture of each model's performance on the individual attack classes. Table \ref{tab:mlp-scv-metrics} and \ref{tab:mlp-test-metrics} show the S-CV and Test Set results for 8 MLP NN models. 
+
+\begin{table}[h]
+\centering
+\caption{MLP S-CV Metrics}
+\label{tab:mlp-scv-metrics}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Model ID} & \textbf{Dataset} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
+4 & 100\% & 99.90 & 99.37 & 99.40 & 99.42 & 99.42 \\ \hline
+5 & 100\% & {\color{red} 98.40} & {\color{red} 94.68} & {\color{red} 96.85} & {\color{red} 95.49} & {\color{red} 95.49} \\ \hline
+6 & 100\% & 99.79 & 99.27 & 99.31 & 99.33 & 99.33 \\ \hline
+7 & 100\% & 99.72 & 99.23 & 99.25 & 99.31 & 99.31 \\ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{MLP Test Metrics}
+\label{tab:mlp-test-metrics}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Model ID} & \textbf{Dataset} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
+0 & 60\% & 99.99 & 99.36 & 99.38 & 99.41 & 99.41 \\ \hline
+1 & 60\% & 99.99 & 99.34 & 99.36 & 99.38 & 99.38 \\ \hline
+2 & 80\% & 99.86 & 99.42 & 99.44 & 99.39 & 99.44 \\ \hline
+3 & 80\% & 99.98 & 99.39 & 99.44 & 99.44 & 99.44 \\ \hline
+4 & 100\% & 99.94 & 99.42 & 99.44 & 99.46 & 99.46 \\ \hline
+5 & 100\% & 99.88 & 99.36 & 99.37 & 99.40 & 99.40 \\ \hline
+6 & 100\% & 99.80 & 99.28 & 99.40 & 99.42 & 99.42 \\ \hline
+7 & 100\% & 99.84 & 99.29 & 99.33 & 99.35 & 99.35 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Data Subsets}
+
+Examining the results across the different data subsets, both 60\% and 80\% models showed high precision and recall. Class-specific performances for minority classes were consistently low. Notable, in model 3 on the 80\% subset there was an increase in recall within the SQL Injection class. The models exhibited high overall performance but struggled with frequent misclassifications which suggest more data is required for the model to correctly identify the specific classes.
+
+\subsubsection*{LeakyReLU}
+
+Models 5 and 6 differ in the selection of the activation function. (ReLU in model 5 and LeakyReLU in model 6). Upon initial examination, there are differences in test metrics, but larger differences appear when looking at class-specific performances. 
+Whilst the precision was increased in some classes such as Botnet and SSH, recall suffered substantially such as 0.13 for SQL Injection, indicating the model was able to reduce some false positives at the high cost of failing to identify the true positives. 
+
+\subsubsection*{Previous Works}
+The works by \textcite{s22155633} similarly used an MLP model consisting of four hidden layers, these specifications were adopted in Model 7 to provide context. The model displayed an AUC of 99.84, F1 of 99.28, Recall of 99.35 and Accuracy of 99.35 on the test set. However, the precision, recall and F1 for SQL Injection are substantially lower at 0.02 and 0.05 compared to other classes. The model fails to identify this class accurately, similarly, Botnet and Malware also saw a drop in performance. The Confusion matrix further affirms this observation with a large number of predictions from those classes being misclassified as Normal traffic. This further emphasises the importance of tuning parameters and settings that are specific to the problem at hand. 
+
+%\begin{table}[htbp]
+%  \centering
+%  \caption{MLP v1 Classification Report}
+%  \label{tab:mlp_v1_class_report}
+%    \begin{tabular}{lcccc}
+%    \toprule
+%    Class & Precision & Recall & F1-Score & Support \\
+%    \midrule
+%    Botnet & 0.65 & 0.53 & 0.58 & 8530 \\
+%    Malware & 0.83 & 0.68 & 0.75 & 19738 \\
+%    Normal & 0.99 & 1.00 & 0.99 & 2286103 \\
+%    SQL Injection & 0.98 & {\color{red}\bfseries 0.23} & 0.37 & 395 \\
+%    SSDP & 1.00 & 1.00 & 1.00 & 824978 \\
+%    SSH & {\color{red}\bfseries 0.58} & 0.38 & {\color{red}\bfseries 0.46} & 1782 \\
+%    Website Spoofing & 0.92 & 0.92 & 0.92 & 60766 \\
+%    \midrule
+%    Accuracy & & & 0.99 & 3202292 \\
+%    Macro Avg & 0.85 & 0.68 & 0.72 & 3202292 \\
+%    Weighted Avg & 0.99 & 0.99 & 0.99 & 3202292 \\
+%    \bottomrule
+%    \end{tabular}%
+%\end{table}%
+%
+%After tuning, we proceeded to create an additional model with additional layers 
+%
+%\begin{table}[hp]
+%\captionsetup{justification=centering} 
+%\centering
+%\caption{MLP v2 Specifications}
+%\begin{tabular}{ll}
+%\hline
+%\textbf{Parameter} & \textbf{Value} \\ \hline
+%Activator & Relu \\
+%Output Activator & Softmax \\
+%Initialiser & he\_uniform \\
+%Optimiser & Adam \\
+%Momentum & N/A \\
+%Early Stopping & N/A \\
+%Dropout & 0.2 \\
+%Learning Rate & 0.001 \\
+%Loss & Categorical Crossentropy \\
+%Batch Norm & Yes \\
+%Hidden Layers & 3 \\
+%Nodes per Layer & 128, 64, 32 \\
+%Batch Size & 180 \\
+%Epochs & 15 \\ \hline
+%\end{tabular}
+%\label{tab:mlp_v2}
+%\end{table}
+
+\subsubsection*{Summary}
+
+The Multi-Layer Perceptron in TensorFlow can provide a vast array of parameters and options, leading to an endless number of combinations to be tailored and optimised. Finding the 'best' model in the classification problem is a difficult non-trivial task. 
+
+With challenges and limitations in the hardware and time, the approach for these experiments consisted of creating a sequence of models and comparing the performance metrics to previous models and the overall domain knowledge and task.
+
+Experimentation stopped after a vast number of models were tested and reached diminishing returns. Whilst this approach does not guarantee the 'best' MLP configuration, it provides a practical and effective method that strikes a balance between complexity and constraints. Further work can be investigated into utilising parameter searching such as GridSearchCV to automate the process.

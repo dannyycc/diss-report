@@ -1,130 +1,81 @@
-
-
 \subsection{Neural Networks}
 \label{sec: Neural Networks}
 
 \subsubsection{Multi-Layer Perceptron (MLP)}
 \label{sec: MLP Neural Network v1}
 
-Table \ref{tab:seq_nn} specifies the parameter values for a multi-layered feed forward neural network model, consisting of one input layer (128 neurons) and one hidden layer (64 neurons) using the ReLu activator function. The output layer has a subsequent 7 neurons corresponding to the 7 different output classes, using a soft-max activation function to produce the class probabilities. See Appendix \ref{appx: MLP NN v1} for the full code.
+As part of the neural network experiments, Multilayered Perceptron models were created and tested through an exploratory process. It should be noted a wide range of MLP models was explored, the selection presented in the results section is a curated list, chosen for performance or notability. All models evaluated and their corresponding code can be found within the codebase. Table \ref{tab:mlp-models-1} and \ref{tab:mlp-models-2} details the set of parameters used for each notable MLP model.  
 
-\begin{table}[h]
-\captionsetup{justification=centering} 
+Experimentation began with a 3 hidden layered MLP model consisting of 128, 64 and 32 neurons across the different subsets of data to gauge a rough estimate of the model's performance through varying levels of data. As such, cross-validation was not utilised. Models 0-3 consist of the same parameters tested across the 60 and 80\% datasets, metrics were high, however, the models struggled to predict minority classes and resulted in low recall and F1-Scores. Performance when increasing the size of the dataset did improve the performance and can be attributed to the fact the larger dataset provided more samples of the minority class to be trained on. With this information, further models were created with increased batch sizes and epochs to train for longer.
+
+\subsubsection*{Overfitting}
+
+A key aspect when training the MLP models was to prevent overfitting. To help mitigate this, techniques such as Early Stopping and Dropout were used in the majority of the models. Early Stopping was used during SCV, the training process monitors the validation AUC loss for signs of overfitting (e.g. when the model starts to learn the data and not generalising). Once the validation loss started to degrade over two defined epochs, the model would stop training. Dropout is a regularisation method that randomly sets 0.2 of the input neurons to 0. Dropout layers were used in the network architecture.
+
+ 
+\subsubsection*{Thresholds}
+Towards the latter stages of experimentation, an attempt was made to further enhance the performance of the models on the misclassified classes. The individual class weightings were adjusted using the thresholds of each class. The aim was to identify the optimal threshold level between 0-1 that would maximise the F1 score for that class. A systematic approach was followed to adjust the value in the class and evaluate the confusion matrices for changes in predictions.
+ 
+ 
+\subsubsection*{Activator}
+Due to the nature of the problem (multi-class classification), applying existing knowledge and experience, the softmax activator was chosen for the output layer. It provides an easy-to-interpret output of the model as a list of probabilities for each class and uses the highest probability as the predicted class.
+
+\subsubsection*{Tuning}
+
+The device used to train and the experiment was the M2 Mac Mini, experiments conducted on the VM were found to be slower and would frequently cause crashes, even when utilising the dedicated GPU. As such, the hardware and time constraints restricted the level of tuning and parameter searching that could be performed. Techniques such as GridSearchCV and RandomisedSearchCV were not feasible when combined with 10 Fold S-CV. 
+
+\medskip
+Due to the complexity and computational demands of running machine learning models, practical limitations such as time constraints result in fewer tested models than desired. After conducting a vast amount of experiments and achieving high-performance results, the decision was made to conclude further model experimentation. 
+ 
+\medskip
+\begin{table}[H]
 \centering
-\caption{MLP v1 Specifications}
-\begin{tabular}{ll}
+\caption{MLP Model Parameters Part 1}
+\label{tab:mlp-models-1}
+\begin{tabular}{llll}
 \hline
-\textbf{Parameter} & \textbf{Value} \\ \hline
-Activator & Relu \\
-Output Activator & Softmax \\
-Initialiser & Default \\
-Optimiser & Adam \\
-Momentum & N/A \\
-Early Stopping & N/A \\
-Dropout & N/A \\
-Learning Rate & Default \\
-Loss & Categorical Crossentropy \\
-Batch Norm & N/A \\
-Hidden Layers & 2 \\
-Nodes per Layer & 128, 64 \\
-Batch Size & 32 \\
-Epochs & 10 \\ \hline
+Parameter & Model 0-3 & Model 4 & Model 5 \\ \hline
+Asctivator: & ReLU & ReLU & ReLU \\
+Output Activator: & Softmax & Softmax & Softmax \\
+Initialiser: & he\_uniform & he\_uniform & he\_uniform \\
+Optimiser: & Adam & Adam & SGD \\
+Momentum: & N/A & N/A & N/A \\
+Early Stopping: & N/A & 2 & 2 \\
+Dropout: & 0.2 & 0.2 & 0.2 \\
+Learning Rate: & 0.001 & 0.001 & 0.01 \\
+Loss: & CC & CC & CC \\
+Batch Norm: & True & True & True \\
+Hidden Layers: & 3 & 3 & 4 \\
+Nodes per Layer: & 128/64/32 & 128/64/32 & 256/128/64/32 \\
+Batch Size: & 180 & 200 & 132 \\
+Epochs: & 15 & 20 & 20 \\ \hline
 \end{tabular}
-\label{tab:seq_nn}
 \end{table}
 
-\begin{table}[htbp]
-  \centering
-  \caption{MLP v1 Classification Report}
-  \label{tab:mlp_v1_class_report}
-    \begin{tabular}{lcccc}
-    \toprule
-    Class & Precision & Recall & F1-Score & Support \\
-    \midrule
-    Botnet & 0.65 & 0.53 & 0.58 & 8530 \\
-    Malware & 0.83 & 0.68 & 0.75 & 19738 \\
-    Normal & 0.99 & 1.00 & 0.99 & 2286103 \\
-    SQL Injection & 0.98 & {\color{red}\bfseries 0.23} & 0.37 & 395 \\
-    SSDP & 1.00 & 1.00 & 1.00 & 824978 \\
-    SSH & {\color{red}\bfseries 0.58} & 0.38 & {\color{red}\bfseries 0.46} & 1782 \\
-    Website Spoofing & 0.92 & 0.92 & 0.92 & 60766 \\
-    \midrule
-    Accuracy & & & 0.99 & 3202292 \\
-    Macro Avg & 0.85 & 0.68 & 0.72 & 3202292 \\
-    Weighted Avg & 0.99 & 0.99 & 0.99 & 3202292 \\
-    \bottomrule
-    \end{tabular}%
-\end{table}%
-
-After tuning, we proceeded to create an additional model with additional layers 
-
-\begin{table}[hp]
-\captionsetup{justification=centering} 
+\begin{table}[H]
 \centering
-\caption{MLP v2 Specifications}
-\begin{tabular}{ll}
+\caption{MLP Model Parameters Pt2}
+\label{tab:mlp-models-2}
+\begin{tabular}{lll}
 \hline
-\textbf{Parameter} & \textbf{Value} \\ \hline
-Activator & Relu \\
-Output Activator & Softmax \\
-Initialiser & he\_uniform \\
-Optimiser & Adam \\
-Momentum & N/A \\
-Early Stopping & N/A \\
-Dropout & 0.2 \\
-Learning Rate & 0.001 \\
-Loss & Categorical Crossentropy \\
-Batch Norm & Yes \\
-Hidden Layers & 3 \\
-Nodes per Layer & 128, 64, 32 \\
-Batch Size & 180 \\
-Epochs & 15 \\ \hline
+Parameter         & Model 6       & Model 7         \\ \hline
+Activator:        & LeakyReLU     & ReLU            \\
+Output Activator: & Softmax       & Softmax         \\
+Initialiser:      & he\_uniform   & -               \\
+Optimiser:        & Adam          & SGD             \\
+Momentum:         & N/A           & 0.9             \\
+Early Stopping:   & 2             & 2               \\
+Dropout:          & 0.2           & 0.25*3/0.2*2    \\
+Learning Rate:    & 0.01          & 0.01            \\
+Loss:             & CC            & CC              \\
+Batch Norm:       & True          & True            \\
+Hidden Layers:    & 4             & 5               \\
+Nodes per Layer:  & 256/128/64/32 & 100/80/60/40/20 \\
+Batch Size:       & 132           & 170             \\
+Epochs:           & 20            & 20              \\ \hline
 \end{tabular}
-\label{tab:mlp_v2}
 \end{table}
 
-\begin{table}[hp]
-\captionsetup{justification=centering} 
-\centering
-\caption{MLP v3 Specifications}
-\begin{tabular}{ll}
-\hline
-\textbf{Parameter} & \textbf{Value} \\ \hline
-Activator & Relu \\
-Output Activator & Softmax \\
-Initialiser & he\_uniform \\
-Optimiser & Adam \\
-Momentum & N/A \\
-Early Stopping & True (2 rounds) \\
-Dropout & 0.2 \\
-Learning Rate & 0.001 \\
-Loss & Categorical Crossentropy \\
-Batch Norm & Yes \\
-Hidden Layers & 3 \\
-Nodes per Layer & 128, 64, 32 \\
-Batch Size & 200 \\
-Epochs & 20 \\ \hline
-\end{tabular}
-\label{tab:mlp_v3}
-\end{table}
+%Table \ref{tab:seq_nn} specifies the parameter values for a multi-layered feed-forward neural network model, consisting of one input layer (128 neurons) and one hidden layer (64 neurons) using the ReLu activator function. The output layer has a subsequent 7 neurons corresponding to the 7 different output classes, using a soft-max activation function to produce the class probabilities. See Appendix \ref{appx: MLP NN v1} for the full code.
+%
 
-\begin{table}[]
-\begin{tabular}{llllll}
-\hline
-Parameter & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 \\ \hline
-Activator: & ReLU & ReLU & ReLU & ReLU & ReLU \\
-Output Activator: & Softmax & Softmax & Softmax & Softmax & Softmax \\
-Initialiser: & Default & he uniform & he\_uniform & he\_uniform & he uniform \\
-Optimiser: & Adam & Adam & Adam & Adam & SGD \\
-Momentum: & N/A & N/A & N/A & N/A & 0.9 \\
-Early Stopping: & N/A & N/A & 2 Rounds & 2 Rounds & N/A \\
-Dropout: & N/A & 0.2 & 0.2 & 0.2 & 0.25, 0.2 \\
-Learning Rate: & Default & 0.001 & 0.001 & 0.001 & 0.01 \\
-Loss: & CC & CC & CC & SCC & CC \\
-Batch Norm: & N/A & Yes & Yes & Yes & Yes \\
-Hidden Layers: & 2 & 3 & 3 & 3 & 4 \\
-Nodes per Layer: & 128, 64 & 128, 64, 32 & 128, 64, 32 & 128, 64, 32 & 100, 80, 60, 40, 20 \\
-Batch Size: & 32 & 180 & 200 & 200 & 180 \\
-Epochs: & 10 & 15 & 20 & 20 & 15 \\ \hline
-\end{tabular}
-\end{table}

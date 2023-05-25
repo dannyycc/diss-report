@@ -1,4 +1,4 @@
-\subsection{Pre-Processing Methods}
+\subsection{Data Pre-Processing}
 
 \subsubsection{Encoding}
 
@@ -42,6 +42,6 @@ Analysing the split, we observe a large imbalance of data between each class of 
 
 \subsection{Cross Validation}
 
-Due to the imbalanced nature of the datasets, stratified k-fold cross-validation with a k value of 10 was used, similar to the works carried out by \textcite{s22155633}. The training set will be split into 10 folds, the model is then trained on all folds, except one called the validation set. The model is then tested on the validation set for its performance metrics and recorded. This is then repeated for all 10 folds, so each fold is used as a test set. The results are then averaged to better represent the model's performance across the data. Stratified split ensures each fold contains the same proportion of samples within each class to preserve the underlying structure of the data. 
+Due to the imbalanced nature of the datasets, stratified k-fold cross-validation with a k value of 10 was used, similar to the works carried out by \textcite{s22155633}. The training set is split into 10 folds, the model is then trained on all folds, except one called the validation set. The model is then tested on the validation set for its performance metrics and recorded. This is then repeated for all 10 folds, so each fold is used as a validation set. The results are then averaged to better represent the model's training performance across the data. Stratified split ensures each fold contains the same proportion of samples within each class to preserve the underlying structure of the data. 
 
-Finally, after Cross Validation, we train the model using the full training set and evaluate it based on the test set to obtain a final measure of performance, before finally saving the model.
+Finally, after Cross Validation, the model is trained using the full training set and evaluated based on the testing set to obtain a final measure of performance, before finally saving the model.

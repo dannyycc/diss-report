@@ -3,75 +3,55 @@
 \subsubsection{XGBoost}
 \label{sec:xgboost}
 
-As discussed earlier, the XGBoost classifier was first trained with default parameters across a range of subsets of data before attempting to optimise parameters using 10 Fold Stratified Cross Validation to verify results across the training set. Finally, the test set (30\% of the overall data) was used to evaluate each model on a series of unseen data.
-
-In the initial experiments, even without tuning parameters, the models achieved a high performance across all metrics. Table \ref{tab:xgb-scv-metrics} summarises the average metrics with 10 Fold Stratified Cross-Validation and Table \ref{tab:xgb-test-metrics} shows the metrics across the 30\% test set. Due to the numerous models created during experimentation, only the most notable models are included in the tables.
-
+A series of models were trained and this model followed both an exploratory and iterative approach, RandomizedSearchCV was also utilised in the training phase to optimise hyperparameters. Table \ref{tab:xgboost-parameters} shows the parameters used for each model, \textbf{-} denotes that no value was used, i.e., the default value was used.
 
 \begin{table}[h]
-\centering
-\caption{XGBoost S-CV Metrics}
-\label{tab:xgb-scv-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model ID} & \textbf{Dataset} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
-1006 & 100\% & 99.99 & 99.64 & 99.64 & 99.64 & 99.64 \\ \hline
-1008 & 100\% & 99.99 & 99.64 & 99.64 & 99.65 & 99.65 \\ \hline
-1010 & 100\% & 100.00 & 99.65 & 99.65 & 99.66 & 99.66 \\ \hline
-1011 & 100\% & 100.00 & 99.64 & 99.64 & 99.65 & 99.65 \\ \hline
-\end{tabular}
+  \centering
+  \caption{XGBoost Model Parameters}
+  \label{tab:xgboost-parameters}
+  \begin{tabular}{lcccccc}
+    \toprule
+    Parameter & Model 0-2\&6 & Model 3 & Model 5 & Model 8 & Model 10 & Model 11 \\
+    \midrule
+    early\_stopping\_rounds & - & 10 & 10 & 10 & 10 & 10 \\
+    subsample & - & - & - & - & 0.9 & - \\
+    n\_estimators & - & - & 300 & 300 & 200 & 300 \\
+    min\_child\_weight & - & - & - & - & 3 & - \\
+    max\_depth & - & - & 5 & 5 & 9 & 5 \\
+    learning\_rate & - & - & 0.2 & 0.2 & 0.3 & 0.2 \\
+    gamma & - & - & - & - & 0 & - \\
+    colsample\_bytree & - & - & - & - & 0.7 & - \\
+    reg\_alpha & - & 0.1 & 0.1 & 0.1 & - & 0.1 \\
+    \bottomrule
+  \end{tabular}
 \end{table}
 
-
-
-\begin{table}[h]
-\centering
-\caption{XGBoost Test Metrics}
-\label{tab:xgb-test-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model ID} & \textbf{Dataset} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
-1000 & 60\% & 99.99 & 99.63 & 99.64 & 99.64 & 99.64 \\ \hline
-1001 & 80\% & 99.99 & 99.64 & 99.65 & 99.65 & 99.65 \\ \hline
-1002 & 80\% & 99.99 & 99.64 & 99.64 & 99.64 & 99.64 \\ \hline
-1003 & 80\% & 99.99 & 99.64 & 99.64 & 99.64 & 99.64 \\ \hline
-1005 & 80\% & 99.99 & 99.64 & 99.65 & 99.65 & 99.65 \\ \hline
-1006 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
-1008 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
-1010 & 100\% & 99.99 & 99.65 & 99.65 & 99.66 & 99.66 \\ \hline
-1011 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
-\end{tabular}
-\end{table}
-
-
-%\begin{table}[h]
-%\centering
-%\caption{XGB Model Metrics}
-%\label{tab:xgb-metrics}
-%\begin{tabular}{|l|l|l|l|l|l|l|l|}
-%\hline
-%\textbf{Model} & \textbf{Device} & \textbf{Dataset} & \textbf{AUC} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}  \\ \hline
-%Base & M2 & 80\% & ? & 99.7 & 95.5 & 88.2 & 91.5 \\ \hline
-%Base & M2 & 100\% & ? & ? & ? & ? & ? \\ \hline
-%Base & VM & 60\% & ? & 99.6 & 95.0 & 88.4 & 91.4 \\ \hline
-%Base & VM & 80\% & 1.00 & 99.6 & 94.9 & 87.8 & 91.0 \\ \hline
-%Base & VM & 100\% & ? & 99.7 & 99.7 & 99.7 & 99.6 \\ \hline
-%Optimised & VM & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
-%Optimised & VM & 100\% & 1.00 & 99.7 & 99.6 & 99.7 & 99.6 \\ \hline
-%RGS & VM & 100\% & 99.99 & 99.66 & 99.65 & 99.66 & 99.65 \\ \hline
-%\end{tabular}
-%\end{table}
-
-\subsubsection*{Randomised GridSearch}
-
-An attempt was made to utilise GridSearchCV for parameter optimization; significant setbacks were encountered in achieving a successful execution due to numerous errors, system crashes, and exceptionally high grid search time. In light of the difficulties faced with GridSearchCV, RandomizedSearchCV was utilised instead, This decision was justified by several factors:
-
-RandomizedSearchCV uses a subset of parameter combinations sampled from a defined grid. This approach heavily reduces the computational power required compared to the exhaustive search needed for GridSearchCV. Moreover, RandomizedSearchCV enables striking a balance between computational resources and search comprehensiveness by defining the number of iterations to evaluate. See Listing \ref{lst:param_grid_xgb} for the parameter grid used.
 
 \medskip
 
+Initial experimentation began with the XGBoost classifier being trained with default parameters across a range of subsets of data, 60\%, 80\% and 100\% as shown in models 0, 1 and 6. Additionally, model 1 further incorporated Stratified Cross Validation during training. This was used to establish clear baseline performance of the classifiers and helped to provide context when tuning parameters.
+
+Where available, the VM machine was used for training, allowing XGBoost to maximise its performance on the dedicated GPU. Early stopping and regularisation were added in subsequent models to help avoid the model from overfitting on the training data. e.g. in Model 3 only early stopping and regularisation were added and no noticeable performance increase/decrease was observed. 
+
+\subsubsection*{Parameter Tuning}
+
+An attempt was made to utilise GridSearchCV for parameter optimisation; significant setbacks were encountered in achieving a successful execution due to numerous errors, system crashes, and exceptionally high grid search time. In light of the difficulties faced with GridSearchCV, RandomizedSearchCV was utilised. 
+
+Despite challenges faced with GridSearchCV, initial experimentation with 5 CV on a smaller parameter grid on the 80\% dataset was successful and subsequent parameters were tested with models 5 and 8. An additional RandomizedSearchCV was run on the entire dataset and combined with stratified 10-fold cross-validation to ensure the best-found parameters were verified and proved consistent across the 10 folds.
+
+See Listing \ref{lst:param_grid_xgb} for the parameter grids used.
+
+\medskip
+	
 \begin{lstlisting}[language=Python, caption={Grid Search Parameters For XGBoost}, label= lst:param_grid_xgb]
-param_grid = {
+
+gscv_param_grid = {
+    'learning_rate': [0.05, 0.1, 0.2],
+    'n_estimators': [100, 200, 300],
+    'max_depth': [3, 4, 5]
+}
+
+rgs_param_grid = {
     'learning_rate': [0.01, 0.1, 0.3],
     'max_depth': [3, 6, 9],
     'min_child_weight': [1, 3, 5],
@@ -82,106 +62,27 @@ param_grid = {
 }
 \end{lstlisting}
 
+\begin{table}[H]
+\captionsetup{justification=centering} 
+\centering
+\caption{XGBoost GridSearch Parameters}
+\begin{tabular}{lll}
+\hline
+\textbf{Parameter} & \textbf{GS} & \textbf{RGS} \\ \hline
+Early Stopping & - & 10 \\
+Evaluation Metric & merror & merror \\
+Learning Rate & 0.2 & 0.3 \\
+Max Depth & 5 & 9 \\
+Min Child Weight & - & 3 \\
+Gamma & - & 0 \\
+Subsamples & - & 0.9 \\
+Colsample By Tree & - & 0.7 \\
+N Estimators & 300 &  200 \\ \hline
+\end{tabular}
+\label{tab:xg_gs_parameters}
+\end{table}
+
 \textbf{Best Found Parameters}
 \medskip
 
-Using the best-found parameters from the RandomizedSearchCV, a new model was created, referenced above as ID 1010. Table \ref{tab:xg_rgs_parameters} highlights the optimal parameters found.
-
-\begin{table}[h]
-\captionsetup{justification=centering} 
-\centering
-\caption{XGBoost RGS Parameters}
-\begin{tabular}{ll}
-\hline
-\textbf{Parameter} & \textbf{Value} \\ \hline
-Early Stopping & 10 \\
-Evaluation Metric & merror \\
-Learning Rate & 0.3 \\
-Max Depth & 9 \\
-Min Child Weight & 3 \\
-Gamma & 0 \\
-Subsamples & 0.9 \\
-Colsample By Tree & 0.7 \\
-N Estimators & 200 \\ \hline
-\end{tabular}
-\label{tab:xg_rgs_parameters}
-\end{table}
-
-
-\textbf{Optimised Model}
-\medskip
-
-A new model was created with the best-found parameters, this is referred to as the 'Optimised Model'/(ID 1010) in this section. The model performed very well, with an average AUC of 99.99 on the training data and 99.98 on the test data. The F1 score is 99.65 on the test set indicating the model has a high proportion of correct predictions, balancing both precision and recall well. The confusion matrix verifies this and shows the model to perform well for most classes, especially Normal, SDDP and Web Spoofing with almost perfect precision and recall. However, there are a few misclassifications for 'Botnet', 'Malware' and 'SSH'. The model struggled and occasionally misclassified Normal traffic as malicious, but performed well in the SQL Injection class, especially given the small number of samples. The Cross-validation and test set results are similar and indicate the model is not overfitting and generalising well to new data. Refer to \ref{fig:xgb_optimised_fi}, \ref{fig:xgb_optimised_cm} and \ref{tab:optimised_xgboost} for metrics.
-
-Using the total number of instances of each class, the misclassification report can be calculated for each and is shown accordingly:
-
-\begin{itemize}
-	\item Botnet: 4208 / 17060 = {\color{red} 25\%}
-	\item Malware: 7161 / 39476 = 18\%
-	\item Normal: 6365 / 4572206 = 0.0013\%
-	\item SQL: 89 / 789 = 11\%
-	\item SSDP: 0 / 1649955 = {\color{mygreen} 0\%}
-	\item SSH: 771 / 3565 = 21\%
-	\item WebSpoof: 3046 / 121533 = 2.5\%
-\end{itemize}
-
-
-\begin{figure}[H]
-\centering
-\caption{Optimised XGBoost Model FI}
-\includegraphics[width=\textwidth]{Appendices/Images/XGB/xgb_1010_fi.png}
-\label{fig:xgb_optimised_fi}
-\end{figure}
-
-\clearpage
-\begin{table}[hp]
-  \centering
-  \caption{Optimised XGBoost Classification Report}
-  \label{tab:optimised_xgboost}
-    \begin{tabular}{lcccc}
-    \toprule
-    Class & Precision & Recall & F1-Score & Support \\
-    \midrule
-    Botnet & 0.96 & {\color{red}\bfseries 0.75} & {\color{red}\bfseries 0.84} & 17060 \\
-    Malware & {\color{red}\bfseries 0.89} & 0.82 & 0.85 & 39476 \\
-    Normal & 1.00 & 1.00 & 1.00 & 4572206 \\
-    SQL Injection & 0.94 & 0.89 & 0.91 & 789 \\
-    SSDP & 1.00 & 1.00 & 1.00 & 1649955 \\
-    SSH & 0.92 & 0.78 & 0.85 & 3565 \\
-    Website Spoofing & 0.99 & 0.97 & 0.98 & 121533 \\
-    \midrule
-    Accuracy & & & 1.00 & 6404584 \\
-    Macro Avg & 0.96 & 0.89 & 0.92 & 6404584 \\
-    Weighted Avg & 1.00 & 1.00 & 1.00 & 6404584 \\
-    \bottomrule
-    \end{tabular}
-\end{table}
-
-\begin{figure}[H]
-\centering
-\caption{Optimised XGBoost Model CM}
-\includegraphics[width=0.9\textwidth]{Appendices/Images/XGB/xgb_1010_cm.png}
-\label{fig:xgb_optimised_cm}
-\end{figure}
-
-
-
-%
-%\begin{table}[h]
-%\centering
-%\caption{XGBoost Evaluation Metrics}
-%\label{tab:xgb-eval-metrics}
-%\begin{tabular}{|l|l|l|l|l|l|l|l|}
-%\hline
-%\textbf{Model} & \textbf{Device} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy} \\ \hline
-%Stock & M2 & 80\% & ? & 91.5 & 95.5 & 88.2 & 99.7 \\ \hline
-%Stock & M2 & 100\% & 99.99 & 99.65 & 99.65 & 99.65 & 99.65 \\ \hline
-%Stock & VM & 60\% & ? & 91.4 & 95.0 & 88.4 & 99.6 \\ \hline
-%Stock & VM & 80\% & 1.00 & 91.0 & 94.9 & 87.8 & 99.6 \\ \hline
-%Stock & VM & 100\% & ? & 99.6 & 99.7 & 99.7 & 99.7 \\ \hline
-%Optimised & VM & 80\% & 1.00 & 99.6 & 99.6 & 99.6 & 99.6 \\ \hline
-%Optimised & VM & 100\% & 1.00 & 99.6 & 99.6 & 99.7 & 99.7 \\ \hline
-%RGS & VM & 100\% & 99.99 & 99.65 & 99.65 & 99.66 & 99.66 \\ \hline
-%\end{tabular}
-%\end{table}
-
+The parameter tuning process helped to identify a set of optimal parameters using RandomisedSearchCV, as detailed in Table \ref{tab:xg_gs_parameters}. These parameters were used to create Model 10. Subsequent models created afterwards, from additional parameter tuning did not show a sign of noticeable improvement in the model's performance. Due to limited time and computational power, further parameter tuning was not performed, and the decision was made here to stop further experiments.

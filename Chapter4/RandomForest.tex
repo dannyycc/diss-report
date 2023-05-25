@@ -1,5 +1,4 @@
 %!TEX root =  ../Report.tex
-% %Here are some subsections so that they will appear on the contents
 \subsection{Classifiers}
 
 %Classification on the combined set of features was conducted against three classifier models, Random Forest (RF), XGBoost and K-Nearest Neighbour (KNN).
@@ -7,7 +6,17 @@
 \subsubsection{Random Forest (RF)}
 \label{sec:RF}
 
-Initial modelling began using stock parameters without changing or adding any values. Due to the nature of training time, we did not utilise GridSearchCV for hyperparameter tuning. Instead, we used a series of settings and parameters to get an optimal model. Each model was trained on the entire training dataset to gauge initial performance, before using 10-fold Stratified Cross Validation and evaluating finally on the test set. Table \ref{tab:rf-params} shows the parameters considered during the creation and optimisation of the models. For the context of the device, the majority of Random Forest models were trained using the VM.
+In an attempt to find optimal parameters, GridSearchCV and RandomizedSearchCV were utilised. However, due to memory issues on both machines and frequent system crashes due to insufficient memory, experimentation for the Random Forest Classifier instead follows an exploratory approach, using both prior knowledge and iterative testing to create a series of models which were subsequently evaluated and optimised. The training was conducted on both the M2 and VM testbeds. Table \ref{tab:rf-params} details the set of parameters focused on during experimentation, using performance feedback and the model's behaviour on the dataset, these were tweaked and fine-tuned to help enhance the model's performance. Table \ref{tab:rf-parameters} documents the parameters used for all models.
+
+\medskip
+
+Initial experimentation began using default parameters without changing or adding any values (Model 0-2). This helped to establish the baseline performance for subsequent comparison and analysis. This initial model achieved high S-CV average scores on the entire dataset. With such high metrics, it was important to ensure modifications made to the model avoided overfitting. 
+
+\medskip
+
+Subsequent experimentation was conducted by using the model's training metrics along with the confusion matrices, classification reports and predictions on the test set. In Models 3 and 5, it was noted that the modification of the \textit{class\_weight} parameter from its default value to \textit{'weighted'} resulted in a decrease in S-CV performance across all metrics, moreover inspecting the metrics on the test set affirms this, with a higher number of misclassifications, but with higher recall and very low precision rates for several classes. 
+
+In the course of the iterative and exploratory phases, it was observed that additional models and future parameter tuning i.e. Models 3-5 all showed negative performance impacts when compared to the baseline model. This indicated that contrary to expectations, using additional parameter values did not increase the performance of this classifier. It was concluded that for the AWID3 dataset and this specific classification problem, the default parameters for the RandomForestClassifier showed superior performance. Subsequently, additional experimentation was concluded at this stage. 
 
 \begin{table}[h]
 \centering
@@ -52,50 +61,23 @@ random\_state & The random seed.\\ \hline
 %\end{tabular}
 %\end{table}
 
-\begin{table}[h]
-\centering
-\caption{RF S-CV Mean Metrics}
-\label{tab:rf-scv-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
-Stock & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
-Model 1 & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
-Model 2 & 100\% & 99.95 & 95.23 & 98.50 & 92.96 & 92.96 \\ \hline
-Model 3 & 100\% & 99.87 & 91.53 & 98.42 & 86.65 & 86.65 \\ \hline
-\end{tabular}
-\end{table}
-
-
-\begin{table}[h]
-\centering
-\caption{RF Evaluation Set Metrics}
-\label{tab:rf-eval-metrics}
-\begin{tabular}{|l|l|l|l|l|l|l|}
-\hline
-\textbf{Model} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
-Stock & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
-Model 1 & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
-Model 2 & 100\% & 99.95 & 95.23 & 98.50 & 92.96 & 92.96 \\ \hline
-\end{tabular}
-\end{table}
-
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \caption{RF Model Parameters}
 \label{tab:rf-parameters}
 \begin{tabular}{llllll}
 \hline
-Parameter & Model 1 & Model 2 \\ \hline
-n\_estimators: & 100 & 200 \\
-max\_depth: & 10 & 15  \\
-min\_samples\_leaf: & 2 & 1  \\
-min\_samples\_split: & 3 & 2  \\
-random\_state: & 1234 & 1234 \\
-class\_weight: & None & balanced \\ \hline
+Parameter & Model 0-2 & Model 3 & Model 4 & Model 5\\ \hline
+n\_estimators: & 100 & 100 & 200 & 100\\
+max\_depth: & None & 10 & 15 & 10  \\
+min\_samples\_leaf: & 1 & 2 & 1 & 2 \\
+min\_samples\_split: & 2 & 3 & 2 & 3 \\
+random\_state: & 1234 & 1234 & 1234 & 1234 \\
+class\_weight: & None & None & balanced & balanced \\ \hline
 \end{tabular}
 \end{table}
+
+
 
 %\paragraph{Confusion Matrix}
 %

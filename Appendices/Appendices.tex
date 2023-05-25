@@ -321,7 +321,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random
 \section{Classifiers}
 \label{appx: Classifiers}
 
-\subsection{Base K-Nearest Neighbor (KNN)}
+\subsection{K-Nearest Neighbor (KNN)}
 \begin{lstlisting}
 # Use KNN
 from sklearn.neighbors import KNeighborsClassifier
@@ -373,9 +373,11 @@ plt.show()
 \end{lstlisting}
 
 \newpage
-\subsection{Random Forest}
 
-\subsubsection{Stock RF - Raw Metrics}
+\subsection{Random Forest}
+\label{appx:Random Forest}
+
+\subsubsection{RF Model ID 0 - Raw Metrics}
 \begin{lstlisting}[escapechar=!]
 !\textbf{S-CV Results}!
 Mean AUC = 99.99
@@ -418,33 +420,112 @@ weighted avg       1.00      1.00      1.00   6404584
 \end{lstlisting}
 
 \begin{center}
-	\includegraphics[scale=0.9]{Appendices/Images/RF/rf_stock_cm.png}
+	\includegraphics[scale=0.8]{Appendices/Images/RF/rf_stock_cm.png}
 \end{center}
 
 
 \includegraphics[width=\textwidth]{Appendices/Images/RF/rf_stock_feature_imp.png}
 
-
 \newpage
-\subsubsection{RF Model 1 - Raw Metrics}
+\subsubsection{RF Model ID 1 - Raw Metrics}
 \begin{lstlisting}[escapechar=!]
 !\textbf{S-CV Results}!
-Mean AUC = 0.9999
-Mean F1 = 0.9966
-Mean Precision = 0.9966
-Mean Recall = 0.9967
-Mean Accuracy = 0.9967
-Training Time: 56043 seconds
+Mean AUC = 99.99
+Mean F1 = 99.66
+Mean Precision = 99.66
+Mean Recall = 99.67
+Mean Accuracy = 99.67
+Training Time 7794.549654006958 seconds
 
 !\textbf{Final Test Results}!
-Weighted AUC: 0.9999070506308619
-Weighted Precision: 0.9966379719195173
-Weighted Recall: 0.9967196932696956
-Weighted F1: 0.996638797834701
-Accuracy: 0.9967196932696956
+Test AUC: 0.9999070506312879
+Weighted Test F1: 0.996638797834701
+Weighted Test Precision: 0.9966379719195173
+Weighted Test Recall: 0.9967196932696956
+Test Accuracy: 0.9967196932696956
 
 !\textbf{Classification Report}!
-                  precision    recall  f1-score   support
+			  precision    recall  f1-score   support
+
+      Botnet       0.95      0.77      0.85     17060
+      Malware      0.89      0.82      0.86     39476
+      Normal       1.00      1.00      1.00   4572206
+         SQL       0.93      0.86      0.89       789
+        SSDP       1.00      1.00      1.00   1649955
+         SSH       0.94      0.79      0.86      3565
+WebsiteSpoof       0.99      0.98      0.98    121533
+
+    accuracy                           1.00   6404584
+   macro avg       0.96      0.89      0.92   6404584
+weighted avg       1.00      1.00      1.00   6404584
+    
+!\textbf{Confusion Matrix}!    
+[[  13082      17    3957       0       0       2       2]
+ [     17   32454    6994       0       0      10       1]
+ [    649    3821 4565771      51       2     161    1751]
+ [      0       0     113     676       0       0       0]
+ [      0       0       2       0 1649953       0       0]
+ [      5      20     707       0       0    2833       0]
+ [      4       0    2723       0       0       0  118806]]
+\end{lstlisting}
+
+
+\newpage
+\subsubsection{RF Model ID 1 - Raw Metrics}
+\begin{lstlisting}[escapechar=!]
+!\textbf{S-CV Results}!
+Mean AUC = 99.99
+Mean F1 = 99.66
+Mean Precision = 99.66
+Mean Recall = 99.67
+Mean Accuracy = 99.67
+Training Time 7794.549654006958 seconds
+
+!\textbf{Final Test Results}!
+Test AUC: 0.9999070506312879
+Weighted Test F1: 0.996638797834701
+Weighted Test Precision: 0.9966379719195173
+Weighted Test Recall: 0.9967196932696956
+Test Accuracy: 0.9967196932696956
+
+!\textbf{Classification Report}!
+			  precision    recall  f1-score   support
+
+      Botnet       0.95      0.77      0.85     17060
+      Malware      0.89      0.82      0.86     39476
+      Normal       1.00      1.00      1.00   4572206
+         SQL       0.93      0.86      0.89       789
+        SSDP       1.00      1.00      1.00   1649955
+         SSH       0.94      0.79      0.86      3565
+WebsiteSpoof       0.99      0.98      0.98    121533
+
+    accuracy                           1.00   6404584
+   macro avg       0.96      0.89      0.92   6404584
+weighted avg       1.00      1.00      1.00   6404584
+    
+!\textbf{Confusion Matrix}!    
+[[  13082      17    3957       0       0       2       2]
+ [     17   32454    6994       0       0      10       1]
+ [    649    3821 4565771      51       2     161    1751]
+ [      0       0     113     676       0       0       0]
+ [      0       0       2       0 1649953       0       0]
+ [      5      20     707       0       0    2833       0]
+ [      4       0    2723       0       0       0  118806]]
+ 
+\end{lstlisting}
+
+\newpage
+\subsubsection{RF Model ID 2 - Raw Metrics}
+\begin{lstlisting}[escapechar=!]
+!\textbf{Final Test Results}!
+Test AUC:  0.9999070506308619
+Weighted Test Precision:  0.9966379719195173
+Weighted Test Recall:  0.9967196932696956
+Weighted Test F1:  0.996638797834701
+Test Accuracy:  0.9967196932696956
+
+!\textbf{Classification Report}!
+				  precision    recall  f1-score   support
 
           Botnet       0.95      0.77      0.85     17060
          Malware       0.89      0.82      0.86     39476
@@ -459,7 +540,7 @@ Website_spoofing       0.99      0.98      0.98    121533
     weighted avg       1.00      1.00      1.00   6404584
     
 !\textbf{Confusion Matrix}!    
- [[  13082      17    3957       0       0       2       2]
+[[  13082      17    3957       0       0       2       2]
  [     17   32454    6994       0       0      10       1]
  [    649    3821 4565771      51       2     161    1751]
  [      0       0     113     676       0       0       0]
@@ -469,7 +550,52 @@ Website_spoofing       0.99      0.98      0.98    121533
 \end{lstlisting}
 
 \newpage
-\subsubsection{RF Model 2 - Raw Metrics}
+\subsubsection{RF Model ID 3 - Raw Metrics}
+\begin{lstlisting}[escapechar=!]
+!\textbf{S-CV Results}!
+Mean AUC = 0.9999
+Mean F1 = 0.9966
+Mean Precision = 0.9966
+Mean Recall = 0.9967
+Mean Accuracy = 0.9967
+Training Time 56042.87267756462  seconds
+
+!\textbf{Final Test Results}!
+Weighted AUC:  0.9999070506308619
+Weighted F1:  0.996638797834701
+Weighted Precision:  0.9966379719195173
+Weighted Recall:  0.9967196932696956
+Accuracy:  0.9967196932696956
+
+!\textbf{Classification Report}!
+				  precision    recall  f1-score   support
+
+          Botnet       0.95      0.77      0.85     17060
+         Malware       0.89      0.82      0.86     39476
+          Normal       1.00      1.00      1.00   4572206
+   SQL_Injection       0.93      0.86      0.89       789
+            SSDP       1.00      1.00      1.00   1649955
+             SSH       0.94      0.79      0.86      3565
+Website_spoofing       0.99      0.98      0.98    121533
+
+        accuracy                           1.00   6404584
+       macro avg       0.96      0.89      0.92   6404584
+    weighted avg       1.00      1.00      1.00   6404584
+    
+    
+!\textbf{Confusion Matrix}!
+
+[[  13082      17    3957       0       0       2       2]
+ [     17   32454    6994       0       0      10       1]
+ [    649    3821 4565771      51       2     161    1751]
+ [      0       0     113     676       0       0       0]
+ [      0       0       2       0 1649953       0       0]
+ [      5      20     707       0       0    2833       0]
+ [      4       0    2723       0       0       0  118806]]
+\end{lstlisting}
+
+\newpage
+\subsubsection{RF Model ID 4 - Raw Metrics}
 \begin{lstlisting}[escapechar=!]
 !\textbf{S-CV Results}!
 Mean AUC = 99.95
@@ -514,8 +640,58 @@ Website_spoofing       0.61      0.98      0.75    121533
  [    282    1145     484     262       0     355  119005]]
 \end{lstlisting}
 
+
+\newpage
+\subsubsection{RF Model ID 5 - Raw Metrics}
+\begin{lstlisting}[escapechar=!]
+!\textbf{S-CV Results}!
+Mean AUC = 0.9987
+Mean F1 = 0.9153
+Mean Precision = 0.9842
+Mean Recall = 0.8665
+Mean Accuracy = 0.8665
+Training Time 4632.155310869217 seconds
+
+!\textbf{Final Test Results}!
+Weighted AUC: 0.998635554230961
+Weighted Precision: 0.9848384599880898
+Weighted Recall: 0.8600619493787575
+Weighted F1: 0.9116563847511311
+Accuracy: 0.8600619493787575
+
+!\textbf{Classification Report}!
+
+			  precision    recall  f1-score   support
+
+      Botnet       0.06      0.94      0.12     17060
+     Malware       0.10      0.90      0.19     39476
+      Normal       1.00      0.81      0.89   4572206
+         SQL       0.01      0.99      0.01       789
+        SSDP       0.99      1.00      1.00   1649955
+         SSH       0.02      0.99      0.04      3565
+    WebSpoof       0.76      0.92      0.83    121533
+
+    accuracy                           0.86   6404584
+   macro avg       0.42      0.94      0.44   6404584
+weighted avg       0.98      0.86      0.91   6404584
+    
+    
+!\textbf{Confusion Matrix}!
+
+[[  16064     141      26     133       0     693       3]
+ [     72   35584     121     125       0    3572       2]
+ [ 240322  301805 3690025  138640   11696  154013   35705]
+ [      0       0       0     783       0       5       1]
+ [      0       0       9       0 1649946       0       0]
+ [      6       1       0      12       0    3546       0]
+ [   4970    1711     301    1392       0     768  112391]]
+\end{lstlisting}
+
+% XGBOOOOOOOOOST
+
 \newpage
 \subsection{XGBoost}
+\label{appx:XGBoost}
 
 \subsubsection{Stock 100\% - XGBoost Raw Metrics}
 \begin{lstlisting}[escapechar=!]
