@@ -36,53 +36,52 @@
 \contentsline {subsection}{\numberline {4.1}Initial Modelling}{23}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Parameter Tuning}{23}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Classifiers}{24}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Random Forest (RF)}{24}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}Random Forest}{24}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}XGBoost}{26}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}KNN Classifier}{29}{subsubsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.4}Neural Networks}{30}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}Multi-Layer Perceptron (MLP)}{30}{subsubsection.4.4.1}%
 \contentsline {section}{\numberline {5}Analysis Of Results}{33}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Comparison of Models}{33}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Model Interpretation}{33}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Limitations}{33}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Future Work}{33}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Random Forest}{34}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}XGBoost}{37}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}MLP}{40}{subsection.5.7}%
-\contentsline {section}{\numberline {6}Conclusion}{42}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Summary Of Findings}{42}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Implications}{42}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Contributions}{42}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Limitations}{42}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Future Work}{42}{subsection.6.5}%
-\contentsline {section}{Bibliography}{43}{section*.47}%
-\contentsline {section}{Appendices}{46}{section*.47}%
-\contentsline {section}{\numberline {A}Ethical Approval}{46}{appendix.a.A}%
-\contentsline {section}{\numberline {B}Dataset Manipulation}{47}{appendix.a.B}%
-\contentsline {subsection}{\numberline {B.1}CSV Combiner Script}{47}{subsection.a.B.1}%
-\contentsline {subsection}{\numberline {B.2}Feature Extraction \& Reduction}{48}{subsection.a.B.2}%
-\contentsline {section}{\numberline {C}Conda Environments}{50}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.1}Neural Networks - Apple Silicon}{50}{subsection.a.C.1}%
-\contentsline {subsection}{\numberline {C.2}Classifiers}{50}{subsection.a.C.2}%
-\contentsline {section}{\numberline {D}Data Preprocessing}{51}{appendix.a.D}%
-\contentsline {subsection}{\numberline {D.1}MinMax Scaling}{51}{subsection.a.D.1}%
-\contentsline {subsection}{\numberline {D.2}OHE Encoding}{51}{subsection.a.D.2}%
-\contentsline {subsection}{\numberline {D.3}Label Encoding}{52}{subsection.a.D.3}%
-\contentsline {subsection}{\numberline {D.4}Loading Dataset}{52}{subsection.a.D.4}%
-\contentsline {section}{\numberline {E}Classifiers}{54}{appendix.a.E}%
-\contentsline {subsection}{\numberline {E.1}K-Nearest Neighbor (KNN)}{54}{subsection.a.E.1}%
-\contentsline {subsection}{\numberline {E.2}Random Forest}{56}{subsection.a.E.2}%
-\contentsline {subsubsection}{\numberline {E.2.1}RF Model ID 0 - Raw Metrics}{56}{subsubsection.a.E.2.1}%
-\contentsline {subsubsection}{\numberline {E.2.2}RF Model ID 1 - Raw Metrics}{59}{subsubsection.a.E.2.2}%
-\contentsline {subsubsection}{\numberline {E.2.3}RF Model ID 1 - Raw Metrics}{60}{subsubsection.a.E.2.3}%
-\contentsline {subsubsection}{\numberline {E.2.4}RF Model ID 2 - Raw Metrics}{61}{subsubsection.a.E.2.4}%
-\contentsline {subsubsection}{\numberline {E.2.5}RF Model ID 3 - Raw Metrics}{62}{subsubsection.a.E.2.5}%
-\contentsline {subsubsection}{\numberline {E.2.6}RF Model ID 4 - Raw Metrics}{63}{subsubsection.a.E.2.6}%
-\contentsline {subsubsection}{\numberline {E.2.7}RF Model ID 5 - Raw Metrics}{64}{subsubsection.a.E.2.7}%
-\contentsline {subsection}{\numberline {E.3}XGBoost}{65}{subsection.a.E.3}%
-\contentsline {subsubsection}{\numberline {E.3.1}Stock 100\% - XGBoost Raw Metrics}{65}{subsubsection.a.E.3.1}%
-\contentsline {subsubsection}{\numberline {E.3.2}Stock 100\% - XGBoost CM}{66}{subsubsection.a.E.3.2}%
-\contentsline {subsubsection}{\numberline {E.3.3}Stock 100\% - XGBoost Feature Importance}{67}{subsubsection.a.E.3.3}%
-\contentsline {section}{\numberline {F}Neural Networks}{68}{appendix.a.F}%
-\contentsline {subsection}{\numberline {F.1}MLP NN v1}{68}{subsection.a.F.1}%
-\contentsline {subsubsection}{\numberline {F.1.1}MLP Neural Network}{68}{subsubsection.a.F.1.1}%
+\contentsline {subsection}{\numberline {5.1}Random Forest}{33}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}XGBoost}{36}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}MLP}{39}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comparison of Models}{42}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Limitations}{48}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Recommendations}{48}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Conclusion}{49}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Summary Of Findings}{49}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Objectives}{50}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Contributions}{50}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Limitations}{51}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Future Work}{51}{subsection.6.5}%
+\contentsline {section}{References}{53}{section*.63}%
+\contentsline {section}{Appendices}{56}{section*.63}%
+\contentsline {section}{\numberline {A}Ethical Approval}{56}{appendix.a.A}%
+\contentsline {section}{\numberline {B}Dataset Manipulation}{57}{appendix.a.B}%
+\contentsline {subsection}{\numberline {B.1}CSV Combiner Script}{57}{subsection.a.B.1}%
+\contentsline {subsection}{\numberline {B.2}Feature Extraction \& Reduction}{58}{subsection.a.B.2}%
+\contentsline {section}{\numberline {C}Conda Environments}{60}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.1}Neural Networks - Apple Silicon}{60}{subsection.a.C.1}%
+\contentsline {subsection}{\numberline {C.2}Classifiers}{60}{subsection.a.C.2}%
+\contentsline {section}{\numberline {D}Data Preprocessing}{61}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.1}MinMax Scaling}{61}{subsection.a.D.1}%
+\contentsline {subsection}{\numberline {D.2}OHE Encoding}{61}{subsection.a.D.2}%
+\contentsline {subsection}{\numberline {D.3}Label Encoding}{62}{subsection.a.D.3}%
+\contentsline {subsection}{\numberline {D.4}Loading Dataset}{62}{subsection.a.D.4}%
+\contentsline {section}{\numberline {E}Classifiers}{64}{appendix.a.E}%
+\contentsline {subsection}{\numberline {E.1}K-Nearest Neighbor (KNN)}{64}{subsection.a.E.1}%
+\contentsline {subsection}{\numberline {E.2}Random Forest}{66}{subsection.a.E.2}%
+\contentsline {subsubsection}{\numberline {E.2.1}RF Model ID 0 - Raw Metrics}{66}{subsubsection.a.E.2.1}%
+\contentsline {subsubsection}{\numberline {E.2.2}RF Model ID 1 - Raw Metrics}{69}{subsubsection.a.E.2.2}%
+\contentsline {subsubsection}{\numberline {E.2.3}RF Model ID 1 - Raw Metrics}{70}{subsubsection.a.E.2.3}%
+\contentsline {subsubsection}{\numberline {E.2.4}RF Model ID 2 - Raw Metrics}{71}{subsubsection.a.E.2.4}%
+\contentsline {subsubsection}{\numberline {E.2.5}RF Model ID 3 - Raw Metrics}{72}{subsubsection.a.E.2.5}%
+\contentsline {subsubsection}{\numberline {E.2.6}RF Model ID 4 - Raw Metrics}{73}{subsubsection.a.E.2.6}%
+\contentsline {subsubsection}{\numberline {E.2.7}RF Model ID 5 - Raw Metrics}{74}{subsubsection.a.E.2.7}%
+\contentsline {subsection}{\numberline {E.3}XGBoost}{75}{subsection.a.E.3}%
+\contentsline {subsubsection}{\numberline {E.3.1}Stock 100\% - XGBoost Raw Metrics}{75}{subsubsection.a.E.3.1}%
+\contentsline {subsubsection}{\numberline {E.3.2}Stock 100\% - XGBoost CM}{76}{subsubsection.a.E.3.2}%
+\contentsline {subsubsection}{\numberline {E.3.3}Stock 100\% - XGBoost Feature Importance}{77}{subsubsection.a.E.3.3}%
+\contentsline {section}{\numberline {F}Neural Networks}{78}{appendix.a.F}%
+\contentsline {subsection}{\numberline {F.1}MLP NN v1}{78}{subsection.a.F.1}%
+\contentsline {subsubsection}{\numberline {F.1.1}MLP Neural Network}{78}{subsubsection.a.F.1.1}%

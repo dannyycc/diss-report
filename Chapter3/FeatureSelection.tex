@@ -14,7 +14,7 @@ The AWID3 dataset contains 254 features within each of its attack CSV files, inc
 \centering
 \begin{tabular}{lcc}
 \hline
-\multicolumn{3}{c}{\textbf{Application Layer Features (19)}} \\ \hline
+\multicolumn{3}{c}{\textbf{Application Layer Features (15)}} \\ \hline
 Feature Name & Preprocessing Method & Data Type \\ \hline
 nbns & OHE & object \\
 ldap & OHE & object \\
@@ -35,6 +35,8 @@ ssh.packet\_length & Min-Max & int64 \\ \hline
 \caption{The selected set of application layer features.}
 \label{tab:application_features}
 \end{table}
+
+%% TODO Talk about how 19 were originally chosen, but 4 were dropped cus there were no values in the dataset for those columns.
 
 The section below covers in more detail each of the selected features and their justification.
 

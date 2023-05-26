@@ -7,22 +7,76 @@
 
 In this section, the performance of the machine learning models on the test set is analysed and discussed. The models are evaluated using the metrics discussed previously, such as F1-Score, Area Under Curve (AUC), Precision, Recall and Accuracy. The best-performing models and algorithms are identified and interpreted. Finally, limitations and challenges faced in the analysis are discussed and addressed and areas of improvement for future work are suggested.
 
-% \subsection{Performance on Test Set}
 
-% Now begin the analysis of each model
+\subsection{Random Forest}
 
-\subsection{Comparison of Models}
+Six notable models were trained during experimentation with the Random Forest Classifier with a series of parameters and values. Tables \ref{tab:rf-scv-metrics} and \ref{tab:rf-test-metrics} show the S-CV and Test metrics for AUC, F1, Precision, Recall and Accuracy. Each model's individual metrics, classification report, confusion matrix and feature importances can be found in Appendix \ref{appx:Random Forest}.
+ 
+\begin{table}[H]
+\centering
+\caption{RF S-CV Mean Metrics}
+\label{tab:rf-scv-metrics}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{Model ID} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
+1 & 100\% & 99.99 & 99.66 & 99.66 & 99.68 & 99.67 \\ \hline
+3 & 100\% & 99.99 & 99.66 & 99.66 & 	99.67 &	99.67 \\ \hline
+4 & 100\% & 99.95 & 95.23 &	98.50 &	92.96 &	92.96 \\ \hline
+5 & 100\% & 99.87 &	91.53 &	98.42 &	86.65 &	86.65 \\ \hline
+\end{tabular}
+\end{table}
 
-% TODO Talk about the best models from each algorithm and then compare the results, features etc and conclude on one or more models that are the best for this classification problem.
+\begin{table}[h]
+\centering
+\caption{RF Test Metrics}
+\label{tab:rf-test-metrics}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{Model ID} & \textbf{Size} & \textbf{AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy}  \\ \hline
+0 & 80\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
+1 & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
+2 & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
+3 & 100\% & 99.99 & 99.66 & 99.66 & 99.67 & 99.67 \\ \hline
+4 & 100\% & 99.95 & 98.48 &	92.54 & 94.97 &	92.54 \\ \hline
+5 & 100\% & 99.86 & 91.17 & 98.48 & 86.01 & 86.01 \\ \hline
+\end{tabular}
+\end{table}
 
-\subsection{Model Interpretation}
+\textbf{Models 0-2}
 
-% Discuss any insights gained from the analysis of the machine learning models, including which features were important for the models' decision-making process and how these features impacted the performance of the models.
+\smallskip
+Models 0-2 all used the default parameters for the RandomForestClassifier, and therefore share similar results across metrics.
 
-\subsection{Limitations}
+Despite model 0 being trained on an 80\% subset of the data, its performance was similar to models 1 and 2, achieving test metrics of AUC: 99.99\%, F1: 99.66\%, Precision: 99.66\%, Recall: 99.67\% and Accuracy of 99.67\%. The model achieved a perfect score for SDDP, with only seven misclassifications. Examining the classification report shows low recall for less represented classes such as Botnet and SSH, with recalls of 0.77 and 0.78, this is further verified by the confusion matrix. 
+Models 1 and 2 were trained on the entire dataset, with the exception that model 1 was trained with 10 Fold Stratified Cross Validation meanwhile model 2 was not. Interestingly despite the change in dataset sizes, the models appear to perform nearly identically with the same consistently high metrics across both Cross Validation and Testing, suggesting the models are not overfitting. As seen in model 0, the classification reports and confusion matrix shares similar performances, with model 1 and 2 having a smaller number of misclassifications i.e. from 7 false positives to 2 on the SDDP class. This may indicate that despite adding more data to training, the RandomForestClassifier was unable to learn from the extra information which leads to diminishing returns for this specific problem. 
+ 
+\medskip
+\textbf{Class Weight}
 
-% Acknowledge any limitations of your analysis and potential sources of error. Explain how these limitations could impact the generalizability of your findings.
+During experimentation, models 3 and 5 share almost identical parameters except for the parameter: \textit{class\_weight}. The Class Weight parameter allows for the classifier to handle imbalanced datasets, its default value is \textit{None}, meaning the model treats every class as equal during the training process. Alternatively, when set to \textit{'balanced'}, the model assigns high weights that are inversely proportional to the class frequencies \parencite{scikit-learn}. Model 5's class weight is set to \textit{balanced} compared to \textit{None}. When evaluating the results, model 3 supersedes model 5 across almost every metric, with a higher F1, precision, recall and accuracy score with the following percentage decrease per metric: AUC: 0.12\%, F1: 8.18\%, Precision: 1.24\%, Recall: 12.99\%, Accuracy: 12.99\%. In terms of classification, Model 3 struggled with some of the minority classes such as Botnet, SSH and Malware, on the other hand, model 5 had a higher recall for these classes, but suffered at the cost of a reduced precision for the Normal class. This suggests that even though higher weighting is given to the majority class, it does not necessarily lead to a better model in this scenario.
 
-\subsection{Future Work}
+It was proposed this was due to Random Forest's majority voting decision factor, so although minority classes may have had a higher weighting, the class that has fundamentally more samples will have more trees \textit{'voting'} for that class.
 
-% Suggest potential areas for future work that could build on your analysis and improve the performance of machine learning models in the specific problem you addressed and in the field more broadly.
+% TODO talk about the results of the models with respect to the test set and metrics.
+
+
+\medskip
+\textbf{Feature Importance}
+
+For all the models, the feature importance of each model was collected and inferred. The feature importance provides a score for each metric and highlights how important each feature was to the creation of the random forest models. In particular, the top five features were as follows:
+
+\begin{itemize}
+	\item \textit{ip.ttl} Appeared in the top five for all models and was the number one feature for models 1,2,3 and 5. The TTL value in the dataset may be containing a series of patterns relating to the different network attacks.
+	\item \textit{http.request.method\_M-SEARCH} also appeared as one of the top features across a few of the models and was the number one feature in model 0. 
+	\item \textit{udp.length} This feature appeared in the top three features except for model 5.
+  	\item \textit{radiotap.dbm\_antsignal} was in the top five features for all models, gaining number one importance in model 5.
+	\item \textit{wlan\_radio.duration} was also prevalent in the top five features across most models.
+	\item \textit{frame.len} was also prevalent in the top five features across most models.
+	\item \textit{wlan\_radio.signal\_dbm} and \textit{wlan\_radio.duration} gained an increase in performance across model 5, this could be the effects of adjusting the class weighting to \textit{balanced} for the model.
+\end{itemize}
+
+
+% TODO Talk about the feature importance diagrams and how they relate to the problem at hand.
+\medskip
+Overall the Random Forest models showed strong performances across the classes, however, due to the imbalanced nature of the dataset, it may have hidden the weaknesses within the minority classes (e.g. SQL Injection \& SSH). Iterative and exploratory experimentation showed that the default parameters achieved superior results compared to the other models. Future work should focus on using GridSearchCV and RandomisedSearchCV to provide more advanced parameter tuning. Moreover, further emphasis can be placed on the minority classes to help lower the number of false positives.
+

@@ -3,7 +3,7 @@
 
 %Classification on the combined set of features was conducted against three classifier models, Random Forest (RF), XGBoost and K-Nearest Neighbour (KNN).
 
-\subsubsection{Random Forest (RF)}
+\subsubsection{Random Forest}
 \label{sec:RF}
 
 In an attempt to find optimal parameters, GridSearchCV and RandomizedSearchCV were utilised. However, due to memory issues on both machines and frequent system crashes due to insufficient memory, experimentation for the Random Forest Classifier instead follows an exploratory approach, using both prior knowledge and iterative testing to create a series of models which were subsequently evaluated and optimised. The training was conducted on both the M2 and VM testbeds. Table \ref{tab:rf-params} details the set of parameters focused on during experimentation, using performance feedback and the model's behaviour on the dataset, these were tweaked and fine-tuned to help enhance the model's performance. Table \ref{tab:rf-parameters} documents the parameters used for all models.
