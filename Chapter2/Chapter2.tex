@@ -1,99 +1,85 @@
 % !TEX root =  ../Report.tex
 
-%\section{Figures, tables, algorithms}
-%\label{sec: figs tables algos}
-
-% The researcher and the supervisor both attended a photography for the new hill valley clock tower. This can be seen in figure \ref{fig:clock tower photo}.
-
-% \begin{figure}[h!]
-%     \centering
-%     \includegraphics[width=\textwidth]{Report/Chapter2/doc_and_marty.jpg}
-%     \caption{The Researcher and Supervisor}
-%     \label{fig:clock tower photo}
-% \end{figure}
-
-% \noindent Again from figure we can see the researcher on the \textit{left} and the supervisor on the \textit{right}.\\
-
-% From this, a table was made for some of the items needed for temporal experiment number one to undergo completion. This is set to occur on \texttt{October 26, 1985, 1:18 A.M}.
-
-% \begin{table}[H] 
-% \begin{tabularx}{\textwidth}{| X | X |}
-%     \hline
-%      Item & Description  \\ \hline
-%      2 x Pocket Clocks & For measurement in time difference of machine and present time \\ \hline
-%      Einstein & The Dog test pilot \\ \hline
-%      JVC GR-C1 & VHS Camcorder \\ \hline
-% \end{tabularx}
-% \caption{Inventory list for temporal experiment number one}
-% \label{table: inventory}
-% \end{table}
-
 % About 3000 words probably
 
-\section{Literature Review}                               
-\label{sec: Literature Review}
+\smallskip
+The recently published 5G-NIDD dataset \parencite{10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361} presents a labelled dataset built using 5G networks and contains a series of attack scenarios such as DDoS and port scans. As a relatively new dataset, it lacks existing literature and research for its utilisation for training an IDS. Moreover, being generated on 5G networks, it fails to meet this project's requirements of needing an 802.11w network dataset.
+\medskip
 
-This section covers the existing research and reviews literature, papers and reports focusing on publicly available datasets, existing work and different machine learning algorithms. The literature reviewed details some of the methodologies and techniques used to develop existing models created for detecting network attacks on 802.11 wireless networks. The practical element of this dissertation is inspired by the following papers and literature.
+The AWID3 dataset \parencite{9360747} released in February 2021 seeks to build upon the existing AWID2 dataset by evaluating various network attacks in an IEEE 802.11 enterprise network environment. These include higher-level layer attacks initiated from the link layer across multiple protocols and layers and newly discovered 802.11w attacks such as Krack, Kook, SSDP amplification, malware and even botnet attacks \parencite{kolias2015intrusion}. The dataset includes the Pairwise Master Key (PMK) and TLS Keys. Additionally, AWID3's concentration on enterprise networks includes Protected Management Frames (PMF) that help provide additional information during usage for an IDS. 
+
+Previous work and research into evaluating numerous machine learning algorithms have been conducted on the well-known older AWID2 dataset \parencite{kolias2015intrusion}, however with an overall lack of publicly available wireless network datasets, the introduction of AWID3 can help to bring new research and training data to help develop new machine learning models.  
+
+In the context of wireless networks, the AWID suite of datasets is widely recognised and used within academic research and literature; being one of the only extensive publicly available datasets on 802.11 enterprise networks concerning application layer attacks, AWID3 is a strong candidate for investigating the development of an IDS using machine learning. 
 
 \subsection{Intrusion Detection Systems}
 
-\textcite{10.4108/eai.27-11-2021.2315535} studies the performance of detecting 10 Denial Of Service attacks using Kismet on a Raspberry Pi using Aireplay-ng to generate a DoS attack on the target access point secured with WPA2/PSK, the experiment was repeated ten times. Using Kismet, the authors were able to successfully identify the attack with an average detection time of 3.42 seconds.
-
-\subsection{Datasets}
-
-\textcite{9664737} discusses 37 public datasets and their suitability for building and training an IDS, limitations and restrictions. It was concluded that these datasets do not represent newer threats such as zero-day attacks. An optimal dataset should consist of well-labelled, up-to-date and public network traffic ranging from regular user activity to different attacks and payloads. It was proposed that using multiple datasets in different network environments and scenarios across a standard set of features could help to improve the accuracy of ML-based Network Intrusion Detection Systems.
-
-\medskip
-
-The AWID3 data set \parencite{9360747} released in February 2021 seeks to build upon the existing AWID2 data set by evaluating various network attacks in an IEEE 802.11 enterprise network environment. These include higher-level layer attacks initiated from the link layer across multiple protocols and layers and newly discovered 802.11w attacks such as Krack, Kook, SSDP amplification, malware and even botnet attacks \parencite{kolias2015intrusion}. Included with the dataset, are the Pairwise Master Key (PMK) and TLS Keys. Additionally, AWID3's concentration on enterprise networks includes the use of Protected Management Frames (PMF) that help to provide additional information during usage for an IDS. 
-
-Previous work and research into evaluating numerous machine learning algorithms have been conducted on the well-known older AWID2 data set \parencite{kolias2015intrusion}, however with an overall lack of publicly available wireless network datasets, the introduction of AWID3 can help to bring new research and training data to help develop new machine learning models.  
-
-In the context of wireless networks, the AWID suite of datasets is widely recognised and used within academic research and literature, being one of the only extensive publicly available datasets on 802.11 enterprise networks with respect to application layer attacks, AWID3 is a strong candidate for investigating the development of an IDS using machine learning. 
+\textcite{10.4108/eai.27-11-2021.2315535} studies the performance of detecting 10 Denial Of Service attacks using Kismet on a Raspberry Pi using Aireplay-ng to generate a DoS attack on the target access point secured with WPA2/PSK, the experiment was repeated ten times. Using Kismet, the authors successfully identified the attack with an average detection time of 3.42 seconds.
 
 \subsection{Detecting Network Attacks}
 
 \subsubsection*{Application Layer Attacks}
 
-\textcite{s22155633} discusses the detection of application layer attacks using machine learning utilising the AWID3 dataset. The authors did not rely on optimisation or dimensionality-reducing techniques, only the six PCAPS containing application layer attacks were used and more specifically, no application layer features were used e.g. HTTP and DNS. These were classified and grouped under three main classes: Normal, Flooding and Other. This was justified due to these being usually encrypted and therefore not easily accessible, moreover, it raises concerns about privacy, requiring attention to ensure the data does not contain personally identifiable information or data unique to the environment. A research gap was identified as no previous work focused primarily on detecting the attacks originating from the application layer on the newer AWID3 dataset.
+\textcite{s22155633} discusses detecting application layer attacks using machine learning utilising the AWID3 dataset. The authors did not rely on optimisation or dimensionality-reducing techniques; only the six PCAPS containing application layer attacks were used, and more specifically, no application layer features were used, e.g. HTTP and DNS. These were classified and grouped under three main classes: Normal, Flooding and Other. This was justified because these are usually encrypted and, therefore, not easily accessible. Moreover, it raises privacy concerns, requiring attention to ensure the data does not contain personally identifiable information or data unique to the environment. A research gap was identified as no previous work focused primarily on detecting the attacks originating from the application layer on the newer AWID3 dataset.
 
-A set of 802.11 and non-802.11 features was evaluated using three classifiers (Decision Tree, Bagging and LightGBM) and two DNNs (Multi-Layer Perceptron (MLP) and Denoising stacked Autoencoders (AE)). Of the classifiers, Bagging produced the highest scoring AUC with the MLP DNN performing slightly better than the AE across the non-802.11 and 802.11 features. The feature importance was evaluated and irrelevant features were removed and tested in combination, resulting in better results across models. 
-
+A set of 802.11 and non-802.11 features was evaluated using three classifiers (Decision Tree, Bagging and LightGBM) and two DNNs (Multi-Layer Perceptron (MLP) and Denoising stacked Autoencoders (AE)). Bagging produced the highest-scoring AUC of the classifiers, with the MLP DNN performing slightly better than the AE across the non-802.11 and 802.11 features. The feature importance was evaluated, and irrelevant features were removed and tested in combination, resulting in better results across models. When the two feature sets were combined, the AUC saw a score of up to 95.30\%. Additionally, an 'insider feature' was engineered to represent if packets in the Botnet class are sent via client-client or client-server. This feature saw an improvement of up to 3\% in LightGMB and Bagging models. It is clear that this paper does not address the problem of using a set of application features or any optimisation techniques.  
 \subsubsection*{5G Attacks}
 
-\textcite{Mughaid2022} discusses the rise and need for protection of 5G based attacks, including rule-based methods and machine learning-based methods. However, these methods have limitations in terms of accuracy and efficiency. To address these issues, the paper "Improved dropping attacks detecting system in 5g networks using machine learning and deep learning approaches" proposes a new system that leverages machine learning and deep learning techniques to achieve a high detection accuracy. A 99\% accuracy was achieved using KNN and 93\% for DF and Neural Network.
+\textcite{Mughaid2022} discusses the rise and need for protection from 5G-based attacks, including rule-based methods and machine learning-based methods. However, these methods have limitations in terms of accuracy and efficiency. To address these issues, the paper proposes a new system that leverages machine learning and deep learning techniques to achieve a high detection accuracy. 99\% accuracy was achieved using KNN and 93\% with DF and Neural Network.
 
 \subsubsection*{Attack Classifications}
 
-\textcite{10.1007/978-3-030-98457-1_1} utilised the AWID dataset to predict one of four attacks using the KNN classifier, the paper presented strong results for the "ARP" attack type, achieving the best accuracy with recall. The paper highlighted the importance of the pre-processing of data, feature selection, and choosing an appropriate classifier and oversampling method. The authors suggested that including additional features in the classification process and testing a more generalised model could improve a model's performance in future research and prevent the curse of dimensionality.
+\textcite{10.1007/978-3-030-98457-1_1} utilised the AWID dataset to predict tuples of four attacks using the KNN classifier; the paper presented strong results for the "ARP" attack type, achieving the best accuracy with recall. The paper highlighted the importance of the pre-processing of data, feature selection, and choosing an appropriate classifier and oversampling method. The authors suggested that including additional features in the classification process and testing a more generalised model could improve a model's performance in future research and prevent the curse of dimensionality.
 
 \medskip
-The work by \textcite{DBLP:journals/corr/abs-2110-04259} investigates WPA3 Enterprise Networks against a combination of known WPA3 attacks alongside a series of older WPA2 attacks such as Beacon Flood and De-authentication attacks. It was concluded that eight of the nine attacks to the testbed's Access Point were vulnerable and a chosen Intrusion Detection System was unable to identify and detect the attacks. \textcite{DBLP:journals/corr/abs-2110-04259} then proceeded to design a new signature-based IDS using Python. A packet capture of each attack was captured and processed into the proposed IDS, if there were indicators of attacks, the IDS outputted the time and classified the type of attack. The paper focuses on logical reasoning to deduce an attack rather than utilising anomaly detection such as machine learning.
- 
+The work by \textcite{DBLP:journals/corr/abs-2110-04259} investigates WPA3 Enterprise Networks against a combination of known WPA3 attacks alongside a series of older WPA2 attacks such as Beacon Flood and De-authentication attacks. It was concluded that eight of the nine attacks on the testbed's Access Point were vulnerable, and a chosen Intrusion Detection System could not identify and detect the attacks. \textcite{DBLP:journals/corr/abs-2110-04259} then designed a new signature-based IDS using Python. A packet capture of each attack was captured and processed into the proposed IDS. If there were indicators of attacks, the IDS outputted the time and classified the type of attack. The paper uses logical reasoning to deduce an attack rather than anomaly detection, such as machine learning.
+
+\medskip
+
+\textcite{pub.1154431160} investigated the detection of WPA3 attacks in the context of intrusion detection using their curated dataset based on existing and known WPA3 attacks: De-Authentication, RogueAP, Evil Twin, Krack and Beacon Flooding. A two-staged intrusion detection system is proposed. Traffic is first run through a Flood Detection system at the AP to detect sudden surges of data packets and secondly using an ML-based classifier. The data was trained on Logistic Regression, Decision Tree and Random forest and achieved a high accuracy of 99.98\% on Decision Tree and 99.97\% on Random Forest. 
+
+\textcite{electronics12112355} utilised the AWID3 dataset for a proposed IDS for anomaly detection; the data was selected based on frames, and an equal number of frames were selected per class. Of the models tested, Decision Tree and Naive Bayes performed the best. Decision Tree achieved the best results with 98.57\% accuracy on the validation set and 96.79\% and 97.03\% accuracy on the custom testbed created with Beacon Flood and de-authentication attacks. The paper addresses the common issue of testing the created models on a data environment different from training.
+
+In \textcite{s22041407} proposed an IDS capable of detecting DoS attacks on wireless sensor networks. Using the WSN-DS dataset, the K-Nearest Neighbor classifier was implemented with an arithmetic optimisation algorithm (AOA), and additionally, the Levy flight strategy was used for optimisation adjustment. The experiments concluded that the model reached up to 99\% accuracy, nearly a 10\% improvement from the original KNN algorithm.
+
+The works by \textcite{10150/666297} utilised KNN on the AWID2 \& 3 datasets on ten features. To save memory, only the last thousand samples were used. The model quickly converged at a high accuracy of 0.95 on AWID2 and 0.88 on AWID3. 
+
 \subsection{Machine Learning Algorithms}
 
-A key area of the work was deciding the machine learning algorithms to use, a combination of classifiers and neural networks were considered in their context of suitability, efficiency and performance. AWID3 is a labelled dataset, as such only supervised algorithms were used for this work. The section below provides an overview of existing work utilising the AWID3 dataset for the machine learning algorithms for detecting wireless network attacks and provides a justification for their usage in this project.
+The following table summarises a selection of existing literature and papers from the past five years related to the use of machine learning in detecting network attacks. The following common algorithms are abbreviated as follows: Random Forest (RF), Decision Tree (DT), Multi-Layer Perceptron (MLP), AutoEncoder (AE), Logistic Regression (Logreg), Neural Network (NN), Support Vector Machine (SVM), Naïve Bayes (NB) and K-Nearest Neighbour (KNN). It concludes that a wide array of machine learning algorithms have been utilised to detect network attacks. However, gaps still remain in using Random Forest and XGBoost on the AWID3 dataset.
 
-\subsubsection{Random Forest}
+\begin{table}[H]
+\caption{Existing Literature Using ML Techniques}
+\label{table:ml_papers}
+\begin{tabular}{p{3cm}p{3cm}p{6cm}l}
+\cline{1-3}
+\textbf{Work}  & \textbf{Dataset/Data}  & \textbf{ML Methods} \\ \cline{1-3}
+\cite{8455962} & MSU Scarda Dataset & \multicolumn{1}{p{6cm}}{\raggedright SVM, RF} \\ \hline
+\cite{Ge2019DeepLI} & Bot-IoT & \multicolumn{1}{p{6cm}}{\raggedright Feed-Forward NN} \\ \hline
+\cite{8746576} & AWID2 & \multicolumn{1}{p{6cm}}{\raggedright Ladder Network} \\ \hline
+\cite{smys2020hybrid} & UNSW NB15 & \multicolumn{1}{p{6cm}}{\raggedright Hybrid Convolutional Neural Network} \\ \hline
+\cite{9074929} & KDDCup99, NSL-KDD & \multicolumn{1}{p{6cm}}{\raggedright KNN, NB} \\ \hline
+\cite{9249426} & AWID2 \& University of Arizona Dataset & \multicolumn{1}{p{6cm}}{\raggedright IsolationForest, C4.5, RF, AdaBoost, DecisionTable}   \\ \hline
+\cite{DBLP:journals/corr/abs-2110-04259} & Mininet 2.2.2 & \multicolumn{1}{p{6cm}}{\raggedright SVM, MLP, DT, RF} \\ \hline 
+\cite{s22155633}  & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright DT, LightGBM, Bagging, MLP \& AE}   \\ \hline
+\cite{pick_quality_over} & AWID 2 \& 3 & \multicolumn{1}{p{6cm}}{\raggedright Logreg, SGDClassifier, LinearSVC, LightGBM, DT, RF, Extra Trees, MLP, AE} \\ \hline
+\cite{pub.1154431160} & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright Logreg, DT, RF } \\ \hline
+\cite{10.1007/978-3-030-98457-1_1} & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright KNN} \\ \hline
+\cite{Mughaid2022} & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright DT, KNN, Decision Jungle, Decision Forest, Neural Network} \\ \hline
+\cite{s22041407} & WSN-DS & \multicolumn{1}{p{6cm}}{\raggedright KNN} \\ \hline
+\cite{DHANYA202357} & UNSW-NB15 & \multicolumn{1}{p{6cm}}{\raggedright RF, AdaBoost, XGBoost, KNN, MLP} \\ \hline
+\cite{electronics12112355} & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright DT, NB, RF, MLP } \\ \hline
+\cite{10.1145/3508398.3519360} & AWID3 & \multicolumn{1}{p{6cm}}{\raggedright XGBoost, LightGBM, CatBoost} \\ \hline
+\cite{su14148707} & X-IIoTDS, TON\_IoT & \multicolumn{1}{p{6cm}}{\raggedright XGBoost} \\ \hline
+\cite{electronics9101689} & AWID2 & \multicolumn{1}{p{6cm}}{\raggedright Bagging, RF, ET, XGBoost, NB} \\ \hline
+\end{tabular}
+\end{table}
 
-Random Forest is an ensemble learning algorithm that combines multiple decision trees during its training process, at each node the best features are selected to split the tree with additional pruning used to help prevent overfitting. The predictions of all the individual decision trees are combined to make a final prediction.
 
-\subsubsection{K-Nearest Neighbor}
 
-K-Nearest Neighbor is a non-parametric algorithm that works by finding the k closest neighbours to a given input and classifying it based on the majority class within the k neighbours. 
-	The works by \textcite{10150/666297} utilised KNN on the AWID2 \& 3 datasets on a set of ten features. In order to save memory, only the last thousand samples were used. The model quickly converged at a high accuracy of 0.95 on AWID2 and 0.88 on AWID3. 
-
-\subsubsection{XGBoost}
-
-XGBoost, short for eXtreme Gradient Boosting is a type of gradient-boosted decision tree. It was developed by \textcite{XGBoost} and is considered to be an efficient and scalable algorithm capable of handling large datasets and models. It utilises a collection, referred to as an ensemble, of decision trees combined to create a model capable of learning from the errors of the previous tree in a sequence. 
-
-\subsubsection{Neural Networks}
-
-\subsubsection*{Multi-Layer Perceptron}
-
-A Multi-Layer Perceptron (MLP) works using a feed-forward artificial neural network that consists of an input layer, one or more hidden layers, and an output layer. Each layer within contains a given number of neurons that are connected together to additional layers through weighted connections. 
+\medskip
 
 
 \subsection{Summary}
 
-Based on the literature review and research on the AWID3 dataset and wireless network attack classification, it appears that detecting application layer wireless network attacks using machine learning remains an under-researched area. In their previous work, \textcite{s22155633} showed that combining 802.11 and non-802.11 features achieved high accuracy and AUC, without using application layer features such as DNS, SMB and HTTP etc. However, it remains to be investigated whether combining these application layer features can improve the accuracy of machine learning classifiers in identifying application layer attacks on 802.11 networks. Furthermore, the works fail to classify individually the method of attack, combining the six attacks under three classes: Normal, Flooding and Other. This project aims to address this research gap by exploring the feasibility of using application layer features to enhance the performance of machine learning classifiers for detecting application layer attacks on specifically the AWID3 dataset.
+Based on the literature review and research on the AWID3 dataset and wireless network attack classification, detecting application layer wireless network attacks using machine learning is under-researched. In their previous work, \textcite{s22155633} showed that combining 802.11 and non-802.11 features achieved high accuracy and AUC without using application layer features such as DNS, SMB and HTTP etc. However, it remains to be investigated whether combining these application layer features can improve the accuracy of machine learning classifiers in identifying application layer attacks on 802.11 networks. Furthermore, the works fail to classify the method of attack individually, combining the six attacks under three classes: Normal, Flooding and Other. This project aims to address this research gap by exploring the feasibility of using application layer features to enhance the performance of machine learning classifiers for detecting application layer attacks on the AWID3 dataset.

@@ -1,18 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.blg'
-[46] biber-darwin:340> INFO - === Fri May 26, 2023, 11:22:05
-[55] Biber.pm:419> INFO - Reading '/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bcf'
-[105] Biber.pm:979> INFO - Found 25 citekeys in bib section 0
-[114] Biber.pm:4419> INFO - Processing section 0
-[120] Biber.pm:4610> INFO - Looking for bibtex file '/Users/vivid/Documents/University/Dissertation/Biblatex/bibliography.bib' for section 0
-[122] bibtex.pm:1713> INFO - LaTeX decoding ...
-[146] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/vivid/Documents/University/Dissertation/Biblatex/bibliography.bib'
-[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[310] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[310] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[310] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[332] bbl.pm:660> INFO - Writing '/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bbl' with encoding 'UTF-8'
-[346] bbl.pm:763> INFO - Output to /Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bbl
-[346] Biber.pm:131> WARN - legacy month field 'Nov' in entry '9664737' is not an integer - this will probably not sort properly.
-[346] Biber.pm:131> WARN - legacy month field '13-15 Nov' in entry 'pmlr-v29-Koco13' is not an integer - this will probably not sort properly.
-[346] Biber.pm:133> INFO - WARNINGS: 2
+[49] biber-darwin:340> INFO - === Fri Jun  2, 2023, 11:58:12
+[59] Biber.pm:419> INFO - Reading '/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bcf'
+[112] Biber.pm:979> INFO - Found 41 citekeys in bib section 0
+[121] Biber.pm:4419> INFO - Processing section 0
+[128] Biber.pm:4610> INFO - Looking for bibtex file '/Users/vivid/Documents/University/Dissertation/Biblatex/bibliography.bib' for section 0
+[130] bibtex.pm:1713> INFO - LaTeX decoding ...
+[170] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/vivid/Documents/University/Dissertation/Biblatex/bibliography.bib'
+[400] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[400] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[400] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[400] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[435] bbl.pm:660> INFO - Writing '/Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bbl' with encoding 'UTF-8'
+[461] bbl.pm:763> INFO - Output to /Users/vivid/Documents/University/Dissertation/Biblatex/.texpadtmp/Report.bbl
+[462] Biber.pm:131> WARN - legacy month field 'Nov' in entry '9664737' is not an integer - this will probably not sort properly.
+[462] Biber.pm:131> WARN - legacy month field '13-15 Nov' in entry 'pmlr-v29-Koco13' is not an integer - this will probably not sort properly.
+[462] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/h2/8rrz5ny52vz5p9rc0sr5fqnc0000gp/T/biber_tmp_nE3C/f4d088b3f9f145b5c3058da33afd57d4_30305.utf8, line 508, warning: 41 characters of junk seen at toplevel
+[462] Biber.pm:133> INFO - WARNINGS: 3

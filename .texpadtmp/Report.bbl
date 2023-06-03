@@ -19,26 +19,180 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{electronics9101689}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8e45b809cd3ccd729dafbe033ea3fbf7}{%
+           family={A.\bibnamedelimi Reyes},
+           familyi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Abel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fe3a992fbf19bc3bc9b4c5634b3cb07}{%
+           family={D.\bibnamedelimi Vaca},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=109e72994de55fa1af85cde19afb7242}{%
+           family={Castro\bibnamedelima Aguayo},
+           familyi={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Gabriel\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a075a054e8ae496a76982988d306396d}{%
+           family={Niyaz},
+           familyi={N\bibinitperiod},
+           given={Quamar},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9986341d1fe013420f1f7cc3ee2d7ba}{%
+           family={Devabhaktuni},
+           familyi={D\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b357190257f099b8042ccff2a48598f}
+      \strng{fullhash}{c9ee080f3d8d627ec649a57f9702f23a}
+      \strng{bibnamehash}{9b357190257f099b8042ccff2a48598f}
+      \strng{authorbibnamehash}{9b357190257f099b8042ccff2a48598f}
+      \strng{authornamehash}{9b357190257f099b8042ccff2a48598f}
+      \strng{authorfullhash}{c9ee080f3d8d627ec649a57f9702f23a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The growth of wireless networks has been remarkable in the last few years. One of the main reasons for this growth is the massive use of portable and stand-alone devices with wireless network connectivity. These devices have become essential on the daily basis in consumer electronics. As the dependency on wireless networks has increased, the attacks against them over time have increased as well. To detect these attacks, a network intrusion detection system (NIDS) with high accuracy and low detection time is needed. In this work, we propose a machine learning (ML) based wireless network intrusion detection system (WNIDS) for Wi-Fi networks to efficiently detect attacks against them. The proposed WNIDS consists of two stages that work together in a sequence. An ML model is developed for each stage to classify the network records into normal or one of the specific attack classes. We train and validate the ML model for WNIDS using the publicly available Aegean Wi-Fi Intrusion Dataset (AWID). Several feature selection techniques have been considered to identify the best features set for the WNIDS. Our two-stage WNIDS achieves an accuracy of 99.42\% for multi-class classification with a reduced set of features. A module for eXplainable Artificial Intelligence (XAI) is implemented as well to understand the influence of features on each type of network traffic records.}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{number}{10}
+      \field{title}{A Machine Learning Based Two-Stage Wi-Fi Network Intrusion Detection System}
+      \field{volume}{9}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.3390/electronics9101689
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/9/10/1689
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/9/10/1689
+      \endverb
+    \endentry
+    \entry{10.1145/3508398.3519360}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3c971008760b54face692f71ca19a894}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f43f7bd4cda002b16a1e3fff04c57f87}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Urbi},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aeefbed01b6badb7850d6dd5ad3dff01}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Rajib\bibnamedelima Ranjan},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Baltimore, MD, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3c3f35f757e68c9042fe64bf827cc563}
+      \strng{fullhash}{3c3f35f757e68c9042fe64bf827cc563}
+      \strng{bibnamehash}{3c3f35f757e68c9042fe64bf827cc563}
+      \strng{authorbibnamehash}{3c3f35f757e68c9042fe64bf827cc563}
+      \strng{authornamehash}{3c3f35f757e68c9042fe64bf827cc563}
+      \strng{authorfullhash}{3c3f35f757e68c9042fe64bf827cc563}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, a number of attacks have been demonstrated (like key reinstallation attack, called KRACK) on WPA2 protocol suite in Wi-Fi WLAN. In this paper, we design and implement a system, called kTRACKER, to passively detect anomalies in the handshake of Wi-Fi security protocols, in particular WPA2, between a client and an access point using COTS radios. A state machine model is implemented to detect KRACK attack by passively monitoring multiple wireless channels. In particular, we perform deep packet inspection and develop a grouping algorithm to group Wi-Fi handshake packets to identify the symptoms of the KRACK in specific stages of a handshake session. Our implementation of kTRACKER does not require any modification to the firmware of the supplicant i.e., client or the authenticator i.e., access point or the COTS devices, our system just needs to be in the accessible range from clients and access points. We use a publicly available dataset for performance analysis of kTRACKER. We employ gradient boosting-based supervised machine learning models, and show that an accuracy around 93.39\% and a false positive rate of 5.08\% can be achieved using kTRACKER.}
+      \field{booktitle}{Proceedings of the Twelfth ACM Conference on Data and Application Security and Privacy}
+      \field{isbn}{9781450392204}
+      \field{series}{CODASPY '22}
+      \field{title}{KTRACKER: Passively Tracking KRACK Using ML Model}
+      \field{year}{2022}
+      \field{pages}{364\bibrangedash 366}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1145/3508398.3519360
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3508398.3519360
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3508398.3519360
+      \endverb
+      \keyw{wpa2,krack,wi-fi,ensemble model}
+    \endentry
+    \entry{brownlee_2018_difference}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=915af163e2107106fced5dd3164d9a8e}{%
+           family={Brownlee},
+           familyi={B\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Machine Learning Mastery}%
+      }
+      \strng{namehash}{915af163e2107106fced5dd3164d9a8e}
+      \strng{fullhash}{915af163e2107106fced5dd3164d9a8e}
+      \strng{bibnamehash}{915af163e2107106fced5dd3164d9a8e}
+      \strng{authorbibnamehash}{915af163e2107106fced5dd3164d9a8e}
+      \strng{authornamehash}{915af163e2107106fced5dd3164d9a8e}
+      \strng{authorfullhash}{915af163e2107106fced5dd3164d9a8e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Difference Between a Batch and an Epoch in a Neural Network}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
+      \endverb
+      \verb{url}
+      \verb https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
+      \endverb
+    \endentry
     \entry{9360747}{article}{}
       \name{author}{3}{}{%
-        {{un=2,uniquepart=given,hash=acd18a327d3504adfd07f2b8b380744b}{%
+        {{un=0,uniquepart=base,hash=acd18a327d3504adfd07f2b8b380744b}{%
            family={{Chatzoglou}},
            familyi={C\bibinitperiod},
            given={E.},
            giveni={E\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
            family={{Kambourakis}},
            familyi={K\bibinitperiod},
            given={G.},
            giveni={G\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=e2472652241dc9c0b900531f6cfd6fab}{%
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2472652241dc9c0b900531f6cfd6fab}{%
            family={{Kolias}},
            familyi={K\bibinitperiod},
            given={C.},
            giveni={C\bibinitperiod},
-           givenun=2}}%
+           givenun=0}}%
       }
       \strng{namehash}{114f417b2fd1df0195de0b8e74557167}
       \strng{fullhash}{114f417b2fd1df0195de0b8e74557167}
@@ -62,90 +216,43 @@
       \verb 10.1109/ACCESS.2021.3061609
       \endverb
     \endentry
-    \entry{pick_quality_over}{article}{}
-      \name{author}{4}{ul=3}{%
-        {{un=2,uniquepart=given,hash=d7eafb66deb2d3e3688753848df2ef24}{%
-           family={Chatzoglou},
-           familyi={C\bibinitperiod},
-           given={Efstratios},
-           giveni={E\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
-           family={Kambourakis},
-           familyi={K\bibinitperiod},
-           given={Georgios},
-           giveni={G\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
-           family={Kolias},
-           familyi={K\bibinitperiod},
-           given={Constantinos},
-           giveni={C\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=e751509604a79a6b468a0960055757bf}{%
-           family={Smiliotopoulos},
-           familyi={S\bibinitperiod},
-           given={Christos},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
-      \strng{fullhash}{660a67211b435a81b51d5e3a629065bc}
-      \strng{bibnamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
-      \strng{authorbibnamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
-      \strng{authornamehash}{b8428e994e3f7ccf3f734fd2a8fc0228}
-      \strng{authorfullhash}{660a67211b435a81b51d5e3a629065bc}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Access}
-      \field{title}{Pick Quality Over Quantity: Expert Feature Selection and Data Preprocessing for 802.11 Intrusion Detection Systems}
-      \field{volume}{10}
-      \field{year}{2022}
-      \field{pages}{64761\bibrangedash 64784}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1109/ACCESS.2022.3183597
-      \endverb
-    \endentry
     \entry{s22155633}{article}{}
-      \name{author}{4}{ul=3}{%
-        {{un=2,uniquepart=given,hash=d7eafb66deb2d3e3688753848df2ef24}{%
-           family={Chatzoglou},
+      \name{author}{4}{ul=4}{%
+        {{un=0,uniquepart=base,hash=acd18a327d3504adfd07f2b8b380744b}{%
+           family={{Chatzoglou}},
            familyi={C\bibinitperiod},
-           given={Efstratios},
+           given={E.},
            giveni={E\bibinitperiod},
-           givenun=2}}%
-        {{un=2,uniquepart=given,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
-           family={Kambourakis},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
+           family={{Kambourakis}},
            familyi={K\bibinitperiod},
-           given={Georgios},
+           given={G.},
            giveni={G\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=e751509604a79a6b468a0960055757bf}{%
-           family={Smiliotopoulos},
-           familyi={S\bibinitperiod},
-           given={Christos},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2472652241dc9c0b900531f6cfd6fab}{%
+           family={{Kolias}},
+           familyi={K\bibinitperiod},
+           given={C.},
            giveni={C\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
-           family={Kolias},
-           familyi={K\bibinitperiod},
-           given={Constantinos},
+        {{un=0,uniquepart=base,hash=23f507284af799bfbff4bc33948b852c}{%
+           family={{Smiliotopoulos}},
+           familyi={S\bibinitperiod},
+           given={C.},
            giveni={C\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{1775af3134bd9ec05a5196a7c7f82b70}
-      \strng{fullhash}{602aee23097005ec7c825a6fd0ac92ab}
-      \strng{bibnamehash}{1775af3134bd9ec05a5196a7c7f82b70}
-      \strng{authorbibnamehash}{1775af3134bd9ec05a5196a7c7f82b70}
-      \strng{authornamehash}{1775af3134bd9ec05a5196a7c7f82b70}
-      \strng{authorfullhash}{602aee23097005ec7c825a6fd0ac92ab}
+      \strng{namehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{fullhash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{bibnamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authorbibnamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authornamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authorfullhash}{7d74a7420b5511e20999c2502923dc66}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -165,6 +272,57 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/1424-8220/22/15/5633
+      \endverb
+    \endentry
+    \entry{pick_quality_over}{article}{}
+      \name{author}{4}{ul=4}{%
+        {{un=0,uniquepart=base,hash=acd18a327d3504adfd07f2b8b380744b}{%
+           family={{Chatzoglou}},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
+           family={{Kambourakis}},
+           familyi={K\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2472652241dc9c0b900531f6cfd6fab}{%
+           family={{Kolias}},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23f507284af799bfbff4bc33948b852c}{%
+           family={{Smiliotopoulos}},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{fullhash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{bibnamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authorbibnamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authornamehash}{7d74a7420b5511e20999c2502923dc66}
+      \strng{authorfullhash}{7d74a7420b5511e20999c2502923dc66}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Pick Quality Over Quantity: Expert Feature Selection and Data Preprocessing for 802.11 Intrusion Detection Systems}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{64761\bibrangedash 64784}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3183597
       \endverb
     \endentry
     \entry{XGBoost}{inproceedings}{}
@@ -323,6 +481,76 @@
       \verb https://arxiv.org/abs/2110.04259
       \endverb
     \endentry
+    \entry{DHANYA202357}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=09fc78d4c929cae227968c179775e8c7}{%
+           family={Dhanya},
+           familyi={D\bibinitperiod},
+           given={K.A.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5546dda92a5c742b48ec4dd8c1f7d948}{%
+           family={Vajipayajula},
+           familyi={V\bibinitperiod},
+           given={Sulakshan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c2fcdee684f2b0dd3e0021cc8fe2bda}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Kartik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9af32d4877812c7db949cce94472a437}{%
+           family={Tibrewal},
+           familyi={T\bibinitperiod},
+           given={Anjali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=335eead5f1010011132d4b8cc2da2362}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi Senthil},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cbe802b390e059bb0b64724f416ec6c}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={T.\bibnamedelimi Gireesh},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c2c8c28b5670788ba22653f31676bca6}
+      \strng{fullhash}{fedcaa2c6d519035e7c1024652caf350}
+      \strng{bibnamehash}{c2c8c28b5670788ba22653f31676bca6}
+      \strng{authorbibnamehash}{c2c8c28b5670788ba22653f31676bca6}
+      \strng{authornamehash}{c2c8c28b5670788ba22653f31676bca6}
+      \strng{authorfullhash}{fedcaa2c6d519035e7c1024652caf350}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1877-0509}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{note}{International Conference on Machine Learning and Data Engineering}
+      \field{title}{Detection of Network Attacks using Machine Learning and Deep Learning Models}
+      \field{volume}{218}
+      \field{year}{2023}
+      \field{pages}{57\bibrangedash 66}
+      \range{pages}{10}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procs.2022.12.401
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050922024942
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050922024942
+      \endverb
+      \keyw{Network security,Random Forest,Deep Multi-Layer Perceptron,Adaboost,XGBoost}
+    \endentry
     \entry{anaconda}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0e124327e463ed2c04da9724ae0bf19a}{%
@@ -451,6 +679,63 @@
       \verb{url}
       \verb https://www.stratosphereips.org/stratosphere-ips-suite
       \endverb
+    \endentry
+    \entry{Ge2019DeepLI}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=3d438c130ccb96d97928c61a8073e6b9}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Mengmeng},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06ddd2991d24513f9d26441830560ce5}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Xiping},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8c17369a70e6e96140407f30dcc9f9c}{%
+           family={Syed},
+           familyi={S\bibinitperiod},
+           given={Naeem\bibnamedelima Firdous},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b6af142e91de782981dfae1eb976ac8}{%
+           family={Baig},
+           familyi={B\bibinitperiod},
+           given={Zubair\bibnamedelima A.},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8b8a3ed9dd597c66a95f4380511d7e2}{%
+           family={Teo},
+           familyi={T\bibinitperiod},
+           given={Gideon},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b89ff1679397e08b9131ecc3fe6ee707}{%
+           family={Robles-Kelly},
+           familyi={R\bibinithyphendelim K\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a8383b92f29e76f2cdd6585b641a558}
+      \strng{fullhash}{8d99c288373a514d34e19b278c0aa486}
+      \strng{bibnamehash}{8a8383b92f29e76f2cdd6585b641a558}
+      \strng{authorbibnamehash}{8a8383b92f29e76f2cdd6585b641a558}
+      \strng{authornamehash}{8a8383b92f29e76f2cdd6585b641a558}
+      \strng{authorfullhash}{8d99c288373a514d34e19b278c0aa486}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2019 IEEE 24th Pacific Rim International Symposium on Dependable Computing (PRDC)}
+      \field{title}{Deep Learning-Based Intrusion Detection for IoT Networks}
+      \field{year}{2019}
+      \field{pages}{256\bibrangedash 25609}
+      \range{pages}{25354}
     \endentry
     \entry{rfc7664}{report}{}
       \name{author}{1}{}{%
@@ -603,6 +888,48 @@
       \field{pages}{1\bibrangedash 16}
       \range{pages}{16}
     \endentry
+    \entry{9074929}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a40e7f910536b5852473356c908969c9}{%
+           family={Kachavimath},
+           familyi={K\bibinitperiod},
+           given={Amit\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67f90b0746a1960975d34dba20cf2645}{%
+           family={Nazare},
+           familyi={N\bibinitperiod},
+           given={Shubhangeni\bibnamedelima Vijay},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6aad3d6db4f469495ce6dbef7e071308}{%
+           family={Akki},
+           familyi={A\bibinitperiod},
+           given={Sheetal\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c10f4e4c14f133ca572af252d32bb823}
+      \strng{fullhash}{c10f4e4c14f133ca572af252d32bb823}
+      \strng{bibnamehash}{c10f4e4c14f133ca572af252d32bb823}
+      \strng{authorbibnamehash}{c10f4e4c14f133ca572af252d32bb823}
+      \strng{authornamehash}{c10f4e4c14f133ca572af252d32bb823}
+      \strng{authorfullhash}{c10f4e4c14f133ca572af252d32bb823}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 2nd International Conference on Innovative Mechanisms for Industry Applications (ICIMIA)}
+      \field{title}{Distributed Denial of Service Attack Detection using Naïve Bayes and K-Nearest Neighbor for Network Forensics}
+      \field{year}{2020}
+      \field{pages}{711\bibrangedash 717}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICIMIA48430.2020.9074929
+      \endverb
+    \endentry
     \entry{kismet_2002_kismet}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c800abdbb10755d62c4ce0d841649782}{%
@@ -705,40 +1032,40 @@
     \endentry
     \entry{kolias2015intrusion}{article}{}
       \name{author}{4}{}{%
-        {{un=2,uniquepart=given,hash=1b9116293efb898cb4fcfec1cea5daa2}{%
-           family={Kolias},
+        {{un=0,uniquepart=base,hash=e2472652241dc9c0b900531f6cfd6fab}{%
+           family={{Kolias}},
            familyi={K\bibinitperiod},
-           given={Constantinos},
+           given={C.},
            giveni={C\bibinitperiod},
-           givenun=2}}%
-        {{un=0,uniquepart=base,hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
-           family={Kambourakis},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b99ba8b70e3fb0738d02ab55f61d88b}{%
+           family={{Kambourakis}},
            familyi={K\bibinitperiod},
-           given={Georgios},
+           given={G.},
            giveni={G\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=a60826786eea1e72364eecd44bd4dff7}{%
-           family={Stavrou},
+        {{un=0,uniquepart=base,hash=48b8397830bcb2d285f9e468f17677f5}{%
+           family={{Stavrou}},
            familyi={S\bibinitperiod},
-           given={Angelos},
+           given={A.},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=47540ae2d02cd791312926fa15602cc8}{%
-           family={Gritzalis},
+        {{un=0,uniquepart=base,hash=5808cff45de490db74e32f3cffd3df44}{%
+           family={{Gritzalis}},
            familyi={G\bibinitperiod},
-           given={Stefanos},
+           given={S.},
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{716dde99b28c6248d6a1789e5114eee1}
-      \strng{fullhash}{7b042a8e5899d64f4930b680c1733925}
-      \strng{bibnamehash}{716dde99b28c6248d6a1789e5114eee1}
-      \strng{authorbibnamehash}{716dde99b28c6248d6a1789e5114eee1}
-      \strng{authornamehash}{716dde99b28c6248d6a1789e5114eee1}
-      \strng{authorfullhash}{7b042a8e5899d64f4930b680c1733925}
+      \strng{namehash}{a37e16eb0965a55480ceb4adda85b19a}
+      \strng{fullhash}{3b6db3771ce75457576a51d1b8bb0b9e}
+      \strng{bibnamehash}{a37e16eb0965a55480ceb4adda85b19a}
+      \strng{authorbibnamehash}{a37e16eb0965a55480ceb4adda85b19a}
+      \strng{authornamehash}{a37e16eb0965a55480ceb4adda85b19a}
+      \strng{authorfullhash}{3b6db3771ce75457576a51d1b8bb0b9e}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -752,6 +1079,172 @@
       \field{year}{2016}
       \field{pages}{184\bibrangedash 208}
       \range{pages}{25}
+    \endentry
+    \entry{su14148707}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bfff4fdf2c4f46b2bb6cea5deda246c4}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Thi-Thu-Huong},
+           giveni={T\bibinithyphendelim T\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f48700553911a1f08da5e60508621c76}{%
+           family={Oktian},
+           familyi={O\bibinitperiod},
+           given={Yustus\bibnamedelima Eko},
+           giveni={Y\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e51fdde7725c2a3ca356b95822a3b4a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Howon},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \strng{fullhash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \strng{bibnamehash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \strng{authorbibnamehash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \strng{authornamehash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \strng{authorfullhash}{9f1be5399c342d5a82b27d5b1ba0f78e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Industrial Internet of Things (IIoT) has advanced digital technology and the fastest interconnection, which creates opportunities to substantially grow industrial businesses today. Although IIoT provides promising opportunities for growth, the massive sensor IoT data collected are easily attacked by cyber criminals. Hence, IIoT requires different high security levels to protect the network. An Intrusion Detection System (IDS) is one of the crucial security solutions, which aims to detect the network \& abnormal behavior and monitor safe network traffic to avoid attacks. In particular, the effectiveness of the Machine Learning (ML)-based IDS approach to building a secure IDS application is attracting the security research community in both the general cyber network and the specific IIoT network. However, most available IIoT datasets contain multiclass output data with imbalanced distributions. This is the main reason for the reduction in the detection accuracy of attacks of the ML-based IDS model. This research proposes an IDS for IIoT imbalanced datasets by applying the eXtremely Gradient Boosting (XGBoost) model to overcome this issue. Two modern IIoT imbalanced datasets were used to assess our proposed method \& effectiveness and robustness, X-IIoTDS and TON_IoT. The XGBoost model achieved excellent attack detection with F1 scores of 99.9\% and 99.87\% on the two datasets. This result demonstrated that the proposed approach improved the detection attack performance in imbalanced multiclass IIoT datasets and was superior to existing IDS frameworks.}
+      \field{issn}{2071-1050}
+      \field{journaltitle}{Sustainability}
+      \field{number}{14}
+      \field{title}{XGBoost for Imbalanced Multiclass Classification-Based Industrial Internet of Things Intrusion Detection Systems}
+      \field{volume}{14}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/su14148707
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/14/14/8707
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/14/14/8707
+      \endverb
+    \endentry
+    \entry{s22041407}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=4789b9b5e55d162e365f6a45bec1aed4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Gaoyuan},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf8b1673e07fc7fef7d2317e9c6a2a58}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Huiqi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751c2a1caa2054195a5c7af547424162}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=baca2d4cc45983e734aa75be8b4b653a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cacd034725d0431a7b1f3fd4a060c02}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b712f023802b1a8d81dfba8f1350621}{%
+           family={Nazir},
+           familyi={N\bibinitperiod},
+           given={Shah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f6443d48d28ad7759d4970a3ca4d1e9a}
+      \strng{fullhash}{3ad31cbbbe4fcecdf8e3493904afe278}
+      \strng{bibnamehash}{f6443d48d28ad7759d4970a3ca4d1e9a}
+      \strng{authorbibnamehash}{f6443d48d28ad7759d4970a3ca4d1e9a}
+      \strng{authornamehash}{f6443d48d28ad7759d4970a3ca4d1e9a}
+      \strng{authorfullhash}{3ad31cbbbe4fcecdf8e3493904afe278}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aiming at the intrusion detection problem of the wireless sensor network (WSN), considering the combined characteristics of the wireless sensor network, we consider setting up a corresponding intrusion detection system on the edge side through edge computing. An intrusion detection system (IDS), as a proactive network security protection technology, provides an effective defense system for the WSN. In this paper, we propose a WSN intelligent intrusion detection model, through the introduction of the k-Nearest Neighbor algorithm (kNN) in machine learning and the introduction of the arithmetic optimization algorithm (AOA) in evolutionary calculation, to form an edge intelligence framework that specifically performs the intrusion detection when the WSN encounters a DoS attack. In order to enhance the accuracy of the model, we use a parallel strategy to enhance the communication between the populations and use the L&eacute;vy flight strategy to adjust the optimization. The proposed PL-AOA algorithm performs well in the benchmark function test and effectively guarantees the improvement of the kNN classifier. We use Matlab2018b to conduct simulation experiments based on the WSN-DS data set and our model achieves 99\% ACC, with a nearly 10\% improvement compared with the original kNN when performing DoS intrusion detection. The experimental results show that the proposed intrusion detection model has good effects and practical application significance.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{4}
+      \field{title}{An Enhanced Intrusion Detection Model Based on Improved kNN in WSNs}
+      \field{volume}{22}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.3390/s22041407
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/4/1407
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/4/1407
+      \endverb
+    \endentry
+    \entry{8455962}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fff403ddd096e27fb712f917c12afc1d}{%
+           family={Lopez\bibnamedelima Perez},
+           familyi={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Rocio},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e81f088c7738b66d437b9d21d7cd39b0}{%
+           family={Adamsky},
+           familyi={A\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06d11d5541cb11e2646d9bc4f9324cdb}{%
+           family={Soua},
+           familyi={S\bibinitperiod},
+           given={Ridha},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36282e29e42fcc162832ff91eb9a945d}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9671899b76e389e40ff0d1518ee033cc}
+      \strng{fullhash}{d60e686911a6324ec4f0053df45fa342}
+      \strng{bibnamehash}{9671899b76e389e40ff0d1518ee033cc}
+      \strng{authorbibnamehash}{9671899b76e389e40ff0d1518ee033cc}
+      \strng{authornamehash}{9671899b76e389e40ff0d1518ee033cc}
+      \strng{authorfullhash}{d60e686911a6324ec4f0053df45fa342}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/ 12th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE)}
+      \field{title}{Machine Learning for Reliable Network Attack Detection in SCADA Systems}
+      \field{year}{2018}
+      \field{pages}{633\bibrangedash 638}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/TrustCom/BigDataSE.2018.00094
+      \endverb
     \endentry
     \entry{tensorflow2015-whitepaper}{misc}{}
       \name{author}{40}{}{%
@@ -899,6 +1392,42 @@
       \endverb
       \verb{url}
       \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{7348942}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ab9bcf08d864de16f62df4a541080d3c}{%
+           family={Moustafa},
+           familyi={M\bibinitperiod},
+           given={Nour},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad49f312d7cfb80480a405544bef2958}{%
+           family={Slay},
+           familyi={S\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \strng{fullhash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \strng{bibnamehash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \strng{authorbibnamehash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \strng{authornamehash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \strng{authorfullhash}{146461a5de1dc15ff65a2d918e8a35f2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 Military Communications and Information Systems Conference (MilCIS)}
+      \field{title}{UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set)}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/MilCIS.2015.7348942
       \endverb
     \endentry
     \entry{Mughaid2022}{article}{}
@@ -1092,6 +1621,48 @@
       \field{pages}{2825\bibrangedash 2830}
       \range{pages}{6}
     \endentry
+    \entry{8746576}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=752c300ceb73bed4549e47e326ad034b}{%
+           family={Ran},
+           familyi={R\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75ae9393d888e741a9bd152f5df78b88}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Yidong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e1515402435a986c0ab6db2f33f3f41}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Bihua},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c1a1f044bf832922723175fdfd5edca8}
+      \strng{fullhash}{c1a1f044bf832922723175fdfd5edca8}
+      \strng{bibnamehash}{c1a1f044bf832922723175fdfd5edca8}
+      \strng{authorbibnamehash}{c1a1f044bf832922723175fdfd5edca8}
+      \strng{authornamehash}{c1a1f044bf832922723175fdfd5edca8}
+      \strng{authorfullhash}{c1a1f044bf832922723175fdfd5edca8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE 89th Vehicular Technology Conference (VTC2019-Spring)}
+      \field{title}{A Semi-Supervised Learning Approach to IEEE 802.11 Network Anomaly Detection}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/VTCSpring.2019.8746576
+      \endverb
+    \endentry
     \entry{roundy_iot_nodate}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f3450870a72da675a05b49d564e927d5}{%
@@ -1129,6 +1700,56 @@
       \endverb
       \verb{url}
       \verb https://enterprise.verizon.com/resources/articles/iot-device-security-challenges-and-solutions
+      \endverb
+    \endentry
+    \entry{pub.1154431160}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2f8df74b617359e21fc573b7644b468f}{%
+           family={Saini},
+           familyi={S\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fa347e3a681f988a7143ed5d118e30b}{%
+           family={Halder},
+           familyi={H\bibinitperiod},
+           given={Debajyoti},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00861203635b271bb47f33e5a9dc6777}{%
+           family={Baswade},
+           familyi={B\bibinitperiod},
+           given={Anand\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \strng{fullhash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \strng{bibnamehash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \strng{authorbibnamehash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \strng{authornamehash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \strng{authorfullhash}{b69e119bc72eb0d8ff5f778f1d445325}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the advent of new IEEE 802.11ax (WiFi 6) devices, enabling security is a priority. Since previous versions were found to have security vulnerabilities, the WiFi Protected Access 3 (WPA3) was introduced to fix the most common security flaws. Although WPA3 is an improvement over its predecessor in terms of security, recently, it was found that WPA3 has a few security vulnerabilities as well. In this paper, we have mentioned the previously known vulnerabilities in WPA3 and WPA2. In addition, we have created our dataset based on WPA3 attacks. We have proposed a two-stage solution for detecting an intrusion in the network. The two-stage approach will help ease the computational processing burden of an AP and WLAN Controller. First, Access Point (AP) will perform a lightweight, simple operation for some duration (say 500ms) at a particular time interval. Upon discovering any abnormality in the flow of traffic, an ML-based solution at the controller will detect the type of attack. Our approach is to utilize resources on AP and the back-end controller with a certain optimization level. We have achieved over 99\% accuracy in attack detection using a Machine Learning (ML) based solution. We have also publicly provided our code and dataset for the open-source research community so that it can contribute to future research work.}
+      \field{booktitle}{GLOBECOM 2022 - 2022 IEEE Global Communications Conference}
+      \field{note}{http://arxiv.org/pdf/2207.02489}
+      \field{title}{RIDS: Real-time Intrusion Detection System for WPA3 enabled Enterprise Networks}
+      \field{year}{2022}
+      \field{pages}{43\bibrangedash 48}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/globecom48099.2022.10001501
+      \endverb
+      \verb{urlraw}
+      \verb https://app.dimensions.ai/details/publication/pub.1154431160
+      \endverb
+      \verb{url}
+      \verb https://app.dimensions.ai/details/publication/pub.1154431160
       \endverb
     \endentry
     \entry{10.4108/eai.27-11-2021.2315535}{inproceedings}{}
@@ -1225,6 +1846,112 @@
       \verb 10.1109/TNSM.2020.3036138
       \endverb
     \endentry
+    \entry{10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f70f8549e591ac0a7dc93d5818e8a974}{%
+           family={Siriwardhana},
+           familyi={S\bibinitperiod},
+           given={Yushan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \strng{fullhash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \strng{bibnamehash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \strng{authorbibnamehash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \strng{authornamehash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \strng{authorfullhash}{f70f8549e591ac0a7dc93d5818e8a974}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361}}
+      \field{month}{12}
+      \field{note}{Yushan Siriwardhana}
+      \field{title}{5G-NIDD: A Comprehensive Network Intrusion Detection Dataset Generated over 5G Wireless Network}
+      \field{year}{2022}
+    \endentry
+    \entry{DBLP:journals/corr/abs-2105-15103}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b7e6512bb8d1bae197a69c3bef92c7d}{%
+           family={Sivalingam},
+           familyi={S\bibinitperiod},
+           given={Krishna\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \strng{fullhash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \strng{bibnamehash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \strng{authorbibnamehash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \strng{authornamehash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \strng{authorfullhash}{8b7e6512bb8d1bae197a69c3bef92c7d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Applications of Artificial Intelligence, Machine Learning and related techniques for Computer Networking Systems}
+      \field{volume}{abs/2105.15103}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2105.15103
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2105.15103
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2105.15103
+      \endverb
+    \endentry
+    \entry{smys2020hybrid}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0296ca7ee3dda8a37225f7e8dae2e816}{%
+           family={Smys},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7515256e0d17425c3fd7c9bd244a15e4}{%
+           family={Basar},
+           familyi={B\bibinitperiod},
+           given={Abul},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8586b5a7885bff2a96a778bb07a8fe3}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haoxiang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4824091298f51502e09082e4d02ae557}
+      \strng{fullhash}{4824091298f51502e09082e4d02ae557}
+      \strng{bibnamehash}{4824091298f51502e09082e4d02ae557}
+      \strng{authorbibnamehash}{4824091298f51502e09082e4d02ae557}
+      \strng{authornamehash}{4824091298f51502e09082e4d02ae557}
+      \strng{authorfullhash}{4824091298f51502e09082e4d02ae557}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of ISMAC}
+      \field{number}{04}
+      \field{title}{Hybrid intrusion detection system for internet of things (IoT)}
+      \field{volume}{2}
+      \field{year}{2020}
+      \field{pages}{190\bibrangedash 199}
+      \range{pages}{10}
+    \endentry
     \entry{10150/666297}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c104bbe7e742c4a8aa34638459015195}{%
@@ -1258,6 +1985,62 @@
       \endverb
       \verb{url}
       \verb http://hdl.handle.net/10150/666297
+      \endverb
+    \endentry
+    \entry{electronics12112355}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7a2cdf5a8499dad290eaf7934d0ced85}{%
+           family={Uszko},
+           familyi={U\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fce97ad2fa8522d3963a7c81300ed5de}{%
+           family={Kasprzyk},
+           familyi={K\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac7e10da77966b8624210c1729e1dda7}{%
+           family={Natkaniec},
+           familyi={N\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44e392a48f65dca57b60376cd40aa63c}{%
+           family={Chołda},
+           familyi={C\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09e2d988281caf72b1f1b7cf2212ffa2}
+      \strng{fullhash}{dccf9210e41b35c2c6b9e362e8226849}
+      \strng{bibnamehash}{09e2d988281caf72b1f1b7cf2212ffa2}
+      \strng{authorbibnamehash}{09e2d988281caf72b1f1b7cf2212ffa2}
+      \strng{authornamehash}{09e2d988281caf72b1f1b7cf2212ffa2}
+      \strng{authorfullhash}{dccf9210e41b35c2c6b9e362e8226849}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The purpose of this paper is to design and implement a complete system for monitoring and detecting attacks and anomalies in 5G wireless local area networks. Regrettably, the development of most open source systems has been stopped, making them unable to detect emerging forms of threats. The system provides a modular framework to create and add new detection rules as new attacks emerge. The system is based on packet analysis modules and rules and incorporates machine learning models to enhance its efficiency. The use of rule-based detection establishes a strong basis for the identification of recognized threats, whereas the additional implementation of machine learning models enables the detection of new and emerging attacks at an early stage. Therefore, the ultimate aim is to create a tool that constantly evolves by integrating novel attack detection techniques. The efficiency of the system is proven experimentally with accuracy levels up to 98.57\% and precision as well as recall scores as high as 92\%.}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{number}{11}
+      \field{title}{Rule-Based System with Machine Learning Support for Detecting Anomalies in 5G WLANs}
+      \field{volume}{12}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/electronics12112355
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/12/11/2355
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/12/11/2355
       \endverb
     \endentry
     \entry{krack}{inproceedings}{}

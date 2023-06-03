@@ -2,31 +2,30 @@
 
 \subsubsection{Encoding}
 
-One of the main decisions when building a model for a classification problem is the choice of encoding such as label, ordinal and one-hot encoding.
+One of the main decisions when building a model for a classification problem is the choice of encoding, such as label, ordinal and one-hot encoding.
 
-One-hot encoding was chosen to encode the categorical data for our models, a binary vector is created for each category, and at once only one element is set to 1 (referred to as 'Hot' i.e True) and the rest set to 0 (referred to as 'Cold' i.e. False). This approach will avoid assigning arbitrary numerical values to each variable that the model may interpret as having a weighting depending on its value. 
+One-hot encoding was chosen to encode the categorical data for the models; a binary vector is created for each category, and at once only one element is set to 1 (referred to as 'Hot' i.e. True) and the rest set to 0 (referred to as 'Cold' i.e. False). This approach will avoid assigning arbitrary numerical values to each variable that the model may interpret as having a weighting depending on its value. 
 
-Ensemble Classifiers such as Random Forest do not require the target variable i.e. Labels to be encoded and can be interpreted as a string e.g. Normal, SSH, Malware etc. However, for deep learning, K-Nearest Neighbor and XGBoost we also utilised One-Hot Encoding to encode the target variable. Refer to \ref{appx:OHE Encoding} for the code used to One-Hot Encode the categorical features. 
-
+Ensemble Classifiers such as Random Forest do not require the target variable, i.e. Labels, to be encoded and can be interpreted as a string, e.g. Normal, SSH, Malware etc. However, for deep learning, K-Nearest Neighbor and XGBoost, One-Hot Encoding were used to encode the target variable. Refer to \ref{appx:OHE Encoding} for the code used to One-Hot Encode the categorical features. 
 
 \subsubsection{Normalisation}
 
-Scaling was performed on the dataset for normalisation to help normalise all numerical values and bring features to a similar scale. MinMax scaler was chosen to scale the data between 0 and 1. As a linear scaling method, it helps preserve the original distribution's shape, ensuring it does not affect the underlying relationship between the different features in the data. Refer to \ref{appx:Scaling} for the code used to perform the MinMax scaler on the numerical features in the dataset.
+Scaling was performed on the dataset for normalisation to help normalise all numerical values and bring features to a similar scale. Some algorithms are sensitive to the scale and may put more importance on certain features if not scaled. MinMax scaler was chosen to scale the data between 0 and 1. As a linear scaling method, it helps preserve the original distribution's shape, ensuring it does not affect the underlying relationship between the different features in the data. Refer to \ref{appx:Scaling} for the code used to perform the MinMax scaler on the numerical features in the dataset.
 
 \subsection{Data Balancing}
 
-At its core, the dataset is imbalanced, with a majority of 'Normal' data with varying ranges of available malicious data from each attack class. Consideration was taken to utilise data balancing methods such as SMOTE and Random under/oversampling to help distribute the data. However, in a normal environment one would expect an overwhelming majority of Normal network traffic, therefore to best represent a real-life scenario, the data was kept imbalanced, ensuring changes were not made to the underlying distribution of the dataset. Refer to Table \ref{tab:split_data} for the distribution of each class respectively before and after splitting into the train and test sets.
+The dataset is imbalanced at its core, with most 'Normal' data with varying ranges of available malicious data from each attack class. Consideration was taken to utilise data balancing methods such as SMOTE and random under/oversampling to help distribute the data. However, in a typical environment, one would expect an overwhelming majority of Normal network traffic; therefore, to best represent a real-life scenario, the data was kept imbalanced, ensuring changes were not made to the underlying distribution of the dataset. Refer to Table \ref{tab:split_data} for the distribution of each class respectively before and after splitting into the train and test sets.
 
 
 \subsection{Data Split}
 
-A stratified train-test split was performed on the dataset by splitting the entire dataset into training and testing sets to ensure the distribution of the target variable i.e. Label is the same in both sets. When training a machine learning model, the testing set is used to evaluate the performance of the model to help prevent overfitting. Overfitting can occur when the model learns all of the features and relationships of the training data; almost memorising the data. Subsequently, it struggles to predict new, unseen data.
+A stratified train-test split was performed on the dataset by splitting the entire dataset into training and testing sets to ensure the distribution of the target variable, i.e. Label is the same in both sets. When training a machine learning model, the testing set is used to evaluate the model's performance to help prevent overfitting. Overfitting can occur when the model learns all of the training data's features and relationships, almost memorising the data. Subsequently, it struggles to predict new, unseen data.
 
 \begin{table}[H]
 \begin{tabular}{llll}
 \textbf{Class}   & \textbf{Train Data (70\%)} & \textbf{Test Data (30\%)} & \textbf{Whole Data (100\%)} \\ \hline
 Normal           & 10,668,482                       &   4,572,206           & 12,192,550                  \\
-SDDP             & 3,849,896                &     1,649,955            & 4,399,881                   \\
+SSDP             & 3,849,896                &     1,649,955            & 4,399,881                   \\
 Website Spoofing & 283,576            &     121,533       & 324,087                     \\
 Malware          &  92,112                     &     39,476               & 105,270                     \\
 Botnet           & 39,806                    &     17,060          & 45,493                      \\
@@ -37,11 +36,9 @@ SQL Injection    & 1,840                &     789                  & 2,103      
 \label{tab:split_data}
 \end{table}
 
-Analysing the split, we observe a large imbalance of data between each class of attack, in particular, SQL Injection makes up less than 0.01\% of the entire dataset, with SSDP taking the majority 21\% of the data. 
+Analysing the split, we observe a significant imbalance of data between each class of attack; in particular, SQL Injection makes up less than 0.01\% of the entire dataset, with SSDP taking the majority at 21\% of the data. 
 
 
 \subsection{Cross Validation}
 
-Due to the imbalanced nature of the datasets, stratified k-fold cross-validation with a k value of 10 was used, similar to the works carried out by \textcite{s22155633}. The training set is split into 10 folds, the model is then trained on all folds, except one called the validation set. The model is then tested on the validation set for its performance metrics and recorded. This is then repeated for all 10 folds, so each fold is used as a validation set. The results are then averaged to better represent the model's training performance across the data. Stratified split ensures each fold contains the same proportion of samples within each class to preserve the underlying structure of the data. 
-
-Finally, after Cross Validation, the model is trained using the full training set and evaluated based on the testing set to obtain a final measure of performance, before finally saving the model.
+Due to the imbalanced nature of the datasets, stratified k-fold cross-validation with a k value of 10 was used, similar to the works carried out by \textcite{s22155633}. The training set is split into ten folds; the model is then trained on all folds except the validation set. The model is then tested on the validation set for its performance metrics and recorded. This is repeated for all ten folds, so each is used as a validation set. The results are then averaged to better represent the model's training performance across the data. Stratified split ensures each fold contains the same proportion of samples within each class to preserve the underlying structure of the data. Finally, after Cross Validation, the model is trained using the entire training set and evaluated based on the testing set to obtain a final performance measure before saving the model.

@@ -3,7 +3,7 @@
 \subsubsection{XGBoost}
 \label{sec:xgboost}
 
-A series of models were trained and this model followed both an exploratory and iterative approach, RandomizedSearchCV was also utilised in the training phase to optimise hyperparameters. Table \ref{tab:xgboost-parameters} shows the parameters used for each model, \textbf{-} denotes that no value was used, i.e., the default value was used.
+A series of models were trained using an exploratory and iterative approach; RandomizedSearchCV was also utilised in the training phase to optimise hyperparameters. Table \ref{tab:xgboost-parameters} shows the parameters used for each model, \textbf{-} denotes that no value was used, i.e., the default value was used.
 
 \begin{table}[h]
   \centering
@@ -31,13 +31,13 @@ A series of models were trained and this model followed both an exploratory and 
 
 Initial experimentation began with the XGBoost classifier being trained with default parameters across a range of subsets of data, 60\%, 80\% and 100\% as shown in models 0, 1 and 6. Additionally, model 1 further incorporated Stratified Cross Validation during training. This was used to establish clear baseline performance of the classifiers and helped to provide context when tuning parameters.
 
-Where available, the VM machine was used for training, allowing XGBoost to maximise its performance on the dedicated GPU. Early stopping and regularisation were added in subsequent models to help avoid the model from overfitting on the training data. e.g. in Model 3 only early stopping and regularisation were added and no noticeable performance increase/decrease was observed. 
+Where available, the VM machine was used for training, allowing XGBoost to maximise its performance on the dedicated GPU. Early stopping and regularisation were added in subsequent models to help avoid the model from overfitting on the training data. However, in Model 3, early stopping and regularisation were added, with no noticeable performance increase/decrease observed. 
 
 \subsubsection*{Parameter Tuning}
 
 An attempt was made to utilise GridSearchCV for parameter optimisation; significant setbacks were encountered in achieving a successful execution due to numerous errors, system crashes, and exceptionally high grid search time. In light of the difficulties faced with GridSearchCV, RandomizedSearchCV was utilised. 
 
-Despite challenges faced with GridSearchCV, initial experimentation with 5 CV on a smaller parameter grid on the 80\% dataset was successful and subsequent parameters were tested with models 5 and 8. An additional RandomizedSearchCV was run on the entire dataset and combined with stratified 10-fold cross-validation to ensure the best-found parameters were verified and proved consistent across the 10 folds.
+Initial experimentation with parameter searching on a smaller grid on the 80\% dataset was successful, and subsequent parameters were tested with models 5 and 8. An additional RandomizedSearchCV was run on the entire dataset and combined with stratified 10-fold cross-validation to ensure the best-found parameters were verified and consistent across the ten folds.
 
 See Listing \ref{lst:param_grid_xgb} for the parameter grids used.
 
@@ -65,7 +65,7 @@ rgs_param_grid = {
 \begin{table}[H]
 \captionsetup{justification=centering} 
 \centering
-\caption{XGBoost GridSearch Parameters}
+\caption{XGBoost GridSearch Best Parameters}
 \begin{tabular}{lll}
 \hline
 \textbf{Parameter} & \textbf{GS} & \textbf{RGS} \\ \hline
@@ -85,4 +85,19 @@ N Estimators & 300 &  200 \\ \hline
 \textbf{Best Found Parameters}
 \medskip
 
-The parameter tuning process helped to identify a set of optimal parameters using RandomisedSearchCV, as detailed in Table \ref{tab:xg_gs_parameters}. These parameters were used to create Model 10. Subsequent models created afterwards, from additional parameter tuning did not show a sign of noticeable improvement in the model's performance. Due to limited time and computational power, further parameter tuning was not performed, and the decision was made here to stop further experiments.
+The parameter tuning process helped to identify a set of optimal parameters using RandomisedSearchCV, as detailed in Table \ref{tab:xg_gs_parameters}. These parameters were used to create Model 10. Subsequent models made afterwards, from additional parameter tuning, did not show a noticeable improvement in the model's performance. Due to limited time and computational power, further parameter tuning was not performed, and the decision was made here to stop further experiments.
+
+\subsubsection{K-Nearest Neighbor}
+
+During initial experimentation, KNN took over 22 hours to predict on the test set following training - Figure \ref{fig:knn_train}. Additionally, utilising the VM machine to train, KNN took over 28 hours to predict the data test set and crashed the system multiple times before results or evidence could be gathered. KNN's algorithm means it does not build and store a model during training but keeps them in memory. As a result, predicting on the test set required high computational power as KNN searches for the K-nearest neighbour from the training set. Due to a large number of features, this further increases the computational power required for these tasks. This was deemed too long for real-world applications where detecting network attacks would be time-sensitive. As network attacks can occur quickly, an IDS using ML algorithms needs a quick response to detect these attacks.
+
+Therefore, despite the advantages of KNN, such as being easy to implement and interpret, the prioritisation of speed and accuracy in this work led to the ultimate decision not to continue with this classifier. Consequently, the results for this classifier remain inconclusive.
+
+\medskip
+
+\begin{figure}[h]
+\caption{Training Time for KNN Classifier}
+\label{fig:knn_train}
+\centering
+\includegraphics[width=\textwidth]{Appendices/Images/knn_predict-2023-04-15.png}
+\end{figure}

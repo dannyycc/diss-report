@@ -1,34 +1,26 @@
-
-
-\subsection{Feature Selection}
-
-Similar to the work carried out by \textcite{s22155633}, six attacks out of the 21 from AWID3 were concentrated, namely Botnet, Malware, SSH, SQL Injection, SSDP Amplification and Website Spoofing, these are attacks that originate from the application layer and forms a good scope of research for this project. 
-
-This work aims to combine the (16) 802.11 and (17) non-802.11 features from \cite{s22155633} with a set of chosen application layer features with the aim to detect and classify the different application layer attacks. As previously established, existing research determined a high degree of accuracy and performance when combining both the 802.11 and non-802.11 features together, but a lack of research into determining if including additional application layer features would provide grounds for a further context into developing a machine learning model and affect its overall performance.
+This work aims to combine the (16) 802.11 and (17) non-802.11 features from \textcite{s22155633} with a set of chosen application layer features to detect and classify the different application layer attacks. As previously established, existing research determined a high degree of accuracy and performance when combining the 802.11 and non-802.11 features. Still, there is a lack of research into whether including additional application layer features would provide grounds for further context into developing a machine learning model and affect its overall performance.
 
 \subsubsection{Application Layer Features}
 
-The AWID3 dataset contains 254 features within each of its attack CSV files, including application layer features in a decrypted format; provided by the decryption keys. While this may not be readily available in most cases, within an organization's internal network in the context of an IDS, some application layer features will be accessible, such as any unencrypted DNS, HTTP, SMB, and NBNS traffic since the keys to protected 802.11 wireless networks would be available. However, to ensure data privacy and avoid bias from information specific to the AWID3 environment or containing identifiable information such as URLs and IP addresses, these features were not selected for this study. Therefore, the selected application layer features can be seen in Table~\ref{tab:application_features}. By combining these selected application layer features, this study aims to develop a machine learning classifier capable of accurately distinguishing between the different types of attacks.
+The AWID3 dataset contains 254 features within each attack CSV file, including application layer features in a decrypted format; provided by the decryption keys. While this may not be readily available in most cases, within an organisation's internal network in the context of an IDS, some application layer features will be accessible, such as any unencrypted DNS, HTTP, SMB, and NBNS traffic, since the keys to protected 802.11 wireless networks would be available. However, these features were not selected for this study to ensure data privacy and avoid bias from information specific to the AWID3 environment or containing identifiable information such as URLs and IP addresses. Therefore, the selected application layer features can be seen in Table~\ref{tab:application_features}. By combining these selected application layer features, this study aims to develop a machine learning classifier capable of accurately distinguishing between the different types of attacks.
 
 \begin{table}[H]
 \centering
 \begin{tabular}{lcc}
 \hline
-\multicolumn{3}{c}{\textbf{Application Layer Features (15)}} \\ \hline
+\multicolumn{3}{c}{\textbf{Application Layer Features (13)}} \\ \hline
 Feature Name & Preprocessing Method & Data Type \\ \hline
 nbns & OHE & object \\
 ldap & OHE & object \\
 dns & OHE & object \\
 http.content\_type & OHE & object \\
 http.request.method & OHE & object \\
-nbss.type & OHE & int64 \\
 smb2.cmd & OHE & int64 \\
 http.response.code & OHE & int64 \\
 ssh.message\_code & OHE & int64 \\
 nbss.length & Min-Max & int64 \\
 dns.count.answers & Min-Max & int64 \\
 dns.count.queries & Min-Max & int64 \\
-dns.resp.len & Min-Max & int64 \\
 dns.resp.ttl & Min-Max & int64 \\
 ssh.packet\_length & Min-Max & int64 \\ \hline
 \end{tabular}
@@ -36,26 +28,38 @@ ssh.packet\_length & Min-Max & int64 \\ \hline
 \label{tab:application_features}
 \end{table}
 
-%% TODO Talk about how 19 were originally chosen, but 4 were dropped cus there were no values in the dataset for those columns.
+The section below covers each of the selected features and their justification in more detail.
 
-The section below covers in more detail each of the selected features and their justification.
-
-NetBIOS name service can be used to identify the names of machines on a network. The \textit{nbns} feature combined with the \textit{nbss.type} and \textit{nbss.length} can provide context into the connections made between machines on a network without including AWID3 specific information. Different types of session packets can be indicative of certain activities such as file transfers and remote execution etc. The length of the packets can also help to identify any anomalous activity that may be useful for a machine learning classifier. 
+NetBIOS name service can be used to identify the names of machines on a network. The \textit{nbns} feature combined with the \textit{nbss.type} and \textit{nbss.length} can provide context into the connections made between machines on a network without including AWID3 specific information. Different types of session packets can be indicative of particular activities, such as file transfers and remote execution etc. The packets' length can also help identify any anomalous activity useful for a machine learning classifier. 
 
 \medskip
-\textit{http.content\_type, request.method and response.code}: These features relate to the HTTP used for web browsing. They can provide insights into the type of content accessed by an attacker, the type of request method used, and the HTTP response code that was received. These HTTP features can be used to help identify potential attacks exploiting web-based vulnerabilities such as SQL Injections or Website Spoofing.
+\textit{http.content\_type, request.method and response.code}: These features relate to the HTTP used for web browsing. They can provide insights into the type of content accessed by an attacker, the type of request method used, and the HTTP response code received. These HTTP features can help identify potential attacks exploiting web-based vulnerabilities such as SQL Injections or Website Spoofing.
 
 \medskip
-Domain Name System (DNS) is responsible for translating human-readable domain names to IP addresses. \textit{dns.count.answers, count.queries, resp.len, and resp.ttl} chosen can provide additional information about DNS traffic, such as the number of queries and answers, the response length, and the time to live of each response. These can be used to help identify potential reconnaissance attacks and provide insights into the network traffic patterns to identify potential DNS-based attacks such as DNS spoofing, cache poisoning, or tunnelling.
+Domain Name System (DNS) converts domain names to IP addresses. \textit{dns.count.answers, count.queries, resp.len, and resp.ttl} chosen can provide additional information about DNS traffic, such as the number of queries and answers, the response length, and the time to live of each response. These can help identify potential reconnaissance attacks and provide insights into the network traffic patterns to identify possible DNS-based attacks such as DNS spoofing, cache poisoning, or tunnelling.
 
 \medskip
-SMB (Server Message Block) is a client-server communication protocol used for sharing resources such as files and printers, in 2017 several Remote Code Execution vulnerabilities were discovered relating to the SMB protocol, including the wider known MS17-010 Eternal Blue exploit. By examining SMB activity, the \textit{smb.cmd} we can determine different access types such as SMB access attempts, SMB file transfers, or SMB authentication requests, using this it may be possible to identify anomalous behaviour that could be indicative of an attack. 
+SMB (Server Message Block) is a client-server communication protocol used for sharing resources such as files and printers; in 2017, several Remote Code Execution vulnerabilities were discovered relating to the SMB protocol, including the wider known MS17-010 Eternal Blue exploit. By examining SMB activity, the \textit{smb.cmd} we can determine different access types such as SMB access attempts, SMB file transfers, or SMB authentication requests; using this, it may be possible to identify abnormal behaviour indicative of an attack. 
 
-\subsubsection{802.11 Features}
+Initially, 19 application layer features were chosen to be included in this research; however, in the later stages of data preprocessing, six features, as seen below, were dropped as they were found to contain zero values for the selected attack classes. Therefore, it was concluded to exclude these features. 
 
-The works by \cite{pick_quality_over} 
+\begin{itemize}
+	\item nbss.type
+	\item smb.access.generic\_execute
+	\item smb.access.generic\_read
+	\item smb.access.generic\_write
+	\item smb.flags.response
+	\item dns.resp.len
+\end{itemize}
 
-\begin{table}[hp]
+
+\subsubsection{802.11 and Non-802.11 Features}
+
+The selection of 802.11 and non-802.11 features was chosen primarily based on the findings of two previous literature papers, \parencite{pick_quality_over, s22155633} which demonstrated high performance and results in similar research and work in the same problem domain. Consideration was made to carry out feature selection. Still, by building on the proven success of existing literature, this project aims to help contribute and validate the claims made by the selected features in the context of detecting network attacks on the AWID3 dataset. 
+
+Table \ref{tab:802.11_features} and Table~\ref{tab:non80211} show the 802.11 and non-802.11 features used for this project. The wireless-specific features, such as the radio signal strength, duration, frame lengths etc., have proven to be important in detecting attacks, as observed from the previous papers. It consists of Transport layer (TCP \& UDP) protocol features responsible for data transfer, and ARP features that operate on the Data-link layer to resolve Mac addresses.
+
+\begin{table}[H]
 \centering
 \begin{tabular}{lcc}
 \hline
@@ -81,10 +85,6 @@ wlan\_radio.signal\_dbm & Min-Max & int64 \\ \hline
 \caption{The selected set of 802.11 features.}
 \label{tab:802.11_features}
 \end{table}
-
-\subsubsection{Non-802.11 Features}
-
-Table~\ref{tab:non80211} shows the non-802.11 features used in the analysis. It consists of Transport layer (TCP \& UDP) protocols features responsible for data transfer and ARP features that operate on the Data-link layer to resolve Mac addresses. By analysing 
 
 \begin{table}[H]
 \centering

@@ -1,87 +1,110 @@
 \contentsline {section}{Abstract}{ii}{section*.1}%
 \contentsline {section}{Abbreviations}{iii}{section*.2}%
-\contentsline {section}{List of Figures}{vii}{section*.4}%
-\contentsline {section}{List of Tables}{vii}{section*.5}%
+\contentsline {section}{List of Figures}{viii}{section*.4}%
+\contentsline {section}{List of Tables}{viii}{section*.5}%
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {subsubsection}{\numberline {1.0.1}Wireless Networks And Attacks}{1}{subsubsection.1.0.1}%
-\contentsline {subsubsection}{\numberline {1.0.2}Intrusion Detection Systems}{2}{subsubsection.1.0.2}%
-\contentsline {subsection}{\numberline {1.1}Research Questions and Objectives}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Literature Review}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Intrusion Detection Systems}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Datasets}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {1.1}Wireless Networks And Attacks}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Intrusion Detection Systems}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Research Questions and Objectives}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Datasets}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Intrusion Detection Systems}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Detecting Network Attacks}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Machine Learning Algorithms}{6}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Random Forest}{7}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}K-Nearest Neighbor}{7}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}XGBoost}{7}{subsubsection.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.4.4}Neural Networks}{7}{subsubsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.5}Summary}{8}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Methodology}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}AWID3 Dataset}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Code Environment}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {2.4}Machine Learning Algorithms}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Summary}{9}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Methodology}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ethics \& Risks}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Code Environment}{10}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Libraries}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Feature Selection}{11}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Application Layer Features}{11}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}802.11 Features}{13}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Non-802.11 Features}{13}{subsubsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.5}Dataset Manipulation}{15}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Data Pre-Processing}{18}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Encoding}{18}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Normalisation}{18}{subsubsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.7}Data Balancing}{18}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Data Split}{19}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Cross Validation}{19}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Evaluation Metrics}{20}{subsection.3.10}%
-\contentsline {section}{\numberline {4}Experiments}{23}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Initial Modelling}{23}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Parameter Tuning}{23}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Classifiers}{24}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Random Forest}{24}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}XGBoost}{26}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}KNN Classifier}{29}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Neural Networks}{30}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Multi-Layer Perceptron (MLP)}{30}{subsubsection.4.4.1}%
-\contentsline {section}{\numberline {5}Analysis Of Results}{33}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Random Forest}{33}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}XGBoost}{36}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}MLP}{39}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Comparison of Models}{42}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Limitations}{48}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Recommendations}{48}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Conclusion}{49}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Summary Of Findings}{49}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Objectives}{50}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Contributions}{50}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Limitations}{51}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Future Work}{51}{subsection.6.5}%
-\contentsline {section}{References}{53}{section*.63}%
-\contentsline {section}{Appendices}{56}{section*.63}%
-\contentsline {section}{\numberline {A}Ethical Approval}{56}{appendix.a.A}%
-\contentsline {section}{\numberline {B}Dataset Manipulation}{57}{appendix.a.B}%
-\contentsline {subsection}{\numberline {B.1}CSV Combiner Script}{57}{subsection.a.B.1}%
-\contentsline {subsection}{\numberline {B.2}Feature Extraction \& Reduction}{58}{subsection.a.B.2}%
-\contentsline {section}{\numberline {C}Conda Environments}{60}{appendix.a.C}%
-\contentsline {subsection}{\numberline {C.1}Neural Networks - Apple Silicon}{60}{subsection.a.C.1}%
-\contentsline {subsection}{\numberline {C.2}Classifiers}{60}{subsection.a.C.2}%
-\contentsline {section}{\numberline {D}Data Preprocessing}{61}{appendix.a.D}%
-\contentsline {subsection}{\numberline {D.1}MinMax Scaling}{61}{subsection.a.D.1}%
-\contentsline {subsection}{\numberline {D.2}OHE Encoding}{61}{subsection.a.D.2}%
-\contentsline {subsection}{\numberline {D.3}Label Encoding}{62}{subsection.a.D.3}%
-\contentsline {subsection}{\numberline {D.4}Loading Dataset}{62}{subsection.a.D.4}%
-\contentsline {section}{\numberline {E}Classifiers}{64}{appendix.a.E}%
-\contentsline {subsection}{\numberline {E.1}K-Nearest Neighbor (KNN)}{64}{subsection.a.E.1}%
-\contentsline {subsection}{\numberline {E.2}Random Forest}{66}{subsection.a.E.2}%
-\contentsline {subsubsection}{\numberline {E.2.1}RF Model ID 0 - Raw Metrics}{66}{subsubsection.a.E.2.1}%
-\contentsline {subsubsection}{\numberline {E.2.2}RF Model ID 1 - Raw Metrics}{69}{subsubsection.a.E.2.2}%
-\contentsline {subsubsection}{\numberline {E.2.3}RF Model ID 1 - Raw Metrics}{70}{subsubsection.a.E.2.3}%
-\contentsline {subsubsection}{\numberline {E.2.4}RF Model ID 2 - Raw Metrics}{71}{subsubsection.a.E.2.4}%
-\contentsline {subsubsection}{\numberline {E.2.5}RF Model ID 3 - Raw Metrics}{72}{subsubsection.a.E.2.5}%
-\contentsline {subsubsection}{\numberline {E.2.6}RF Model ID 4 - Raw Metrics}{73}{subsubsection.a.E.2.6}%
-\contentsline {subsubsection}{\numberline {E.2.7}RF Model ID 5 - Raw Metrics}{74}{subsubsection.a.E.2.7}%
-\contentsline {subsection}{\numberline {E.3}XGBoost}{75}{subsection.a.E.3}%
-\contentsline {subsubsection}{\numberline {E.3.1}Stock 100\% - XGBoost Raw Metrics}{75}{subsubsection.a.E.3.1}%
-\contentsline {subsubsection}{\numberline {E.3.2}Stock 100\% - XGBoost CM}{76}{subsubsection.a.E.3.2}%
-\contentsline {subsubsection}{\numberline {E.3.3}Stock 100\% - XGBoost Feature Importance}{77}{subsubsection.a.E.3.3}%
-\contentsline {section}{\numberline {F}Neural Networks}{78}{appendix.a.F}%
-\contentsline {subsection}{\numberline {F.1}MLP NN v1}{78}{subsection.a.F.1}%
-\contentsline {subsubsection}{\numberline {F.1.1}MLP Neural Network}{78}{subsubsection.a.F.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1}Application Layer Features}{12}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}802.11 and Non-802.11 Features}{14}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Dataset Manipulation}{16}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Data Pre-Processing}{19}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Encoding}{19}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Normalisation}{19}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Data Balancing}{19}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Data Split}{20}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Cross Validation}{20}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Machine Learning Algorithms}{21}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}Random Forest}{21}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}K-Nearest Neighbor}{21}{subsubsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.3}XGBoost}{21}{subsubsection.3.10.3}%
+\contentsline {subsubsection}{\numberline {3.10.4}Multi-Layer Perceptron}{22}{subsubsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.11}Evaluation Metrics}{23}{subsection.3.11}%
+\contentsline {section}{\numberline {4}Experiments}{26}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Initial Modelling}{26}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Parameter Tuning}{26}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Classifiers}{27}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Random Forest}{27}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}XGBoost}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}K-Nearest Neighbor}{31}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Neural Networks}{32}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Multi-Layer Perceptron (MLP)}{32}{subsubsection.4.4.1}%
+\contentsline {section}{\numberline {5}Analysis Of Results}{35}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Random Forest}{35}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}XGBoost}{38}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}MLP}{41}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comparison of Models}{44}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Feature Importance}{51}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Limitations}{51}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Recommendations}{52}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Conclusion}{53}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Summary Of Findings}{53}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Project Review}{54}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Objectives}{54}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Contributions}{55}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Limitations}{55}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Future Work}{56}{subsection.6.6}%
+\contentsline {section}{References}{57}{section*.67}%
+\contentsline {section}{Appendices}{62}{section*.67}%
+\contentsline {section}{\numberline {A}Ethical Approval}{62}{appendix.a.A}%
+\contentsline {section}{\numberline {B}Dataset Manipulation}{63}{appendix.a.B}%
+\contentsline {subsection}{\numberline {B.1}CSV Combiner Script}{63}{subsection.a.B.1}%
+\contentsline {subsection}{\numberline {B.2}Feature Extraction \& Reduction}{64}{subsection.a.B.2}%
+\contentsline {section}{\numberline {C}Conda Environments}{66}{appendix.a.C}%
+\contentsline {subsection}{\numberline {C.1}Neural Networks - Apple Silicon}{66}{subsection.a.C.1}%
+\contentsline {subsection}{\numberline {C.2}Classifiers}{66}{subsection.a.C.2}%
+\contentsline {section}{\numberline {D}Data Preprocessing}{67}{appendix.a.D}%
+\contentsline {subsection}{\numberline {D.1}MinMax Scaling}{67}{subsection.a.D.1}%
+\contentsline {subsection}{\numberline {D.2}OHE Encoding}{67}{subsection.a.D.2}%
+\contentsline {subsection}{\numberline {D.3}Label Encoding}{68}{subsection.a.D.3}%
+\contentsline {subsection}{\numberline {D.4}Loading Dataset}{68}{subsection.a.D.4}%
+\contentsline {section}{\numberline {E}Classifiers}{70}{appendix.a.E}%
+\contentsline {subsection}{\numberline {E.1}K-Nearest Neighbor (KNN)}{70}{subsection.a.E.1}%
+\contentsline {subsection}{\numberline {E.2}Random Forest}{72}{subsection.a.E.2}%
+\contentsline {subsubsection}{\numberline {E.2.1}RF Model ID 0 - Raw Metrics}{72}{subsubsection.a.E.2.1}%
+\contentsline {subsubsection}{\numberline {E.2.2}RF Model ID 1 - Raw Metrics}{75}{subsubsection.a.E.2.2}%
+\contentsline {subsubsection}{\numberline {E.2.3}RF Model ID 2 - Raw Metrics}{78}{subsubsection.a.E.2.3}%
+\contentsline {subsubsection}{\numberline {E.2.4}RF Model ID 3 - Raw Metrics}{80}{subsubsection.a.E.2.4}%
+\contentsline {subsubsection}{\numberline {E.2.5}RF Model ID 4 - Raw Metrics}{82}{subsubsection.a.E.2.5}%
+\contentsline {subsubsection}{\numberline {E.2.6}RF Model ID 5 - Raw Metrics}{84}{subsubsection.a.E.2.6}%
+\contentsline {subsection}{\numberline {E.3}XGBoost}{86}{subsection.a.E.3}%
+\contentsline {subsubsection}{\numberline {E.3.1}XGBoost Model 0 - Raw Metrics}{86}{subsubsection.a.E.3.1}%
+\contentsline {subsubsection}{\numberline {E.3.2}XGBoost Model 1 - Raw Metrics}{87}{subsubsection.a.E.3.2}%
+\contentsline {subsubsection}{\numberline {E.3.3}XGBoost Model 2 - Raw Metrics}{88}{subsubsection.a.E.3.3}%
+\contentsline {subsubsection}{\numberline {E.3.4}XGBoost Model 3 - Raw Metrics}{89}{subsubsection.a.E.3.4}%
+\contentsline {subsubsection}{\numberline {E.3.5}XGBoost Model 4 - Raw Metrics}{91}{subsubsection.a.E.3.5}%
+\contentsline {subsubsection}{\numberline {E.3.6}XGBoost Model 5 - Raw Metrics}{91}{subsubsection.a.E.3.6}%
+\contentsline {subsubsection}{\numberline {E.3.7}XGBoost Model 6 - Raw Metrics}{92}{subsubsection.a.E.3.7}%
+\contentsline {subsubsection}{\numberline {E.3.8}XGBoost Model 7 - Raw Metrics}{94}{subsubsection.a.E.3.8}%
+\contentsline {subsubsection}{\numberline {E.3.9}XGBoost Model 8 - Raw Metrics}{95}{subsubsection.a.E.3.9}%
+\contentsline {subsubsection}{\numberline {E.3.10}XGBoost Model 9 - Raw Metrics}{96}{subsubsection.a.E.3.10}%
+\contentsline {subsubsection}{\numberline {E.3.11}XGBoost Model 10 - Raw Metrics}{96}{subsubsection.a.E.3.11}%
+\contentsline {subsubsection}{\numberline {E.3.12}XGBoost Model 11 - Raw Metrics}{98}{subsubsection.a.E.3.12}%
+\contentsline {section}{\numberline {F}Neural Networks}{100}{appendix.a.F}%
+\contentsline {subsubsection}{\numberline {F.0.1}MLP Model 0 - Raw Metrics}{100}{subsubsection.a.F.0.1}%
+\contentsline {subsubsection}{\numberline {F.0.2}MLP Model 1 - Raw Metrics}{100}{subsubsection.a.F.0.2}%
+\contentsline {subsubsection}{\numberline {F.0.3}MLP Model 2 - Raw Metrics}{101}{subsubsection.a.F.0.3}%
+\contentsline {subsubsection}{\numberline {F.0.4}MLP Model 3 - Raw Metrics}{102}{subsubsection.a.F.0.4}%
+\contentsline {subsubsection}{\numberline {F.0.5}MLP Model 4 - Raw Metrics}{103}{subsubsection.a.F.0.5}%
+\contentsline {subsubsection}{\numberline {F.0.6}MLP Model 5 - Raw Metrics}{105}{subsubsection.a.F.0.6}%
+\contentsline {subsubsection}{\numberline {F.0.7}MLP Model 6 - Raw Metrics}{105}{subsubsection.a.F.0.7}%
+\contentsline {subsubsection}{\numberline {F.0.8}MLP Model 7 - Raw Metrics}{106}{subsubsection.a.F.0.8}%
+\contentsline {section}{\numberline {G}Model Code}{108}{appendix.a.G}%
+\contentsline {subsection}{\numberline {G.1}Data Cleaning}{109}{subsection.a.G.1}%
+\contentsline {subsection}{\numberline {G.2}Data Import - Code}{126}{subsection.a.G.2}%
+\contentsline {subsection}{\numberline {G.3}Data Import 2 - Code}{128}{subsection.a.G.3}%
+\contentsline {subsection}{\numberline {G.4}RF Model 1 - Code}{131}{subsection.a.G.4}%
+\contentsline {subsection}{\numberline {G.5}XGBoost Model 10 - Code}{133}{subsection.a.G.5}%
+\contentsline {subsection}{\numberline {G.6}MLP Model 4 - Code}{135}{subsection.a.G.6}%

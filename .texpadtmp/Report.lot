@@ -1,21 +1,23 @@
-\contentsline {table}{\numberline {3.1}{\ignorespaces The selected set of application layer features.\relax }}{12}{table.caption.10}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces The selected set of 802.11 features.\relax }}{13}{table.caption.11}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces The selected set of Non-802.11 Features\relax }}{14}{table.caption.12}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Existing Literature Using ML Techniques\relax }}{8}{table.caption.9}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces The selected set of application layer features.\relax }}{13}{table.caption.10}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces The selected set of 802.11 features.\relax }}{15}{table.caption.11}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces The selected set of Non-802.11 Features\relax }}{15}{table.caption.12}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Data Before Cleaning and Processing\relax }}{16}{table.caption.13}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Data After Cleaning and Processing\relax }}{17}{table.caption.14}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Data Model Split into Train and Test Sets\relax }}{19}{table.caption.15}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters for Random Forest Classifier\relax }}{25}{table.caption.22}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces RF Model Parameters\relax }}{25}{table.caption.23}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces XGBoost Model Parameters\relax }}{26}{table.caption.24}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces XGBoost GridSearch Parameters\relax }}{27}{table.caption.26}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces MLP Model Parameters Part 1\relax }}{31}{table.caption.32}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces MLP Model Parameters Pt2\relax }}{32}{table.caption.33}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces RF S-CV Mean Metrics\relax }}{33}{table.caption.34}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces RF Test Metrics\relax }}{33}{table.caption.35}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces XGBoost S-CV Metrics\relax }}{36}{table.caption.36}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces XGBoost Test Metrics\relax }}{36}{table.caption.37}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces MLP S-CV Metrics\relax }}{39}{table.caption.41}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces MLP Test Metrics\relax }}{39}{table.caption.42}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces RF Model 1 Classification Report\relax }}{43}{table.caption.49}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces XGBoost Best Model Classification Report\relax }}{44}{table.caption.53}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces MLP Best Model Classification Report\relax }}{47}{table.caption.57}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Data After Cleaning and Processing\relax }}{18}{table.caption.14}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Data Model Split into Train and Test Sets\relax }}{20}{table.caption.15}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters for Random Forest Classifier \blx@tocontentsinit {0}\parencite {scikit-learn}\relax }}{28}{table.caption.23}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces RF Model Parameters\relax }}{28}{table.caption.24}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces XGBoost Model Parameters\relax }}{29}{table.caption.25}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces XGBoost GridSearch Best Parameters\relax }}{30}{table.caption.27}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces MLP Model Parameters Pt 1\relax }}{33}{table.caption.33}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces MLP Model Parameters Pt 2\relax }}{34}{table.caption.34}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces RF S-CV Mean Metrics\relax }}{35}{table.caption.35}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces RF Test Metrics\relax }}{35}{table.caption.36}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces XGBoost S-CV Metrics\relax }}{38}{table.caption.37}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces XGBoost Test Metrics\relax }}{38}{table.caption.38}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces MLP S-CV Metrics\relax }}{41}{table.caption.42}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces MLP Test Metrics\relax }}{41}{table.caption.43}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces RF Model 1 - Classification Report\relax }}{45}{table.caption.50}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces XGBoost Model 10 - Classification Report\relax }}{47}{table.caption.54}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces MLP Model 4 - Classification Report\relax }}{49}{table.caption.58}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Best Models\relax }}{50}{table.caption.61}%

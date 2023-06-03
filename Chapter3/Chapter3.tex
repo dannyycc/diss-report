@@ -3,32 +3,39 @@
 \section{Methodology}                               
 \label{sec: Methodology}
 
-% \lipsum[3]
 
+\subsection{Ethics \& Risks}
 
-\subsection{AWID3 Dataset}
-
-
+Ethical approval was not required for this project and can be found in \ref{appx:Ethical Approval}. The following risks and ethical concerns are addressed as follows:
 \begin{itemize}
-	\item SSH Bruteforce - a brute-force attack was conducted against the radius server 
-	\item Botnet - The attack deployed a piece of malware and infects a number of STAs, once executed the victim's machine pings back to the C2 server. 
-	\item Malware - Malware was launched that aims to exploit a specific vulnerability in the target system to further escalate the attack, e.g., deploy ransomware.
-	\item SQL Injection - The target is an external node and a malicious SQL query string is inputted into a web form of the target. The packet's HTTP POST and GET requests can reveal the SQL code query.
-	\item SDDP Amplification - This attack consists of a DDoS attack using the Simple Service Discovery Protocol and uses Universal Plug and Play (UPnP) to trick all STAs of the wireless network to send a barrage of packets to each SDDP-enabled device. Every device then responds, eventually leading to a DoS.
+	\item Data Reliability and Quality: Public datasets may vary in data quality and can lead to possibly unreliable results and conclusions. The chosen dataset is well-established and has extensive existing literature and research.
+	\item Privacy Concerns: Datasets may contain personally identifiable information; however, in the context of this project and AWID3, features that may contain personal information will not be used for this project. 
 \end{itemize}
+In summary, no significant risks were identified, and no mitigations are required for this project.
 
 \subsection{Code Environment}
 
-The code for developing the machine learning models was programmed using Python 3.8/9, Visual Studio Code, and Jupyter Notebooks for the IDE. All experiments were conducted on a hardware combination of an M2 Mac Mini with 8 Cores and 16GB RAM or an Intel(R) Xeon(R) CPU E5-2699 VM running Ubuntu 22.04.02 LTS with 64 GB RAM and an Nvidia Tesla M40. Accordingly, the two machines will be referred to as 'M2' and 'VM'. Due to the limitations and errors encountered, TensorFlow GPU Acceleration was not utilised for Deep Learning on the M2 Mac Mini.
+The code for developing the machine learning models was programmed using Python 3.8/9, Visual Studio Code, and Jupyter Notebooks for the IDE. All experiments were conducted on a hardware combination of an M2 Mac Mini with 8 Cores and 16GB RAM or an Intel(R) Xeon(R) CPU E5-2699 VM running Ubuntu 22.04.02 LTS with 64 GB RAM and an Nvidia Tesla M40. Accordingly, the two machines will be referred to as 'M2' and 'VM'. Due to the Apple Silicon limitations and errors encountered, TensorFlow GPU Acceleration was not utilised for Deep Learning on the M2 Mac Mini.
 
 \medskip
-In order to create a reproducible environment and manage dependencies, Conda virtual environments \parencite{anaconda} were used to isolate the experiments on the M2 Mac Mini. A TensorFlow GPU docker container running Nvidia CUDA was utilised on the VM. See Appx \ref{appx: Conda_Env} for the full code for creating the environments.
+To create a reproducible environment and manage dependencies, Conda virtual environments \parencite{anaconda} were used to isolate the experiments on the M2 Mac Mini. A TensorFlow GPU docker container running Nvidia CUDA was utilised on the VM. See Appx \ref{appx: Conda_Env} for the complete code for creating the environments.
 
 \subsection{Libraries}
 
 Several libraries were used to develop and implement the machine learning models, including: 
 A selection of common machine learning libraries was utilised for this project, namely Numpy, Pandas, Scikit-Learn \parencite{scikit-learn}, Matplotlib, Seaborn, Joblib, Jupyter, Tensorflow \parencite{tensorflow2015-whitepaper} and XGBoost \parencite{XGBoost}. 
 
+\subsection{Feature Selection}
 
+Similar to the work carried out by \textcite{s22155633}, six attacks out of the 13 from AWID3 were concentrated, namely Botnet, Malware, SSH, SQL Injection, SSDP Amplification and Website Spoofing; these are attacks that originate from the application layer and forms a good scope of research for this project. 
 
+The following details relevant background information about each attack class \parencite{kolias2015intrusion}.
+\begin{itemize}
+	\item SSH Bruteforce - a brute-force attack was conducted against the radius server unsuccessfully for 180 seconds on the login credentials. 
+	\item Botnet - The attack deployed pieces of malware within a Samba shared directory and assumed victims executed them. Four STAS were then infected, turning into bots. Remote commands were then executed, such as grabbing a screenshot of the desktop and sent to the attacker.
+	\item Malware - Two pieces of malware were placed within a Samba share and downloaded by six STAs, but never executed. 
+	\item SQL Injection - The target is an external node (DVWA), and a malicious SQL query string was inputted into a web form of the target. The packet's HTTP POST and GET requests can reveal the SQL code query.
+	\item SSDP Amplification - This attack consists of a DDoS attack using the Simple Service Discovery Protocol. It uses Universal Plug and Play (UPnP) to trick all STAs of the wireless network into sending a barrage of packets to each SSDP-enabled device. Every device then responds, eventually leading to a DoS. In the dataset, the attacker scanned the intranet for ~30 seconds before launching the attack for 210 seconds on the DVWA webpage.
+	\item Website Spoofing - The attack deployed a fake Instagram webpage and used ARP and DNS poisoning to redirect victims to the fake page, where entered credentials were stolen and decrypted. 
+\end{itemize}
 

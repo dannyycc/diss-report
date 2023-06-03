@@ -1,25 +1,24 @@
 \subsection{Evaluation Metrics}
 
-A key area of the work was deciding the use of specific metrics to evaluate the performance of the models. Metrics are vital to determine if models are under or over-fitting on the data and help to provide context into steps and modifications needed to improve the performances of the models. 
-As a multi-class classification problem, the primary focus was on the two main metrics of evaluation AUC and F1. Given the nature of the problem, it is important to both minimise false negatives and false positives, which represents misclassifying the attack of the network traffic as either a potential intrusion (false negative) or falsely marking normal traffic as malicious (false positives). By looking placing a strong emphasis on the F1 and AUC scores, this aims to provide a balanced measure of the model's performance.
+A vital area of the work was deciding the use of specific metrics to evaluate the performance of the models. Metrics are essential to determine if models are under or over-fitting on the data and help to provide context into steps and modifications needed to improve the models' performances. 
+As a multi-class classification problem, the primary focus was on the two main metrics of evaluation AUC and F1. Given the nature of the problem, it is essential to minimise false negatives and false positives, which represent misclassifying the attack on the network traffic as either a potential intrusion (false negative) or falsely marking regular traffic as malicious (false positives). By placing a strong emphasis on the F1 and AUC scores, this aims to provide a balanced measure of the model's performance.
 
 
 \subsubsection*{AUC-ROC}
 
-The Area Under the Receiver Operating Characteristic Curve (AUC-ROC) measures the ability of a model to correctly distinguish between positive and negative classes. AUC-ROC is also insensitive to class imbalances. Similarly in the works carried out in \parencite{s22155633, pick_quality_over} AUC was used as one of the primary evaluation metrics.
+The Area Under the Receiver Operating Characteristic Curve (AUC-ROC) measures the ability of a model to distinguish between positive and negative classes correctly. AUC-ROC is also insensitive to class imbalances. Similarly, in the works carried out in \parencite{s22155633, pick_quality_over}, AUC was used as one of the primary evaluation metrics.
 
 \medskip
 
-This value is first calculated by plotting the Receiver Operating Characteristic (ROC) curve using the True Positive Rate (TPR) against the False Positive Rate (FPR) for each classification threshold. The TPR is a measure of the proportions of positive values that were correctly classified. Similarly, the FPR is the proportion of negative values that are incorrectly classified as positive. Using the ROC curve, the area under the curve (AUC) is calculated. This value ranges between 0 and 1, where 0.5 represents at best random guessing, and 1 corresponds to a perfect classifier.
+This value is first calculated by plotting the Receiver Operating Characteristic (ROC) curve using the True Positive Rate (TPR) against the False Positive Rate (FPR) for each classification threshold. The TPR measures the proportions of positive values that were correctly classified. Similarly, the FPR is the proportion of negative values that are incorrectly classified as positive. The area under the curve (AUC) is calculated using the ROC curve. This value ranges between 0 and 1, where 0.5 represents, at best random guessing, and one corresponds to a perfect classifier.
 
 \medskip
 
-As our problem is multi-class, the AUC will be calculated by computing the one-vs-all metric for each class separately i.e.,  calculated for each class individually, treating all samples for that class as positive and all others as negative. Then these scores are averaged to calculate a final AUC score.
+As the problem is multi-class, the AUC will be calculated by computing the one-vs-all metric for each class separately, i.e.,  calculated for each class individually, treating all samples for that class as positive and all others as negative. Then these scores are averaged to calculate a final AUC score.
 
 \subsubsection*{F1}
 
 The F1 score is a weighted average of both precision and recall. Precision is the fraction of correctly predicted positive instances out of all total predicted positive instances. The recall is the fraction of correctly predicted positive instances out of the total actual positive instances.
-8une the model to achieve a balance between false positives and false negatives.
 
 \subsubsection*{Equations for Precision, Recall \& F1} 
 
@@ -33,20 +32,24 @@ F_1 = 2 \cdot \frac{\mathrm{Precision} \cdot \mathrm{Recall}}{\mathrm{Precision}
 
 \subsubsection*{Micro, Macro and Weighted}
 
-In regular binary classification, metrics such as F1, Precision, Recall and AUC can be calculated easily, however, for our multi-class classification problem, a slightly different approach must be taken. In particular, there are three main methods:
+In regular binary classification, metrics such as F1, Precision, Recall and AUC can be calculated easily; however, for multi-class classification problems, a slightly different approach must be taken. In particular, there are three main methods:
 
 \begin{itemize}
-    \item Micro averaging uses the metric across all classes by counting the total true positives, false positives, and false negatives. This is the equivalent of using the accuracy i.e., fails to take into account class imbalances.
-    \item Macro averaging calculates the metric in each class independently and then averages this for all classes, giving equal weight for all classes. It is used typically when all classes are equally as important, irrespective of the class size or any imbalances.
+    \item Micro averaging uses the metric across all classes by counting the total true positives, false positives, and false negatives. This is the equivalent of using the accuracy, i.e., fails to consider class imbalances.
+    \item Macro averaging calculates the metric in each class independently and then averages this for all classes, giving equal weight for all classes. It is typically used when all classes are equally important, regardless of class size or imbalance.
     \item Weighted averaging also calculates the metric for each class independently, but the average of the individual class scores is weighted with the number of samples in each class. It is used when performance across all classes is considered important, and the class imbalance needs to be considered.
 \end{itemize}
 
-Therefore, the weighted averaging method was chosen, leading to robust scores that take into account both the number of samples within the class and its performance. It was observed that most previous works fail to mention the averaging method used for its evaluation metrics.
+Therefore, the weighted averaging method was chosen, leading to robust scores that consider both the number of samples within the class and its performance. It was observed that most previous works fail to mention the averaging method used for its evaluation metrics.
 
 \subsubsection*{Classification Report}
 
-In addition to viewing the averaged metrics across all classes, the classification report provides a comprehensive summary detailing the metrics for Precision, Recall, Accuracy and F1 across each class. This is important for understanding the underlying performance of the model, we can easily identify specific classes the model may be underperforming on, allowing for better tweaking and modifications to improve performance.
+In addition to viewing the averaged metrics across all classes, the classification report provides a comprehensive summary detailing the metrics for Precision, Recall, Accuracy and F1 across each class. This is important for understanding the underlying performance of the model, as underperforming classes can be identified, allowing guidance for tuning and modifications.
 
 \subsubsection*{Confusion Matrix}
 
-The Confusion Matrix is a table that displays the performance of a model by showing the number of true positives, false positives, true negatives and false negatives for each class. In other words, how accurate the classifier is on each class and how it tends to wrong predict each class for another (confusion). By examining the confusion matrix, we can identify any specific classes that may require additional tuning or changes to the model to improve its performance. Works by \textcite{pmlr-v29-Koco13} introduced a new method using confusion matrices to measure and analyse the performance of cost-sensitive methods showing the importance of the confusion matrix in imbalanced data sets.
+The Confusion Matrix is a table that displays the performance of a model by showing the number of true positives, false positives, true negatives and false negatives for each class. In other words, how accurate the classifier is on each class and how it tends to wrongly predict each class for another (confusion). By examining the confusion matrix, any specific classes that may require additional tuning or changes to the model can be identified. Works by \textcite{pmlr-v29-Koco13} introduced a new method using confusion matrices to measure and analyse the performance of cost-sensitive methods, showing the confusion matrix's importance in imbalanced datasets.
+
+
+\subsubsection*{Feature Importance}
+Feature Importance is a metric that determines the relative importance of each feature in predicting the output. XGBoost and Random Forest, being ensemble learning algorithms, provide feature importance scores. The top 20 features in each model will be plotted in a graph. This metric can provide insights into model interpretation and domain understanding of the problem and which features have a higher impact, helping select features. 

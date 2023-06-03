@@ -3,30 +3,29 @@
 \section{Conclusion}
 \label{sec: Conclusion}
 
-% \lipsum[7]
 
 \subsection{Summary Of Findings}
 
-The research proposed the idea of utilising a set of application layer features together with 802.11 and non-802.11 features to develop machine learning models capable of distinguishing between six different attacks (Botnet, Malware, SQL Injection, SDDP, SSH and Website Spoofing) launched from the application layer from the AWID3 dataset. In total, 15 application layer features, detailed in Table \ref{tab:application_features}, were chosen to be used to help form the feature set used in each model. Two classifiers: Random Forest and XGBoost and one deep neural network: Multilayer Perceptron machine learning algorithms were used to evaluate their effectiveness on the problem. 
+This project proposed the idea of utilising a set of application layer features together with 802.11 and non-802.11 features to develop machine learning models capable of distinguishing between six different attacks (Botnet, Malware, SQL Injection, SSDP Amplification, SSH and Website Spoofing) launched from the application layer from the AWID3 dataset. In total, 13 application layer features, detailed in Table \ref{tab:application_features}, were chosen to help form the feature set used in each model. Two classifiers: Random Forest and XGBoost, and one deep neural network: Multilayer Perceptron machine learning algorithms, were used to evaluate their effectiveness on the problem. 
 
 \medskip
-Random Forest showed exceptional performance with default parameters, the AUC and F1 scores on the test set were incredibly high at 99.99\% and 99.65\%, providing a great balance of precision and recall. It was able to almost completely distinguish the SDDP class from the others. Naturally, due to the imbalance of the dataset, it struggled with misclassifications of minority classes and in particular, Botnet, Malware, SQL and SSH with recall values ranging from 0.77-0.82. 
+Random Forest showed exceptional performance with default parameters; the AUC and F1 scores on the test set were incredibly high at 99.99\% and 99.65\%, providing a great balance of precision and recall. It was able to almost completely distinguish the SSDP class from the others. Naturally, due to the dataset imbalance, it struggled with misclassifications of minority classes, particularly Botnet, Malware, SQL and SSH, with recall values ranging from 0.77-0.82. 
 
 \smallskip
-XGBoost, an ensemble method based on gradient boosting carried similar results to RandomForest. Metrics of the highest achieving model on the test set shared similar performances. In particular, it achieved perfect classification on the SDDP class, with zero misclassifications and the highest recall on the SQL Injection class. Like RF, it faced difficulty in detecting Botnet, Malware and SSH.
+XGBoost, an ensemble method based on gradient boosting, carried similar results to RandomForest. Metrics of the highest achieving model on the test set shared similar performances of 99.99\% AUC and 99.65\% F1. In particular, it achieved perfect classification on the SSDP class, with zero misclassifications and the highest recall on the SQL Injection class. Like RF, it faced difficulty in detecting Botnet, Malware and SSH.
 
 \smallskip
-The MLP models showed a good overall performance but were significantly behind the other two models. The highest-performing model consisted of 3 hidden layers with dropout, batch normalisation and ReLU as the activator. The AUC, F1, Recall and Precision were high, but comparatively lower than XGBoost and RandomForest models. Like the two other models, it also struggled with under-represented classes. However, the MLP model in particular struggled to identify the SQL Injection class, with a misclassification rate of 63\%, a recall of 0.37. 
+The MLP models showed a good overall performance but were significantly behind the other two models with AUC of 99.94\% and 99.42\% in F1. The highest-performing model consisted of 3 hidden layers with dropout, batch normalisation and ReLU as the activator. The AUC, F1, Recall and Precision were high but comparatively lower than XGBoost and RandomForest models. Like the two other models, it also struggled with under-represented classes. However, the MLP model struggled to identify the SQL Injection class, with a misclassification rate of 63\% and a recall of 0.37. 
 
-Overall, this dissertation shows that implementing application layer features with 802.11 and non-802.11 features achieved impressive performance with AUC, F1, Precision, Recall and Accuracy all above 99\% in all chosen ML algorithms. 
+Overall, this project shows that implementing application layer features with 802.11 and non-802.11 features achieved impressive performance with AUC, F1, Precision, Recall and Accuracy all above 99\% in all chosen ML algorithms. 
 
-%Summarize the main findings of your research, including the performance of your machine learning models, insights gained from the analysis, and any limitations or areas for future work.
+\subsection{Project Review}
 
+The project deviated slightly from the original concept of detecting wireless network attacks on 802.11 networks; after a review of the existing literature, a gap was identified in exploring if machine learning could be leveraged to detect attacks launched from higher-level layers such as the Application Layer instead. The project diverted from its original timeline, and the struggle with manipulating the large dataset caused issues and hindered the time allocated to model training and evaluation. Additionally, the time required to tune parameters and create and evaluate models took much longer than initially thought, and the time allotted for this needed to be more. In light of this, a significant amount of helpful research and work was achieved, and the core objectives of this project were met.
 
 \subsection{Objectives}
 
-
-This dissertation set out with the aim to meet a series of objectives: 
+This project set out with the aim of meeting a series of objectives: 
 
 \begin{itemize}
 \item To explore and analyse current literature and academic research utilising ML for intrusion detection systems for IEEE 802.11 networks.
@@ -39,38 +38,36 @@ This dissertation set out with the aim to meet a series of objectives:
 \item To compare the performance of such models on the dataset, proving a recommendation for a proposed Wireless Intrusion Detection System (WIDS)
 \end{itemize}
 
+\subsubsection*{Objective: Existing Literature \& Common ML Algorithms}
 
-\subsubsection*{Current Literature}
+Through the research, a plethora of existing research and literature were reviewed and considered for this project. Papers on wireless network standards, security attacks, intrusion detection systems and machine learning algorithms were reviewed extensively. The literature review section revealed a gap in research in exploring the detection of application layer attacks on wireless 802.11 networks, explicitly utilising the AWID3 dataset. Therefore, the exploration and examination of current literature on using ML for intrusion detection systems were met, including identifying common ML algorithms for classifying network attacks. 
+ 
+\subsubsection*{Objective: Training ML Models}
+Models were trained and tested using supervised machine learning techniques, specifically Random Forest, XGBoost and Multi-layer Perceptron. For most machine learning algorithms, a systematic approach was followed by establishing a baseline model with default parameters. Then, parameters and settings were tuned and changed to optimise the performance. 
 
-\subsubsection*{Common Machine Learning Algorithms}
+Each model subsequently achieved high-performance levels, with metrics such as AUC and F1 achieving scores of up to 99.9\%, indicating a solid ability to classify the six attack classes launched from the application layer on an 802.11 wireless network dataset and thus achieve the objective.
 
-\subsubsection*{Supervised Machine Learning Models}
-Using supervised machine learning techniques, specifically Random Forest, XGBoost and Multi-layer Perceptron, models were trained and tested. For each machine learning algorithm, a systematic approach was followed by establishing a baseline model with default parameters and then parameters and settings were tuned and changed in the hopes of optimising the performance. 
+\subsubsection*{Objective: Model Performance}
 
-Each model subsequently achieved high levels of performance, with metrics such as AUC and F1 achieving scores of up to 99.9\% indicating a strong ability to classify the six attack classes, launched from the application layer on an 802.11 wireless network dataset, achieving the objective.
-
-\subsubsection*{Model Performance}
+Finally, in the analysis section, the performance of each model was analysed and compared using multiple metrics such as Classification Reports and Confusion Matrices and ranked. The best-performing models were then introduced and recommended as viable options to be implemented in a Wireless Network Intrusion Detection System (WIDS), meeting the final objective.
 
 \subsection{Contributions}
 
-% Discuss the contributions of your research to the field of machine learning. This could include discussing how your research fills a gap in the literature, how it provides new insights into the problem you addressed, or how it advances the methodology used in the field.
+This project focused on classifying six application layer attacks on an 802.11w wireless network dataset, specifically AWID3. This research builds upon similar work but combines a new selection of application layer features chosen from the 254 total features alongside 802.11 and non-802.11 features from \parencite{s22155633}. Then, three machine learning algorithms: Random Forest, XGBoost and Multi-Layer Perceptron, were compared and evaluated; the best-performing models achieved high metrics of up to 99.9\% in Area Under Curve (AUC) and 99.66\% in F1 Score. The findings are unique and original and contribute to the existing literature and research surrounding machine learning in the context of Wireless Network Intrusion Detection Systems.
 
-This dissertation focused on classifying six application layer attacks on an 802.11w wireless network dataset, specifically AWID3. The research builds upon similar work but combines a selection of application layer features chosen from the 254 features total alongside 802.11 and non-802.11 features from \parencite{s22155633}. 3 machine learning algorithms: Random Forest, XGBoost and Multi-Layer Perceptron were compared and evaluated on a series of metrics, providing a valuable understanding of the strengths, weaknesses and suitability of their use in a Wireless Network Intrusion System. 
 
 \subsection{Limitations}
 
-%Discuss the limitations of your research and potential sources of error. Explain how these limitations could impact the generalizability of your findings and suggest ways to address these limitations in future research.
+As with all research, this project experience limitations and struggles that must be considered during interpretation. Due to the scope of the research, the hardware and time constraints impacted the complexity and range of exploration in the number of models, algorithms and parameters to be developed and tested. As such, hyperparameter tuning was limited, and the use the grid searching techniques such as GridSearchCV and RandomisedSearchCV was limited, resorting to a more iterative and exploratory method, potentially limiting the optimal parameters for each model. The feature importance of XGBoost and RF was explored to gain an understanding of the model. However, the exploration could have been more exhaustive and directly used for model optimisation.
 
-As with all research, this dissertation experience limitations and struggles that must be considered during interpretation. Due to the scope of the research, the hardware and time constraints impacted the complexity and range of exploration in the number of models, algorithms and parameters to be developed and tested. As such, hyperparameter tuning was limited and the use the grid searching techniques such as GridSearchCV and RandomisedSearchCV was limited, resorting to a more iterative and exploratory method, potentially limiting the optimal parameters for each model.
+A limitation of this research was the reliance on a single dataset; whilst the AWID3 dataset is well-established and used, the research and models may differ from real-world traffic and datasets with different data distributions.
 
-A big limitation of this research was the reliance on a single dataset, whilst the AWID3 dataset is well-established and used, the research and models conducted may not be reflective of real-world traffic and datasets with different distributions of data.
+In classification problems, imbalanced datasets can lead to biased models; no data balancing techniques, such as Under/Oversampling, were used for this research. Additionally, the focus was placed on achieving a balance between specificity and sensitivity, both critical factors in an Intrusion Detection System; therefore, other interpretations may draw different conclusions in model selection.
 
-In classification problems, imbalanced datasets can lead to biased models, for the purposes of this research, no data balancing techniques such as Under/Oversampling were used. Additionally, the focus was placed on achieving a balance between specificity and sensitivity, both factors that are important in an Intrusion Detection System, therefore other interpretations may draw different conclusions in model selection.
-
-Finally, this research did not factor in metrics such as processing time, as this can be a crucial factor to consider when being deployed in the real world.
+Finally, this research did focus on metrics such as training time, as this can be a crucial factor to consider when deployed in the real world.
 
 \subsection{Future Work}
 
-Additional work can explore the realms of including additional or different application layer features to determine their impacts on models. Additionally, future work may address the limitations encountered during this research, using more advanced neural networks such as Convolutional Neural Networks (CNNs) or Stacked AutoEncoders and utilising larger parameter grids for hyper-parameter tuning. Moreover, using data balancing techniques and feature engineering could potentially be used to provide valuable information for wireless network intrusion detection. 
+Additional work can explore the realms of including additional or different application layer features, considering each model's feature importance to determine their impacts on performance. Additionally, future work may address the limitations encountered during this research, using more advanced deep neural networks such as Convolutional Neural Networks (CNNs) or Stacked AutoEncoders and utilising larger parameter grids for hyper-parameter tuning. Moreover, using data balancing techniques and additional feature selection and engineering could be used to improve the performances and results of this project.
 
-Using the models in the real world would serve as a major milestone for future work, existing literature and research primarily focuses on the performance of curated datasets rather than in a network environment. However, the contributions of this research has allowed for plethora of future work to be conducted.
+Finally, using the models in the real world would be a major milestone for future work as existing literature and research primarily focus on using datasets rather than in a real-world network environment. However, the contributions of this project will allow for a plethora of future work to be conducted.

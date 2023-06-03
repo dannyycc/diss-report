@@ -1,9 +1,9 @@
 \subsection{Dataset Manipulation}
 
-The AWID3 Dataset \parencite{9360747} is supplied in two formats, a set of CSV files representing each method of attack and its subsequent data and the raw PCAP network captures. This project, as mentioned previously focuses on the six attack methods. For this instance, the CSV files were utilised and the dataset was manipulated to suit the purpose of experimentation. Each attack contained a folder with the data split into numerous CSV files, these needed to be rejoined to form one file/dataset so that it could be utilised and processed accordingly. 
+The AWID3 Dataset is supplied in two formats, a set of CSV files representing each method of attack and its subsequent data and the raw PCAP network captures. For this instance, the CSV files were utilised, and the dataset was manipulated to suit the purpose of experimentation. Each attack contained a folder with the data split into multiple CSV files; these needed to be rejoined to form one file/dataset so that it could be utilised and processed accordingly. 
 
 \medskip
-The methodology proposed was as followed:
+The methodology proposed was as follows:
 \begin{enumerate}
     \item Combine all individual CSV files for each attack method into one file using a bash script.
     \item Import the file as a data frame and extract the desired features into a separate data frame.
@@ -16,10 +16,10 @@ The methodology proposed was as followed:
 
 \medskip
 
-\textbf{Combing Files}
+\textbf{Combining Files}
 
 \smallskip
-A bash script, Appendix \ref{appx: CSV Combiner Script} was created to list all contents of a given folder, containing the \textit{.csv} file extension and sorted into numerical order i.e. 01, 02, 03. However, each individual file contained the CSV header, so only the first CSV file's header was read and written into the new \textit{'combined.csv'} file. All other files were read and appended into the new file, ignoring the first line; the CSV header. 
+A bash script, Appendix \ref{appx: CSV Combiner Script} was created to list all contents of a given folder, containing the \textit{.csv} file extension and sorted into numerical order, i.e. 01, 02, 03. However, each file contained the CSV header, so only the first CSV file's header was read and written into the new \textit{'combined.csv'} file. All other files were read and appended into the new file, ignoring the first line, the CSV header. 
 
 This step resulted in 6 large CSV files with the following rows and file sizes. See Table \ref{tab:full_data}
 
@@ -44,28 +44,28 @@ Website Spoofing & 2,668,568     & 2.85 GB            &  &  &  \\ \cline{1-3}
 \textbf{Feature Extraction}
 
 \smallskip
-With the combined datasets, the selected features were extracted from the 254 features as referenced in Table \ref{tab:application_features}, \ref{tab:802.11_features} and \ref{tab:non80211}. Due to the large file sizes, numerous errors and kernel crashes were encountered during the importing of the file into Pandas. 
+With the combined datasets, the selected features were extracted from the 254 features as referenced in Table \ref{tab:application_features}, \ref{tab:802.11_features} and \ref{tab:non80211}. Due to the large file sizes, numerous errors and kernel crashes were encountered while importing the file into Pandas. 
 
-Instead of importing all columns, the required features were specified using the \textit{'use\_cols'} parameter along with the \textit{'chunk size'} parameter to read the file in smaller chunks to save memory and eventually combined them together, forming one dataframe. This saw a reduction in import time and lower memory consumption.
+Instead of importing all columns, the required features were specified using the \textit{'use\_cols'} parameter along with the \textit{'chunk size'} parameter to read the file in smaller chunks to save memory and eventually combined them, forming one data frame. This saw a reduction in import time and lower memory consumption.
 
 \medskip
 \textbf{Data Cleaning}
 
 \smallskip
-Following this, the data was cleaned to ensure it was fit for the next stage of data pre-processing. Rows that contained only NAN values were dropped, as well as missing Label values. All missing/nan values from each column were replaced and represented with 0, following a similar approach to \textcite{s22155633}.
+The data was cleaned to ensure it was fit for the next data pre-processing stage. Rows that contained only NAN values were dropped, as well as missing Label values. Each column's missing/nan values were replaced and represented with 0, following a similar approach to \textcite{s22155633}.
 
 \smallskip
-Upon analysis, frequent occurrences of hyphened values e.g \textit{-100-100-10, 123-456-1, -10-2, 81-63-63 etc.} were observed. These were more notable in the 802.11w features such as \textit{'radiotap.dbm\_antsignal'} and \textit{'wlan\_radio.signal\_dbm'}, this was expected, as being wireless radio features, \textit{'radiotap.dbm\_antsignal'} represents the signal strength in decibel milliwatts (dBm) and is captured via multiple antennas each representing the captured signal strength. A similar approach to \parencite{s22155633} was followed, extracting and keeping the first value in the sequence, e.g \textit{-100-100-10} became -100, \textit{123-456-1} became 123, \textit{-10-2} became -10 and \textit{81-63-63} became 81. A regex expression was written to iterate through each column to replace these values accordingly.
+Upon analysis, frequent hyphened values were observed, e.g. \textit{-100-100-10, 123-456-1, -10-2, 81-63-63 etc.}. These were more notable in the 802.11w features such as \textit{'radiotap.dbm\_antsignal'} and \textit{'wlan\_radio.signal\_dbm'}, this was expected, as being wireless radio features, \textit{'radiotap.dbm\_antsignal'} represents the signal strength in decibel milliwatts (dBm) and is captured via multiple antennas each representing the captured signal strength. A similar approach to \parencite{s22155633} was followed, extracting and keeping the first value in the sequence, e.g. \textit{-100-100-10} became -100, \textit{123-456-1} became 123, \textit{-10-2} became -10 and \textit{81-63-63} became 81. A regex expression was written to iterate through each column to replace these values accordingly.
 
 \smallskip
-Following on, invalid values were observed such as the presence of values containing months such as: \textit{Oct-26, Oct-18, Feb-10} etc. This was determined to be a processing error during the creation of the CSV files from the PCAP files and represented a low majority of the dataset. It was concluded that rows containing invalid values would be dropped from the data. A similar RegEX expression was written to filter out these values from the following columns: \textit{'tcp.option\_len', 'dns.resp.ttl', 'ip.ttl', 'smb2.cmd'}. The full code for this section can be found in Appendix \ref{appx: Feature Extraction}.
+Following on, invalid values were observed, such as the presence of values containing months such as: \textit{Oct-26, Oct-18, Feb-10} etc. This was proposed to be a processing error during the creation of the CSV files from the PCAP files and represented a low majority of the dataset. It was concluded that rows containing invalid values would be dropped from the data. A similar RegEX expression was written to filter out these values from the following columns: \textit{'tcp.option\_len', 'dns.resp.ttl', 'ip.ttl', 'smb2.cmd'}. The complete code for this section can be found in Appendix \ref{appx: Feature Extraction}.
 
 \medskip
 
 \textbf{Individual Datasets}
 
 \smallskip
-After data cleaning and processing, the final 6 individual data files consisted of the following. See Table \ref{tab:reduced_data}
+After data cleaning and processing, the final six individual data files consisted of the following. See Table \ref{tab:reduced_data}
 
 \begin{table}[H]
 \centering
@@ -88,4 +88,4 @@ Website Spoofing & 2,666,406     & 340 MB            &  &  &  \\ \cline{1-3}
 \textbf{Combining Datasets}
 
 \smallskip
-Finally, utilising the same bash script (\ref{appx: CSV Combiner Script}) the six reduced CSV files were combined into one large single data frame and then subsequently exported to a CSV file. The resulting file was 2.67GB in size and contained approximately 21,348,614 rows. 
+Finally, utilising the same bash script (\ref{appx: CSV Combiner Script}), the six reduced CSV files were combined into one large single data frame and then subsequently exported to a CSV file. The resulting file was 2.67GB in size and contained approximately 21,348,614 rows. 

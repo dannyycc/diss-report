@@ -104,7 +104,15 @@
   number={1},
   pages={1077-1091},
   doi={10.1109/TNSM.2020.3036138}}
-  
+ 
+ 
+@article{Ge2019DeepLI,
+  title={Deep Learning-Based Intrusion Detection for IoT Networks},
+  author={Mengmeng Ge and Xiping Fu and Naeem Firdous Syed and Zubair A. Baig and Gideon Teo and Antonio Robles-Kelly},
+  journal={2019 IEEE 24th Pacific Rim International Symposium on Dependable Computing (PRDC)},
+  year={2019},
+  pages={256-25609}
+}
   
 % KRACK Attack
 @inproceedings{krack,
@@ -146,8 +154,6 @@ series = {CCS '17}
 
 @INPROCEEDINGS{9664737,  author={Hnamte, Vanlalruata and Hussain, Jamal},  booktitle={2021 3rd International Conference on Electrical, Control and Instrumentation Engineering (ICECIE)},   title={An Extensive Survey on Intrusion Detection Systems: Datasets and Challenges for Modern Scenario},   year={2021},  volume={},  number={},  pages={1-10},  abstract={Cyberattacks are becoming more and more advanced, making it more difficult to identity suspicious activities on network traffic. Weaponizing the data in the line between network attacks and data breaches continues and the number rises upward even during the recent year with a massive increase in the attack type. Many consider Intrusion Detection System (IDS) datasets publicly available are becoming outdated and inadequate due to the availability of newer attack techniques. Therefore, it is a concern that the extensive usage of these available datasets in the current attack scenario to evaluate IDS models. This paper lists 37 datasets available for testing the IDS models and discusses those publicly accessible datasets, describing the characteristics and limitations for researchers who use such datasets. Finally, based on the dataset characteristics and usage survey, we conclude with a summary of the problems and provide our insights and suggestions for the use of network-based datasets for the Deep Learning approach for further improvement.},  keywords={},  doi={10.1109/ICECIE52348.2021.9664737},  ISSN={},  month={Nov},}
 
-
-
 @InProceedings{10.1007/978-3-030-98457-1_1,
 author="Islam, Tariqul
 and Allayear, Shaikh Muhammad",
@@ -165,11 +171,91 @@ abstract="A wireless attack is a malicious action against wireless systems and w
 isbn="978-3-030-98457-1"
 }
 
-% AWID3
+@inproceedings{10.1145/3508398.3519360,
+author = {Agrawal, Anand and Chatterjee, Urbi and Maiti, Rajib Ranjan},
+title = {KTRACKER: Passively Tracking KRACK Using ML Model},
+year = {2022},
+isbn = {9781450392204},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3508398.3519360},
+doi = {10.1145/3508398.3519360},
+abstract = {Recently, a number of attacks have been demonstrated (like key reinstallation attack, called KRACK) on WPA2 protocol suite
+in Wi-Fi WLAN. In this paper, we design and implement a system, called kTRACKER, to passively detect anomalies in the handshake of
+Wi-Fi security protocols, in particular WPA2, between a client and an access point using COTS radios. A state machine model is
+implemented to detect KRACK attack by passively monitoring multiple wireless channels. In particular, we perform deep packet inspection
+and develop a grouping algorithm to group Wi-Fi handshake packets to identify the symptoms of the KRACK in specific stages of a
+handshake session. Our implementation of kTRACKER does not require any modification to the firmware of the supplicant i.e., client or
+the authenticator i.e., access point or the COTS devices, our system just needs to be in the accessible range from clients and access
+points. We use a publicly available dataset for performance analysis of kTRACKER. We employ gradient boosting-based supervised machine
+learning models, and show that an accuracy around 93.39\% and a false positive rate of 5.08\% can be achieved using kTRACKER.},
+booktitle = {Proceedings of the Twelfth ACM Conference on Data and Application Security and Privacy},
+pages = {364–366},
+numpages = {3},
+keywords = {wpa2, krack, wi-fi, ensemble model},
+location = {Baltimore, MD, USA},
+series = {CODASPY '22}
+}
+
+@Article{s22041407,
+AUTHOR = {Liu, Gaoyuan and Zhao, Huiqi and Fan, Fang and Liu, Gang and Xu, Qiang and Nazir, Shah},
+TITLE = {An Enhanced Intrusion Detection Model Based on Improved kNN in WSNs},
+JOURNAL = {Sensors},
+VOLUME = {22},
+YEAR = {2022},
+NUMBER = {4},
+ARTICLE-NUMBER = {1407},
+URL = {https://www.mdpi.com/1424-8220/22/4/1407},
+PubMedID = {35214308},
+ISSN = {1424-8220},
+ABSTRACT = {Aiming at the intrusion detection problem of the wireless sensor network (WSN), considering the combined characteristics of the wireless sensor network, we consider setting up a corresponding intrusion detection system on the edge side through edge computing. An intrusion detection system (IDS), as a proactive network security protection technology, provides an effective defense system for the WSN. In this paper, we propose a WSN intelligent intrusion detection model, through the introduction of the k-Nearest Neighbor algorithm (kNN) in machine learning and the introduction of the arithmetic optimization algorithm (AOA) in evolutionary calculation, to form an edge intelligence framework that specifically performs the intrusion detection when the WSN encounters a DoS attack. In order to enhance the accuracy of the model, we use a parallel strategy to enhance the communication between the populations and use the L&eacute;vy flight strategy to adjust the optimization. The proposed PL-AOA algorithm performs well in the benchmark function test and effectively guarantees the improvement of the kNN classifier. We use Matlab2018b to conduct simulation experiments based on the WSN-DS data set and our model achieves 99\% ACC, with a nearly 10\% improvement compared with the original kNN when performing DoS intrusion detection. The experimental results show that the proposed intrusion detection model has good effects and practical application significance.},
+DOI = {10.3390/s22041407}
+}
+
+
+@INPROCEEDINGS{9074929,
+  author={Kachavimath, Amit V and Nazare, Shubhangeni Vijay and Akki, Sheetal S},
+  booktitle={2020 2nd International Conference on Innovative Mechanisms for Industry Applications (ICIMIA)}, 
+  title={Distributed Denial of Service Attack Detection using Naïve Bayes and K-Nearest Neighbor for Network Forensics}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={711-717},
+  doi={10.1109/ICIMIA48430.2020.9074929}}
+
+@Article{su14148707,
+AUTHOR = {Le, Thi-Thu-Huong and Oktian, Yustus Eko and Kim, Howon},
+TITLE = {XGBoost for Imbalanced Multiclass Classification-Based Industrial Internet of Things Intrusion Detection Systems},
+JOURNAL = {Sustainability},
+VOLUME = {14},
+YEAR = {2022},
+NUMBER = {14},
+ARTICLE-NUMBER = {8707},
+URL = {https://www.mdpi.com/2071-1050/14/14/8707},
+ISSN = {2071-1050},
+ABSTRACT = {The Industrial Internet of Things (IIoT) has advanced digital technology and the fastest interconnection, which creates opportunities to substantially grow industrial businesses today. Although IIoT provides promising opportunities for growth, the massive sensor IoT data collected are easily attacked by cyber criminals. Hence, IIoT requires different high security levels to protect the network. An Intrusion Detection System (IDS) is one of the crucial security solutions, which aims to detect the network \& abnormal behavior and monitor safe network traffic to avoid attacks. In particular, the effectiveness of the Machine Learning (ML)-based IDS approach to building a secure IDS application is attracting the security research community in both the general cyber network and the specific IIoT network. However, most available IIoT datasets contain multiclass output data with imbalanced distributions. This is the main reason for the reduction in the detection accuracy of attacks of the ML-based IDS model. This research proposes an IDS for IIoT imbalanced datasets by applying the eXtremely Gradient Boosting (XGBoost) model to overcome this issue. Two modern IIoT imbalanced datasets were used to assess our proposed method \& effectiveness and robustness, X-IIoTDS and TON_IoT. The XGBoost model achieved excellent attack detection with F1 scores of 99.9\% and 99.87\% on the two datasets. This result demonstrated that the proposed approach improved the detection attack performance in imbalanced multiclass IIoT datasets and was superior to existing IDS frameworks.},
+DOI = {10.3390/su14148707}
+}
+
+@Article{electronics9101689,
+AUTHOR = {A. Reyes, Abel and D. Vaca, Francisco and Castro Aguayo, Gabriel A. and Niyaz, Quamar and Devabhaktuni, Vijay},
+TITLE = {A Machine Learning Based Two-Stage Wi-Fi Network Intrusion Detection System},
+JOURNAL = {Electronics},
+VOLUME = {9},
+YEAR = {2020},
+NUMBER = {10},
+ARTICLE-NUMBER = {1689},
+URL = {https://www.mdpi.com/2079-9292/9/10/1689},
+ISSN = {2079-9292},
+ABSTRACT = {The growth of wireless networks has been remarkable in the last few years. One of the main reasons for this growth is the massive use of portable and stand-alone devices with wireless network connectivity. These devices have become essential on the daily basis in consumer electronics. As the dependency on wireless networks has increased, the attacks against them over time have increased as well. To detect these attacks, a network intrusion detection system (NIDS) with high accuracy and low detection time is needed. In this work, we propose a machine learning (ML) based wireless network intrusion detection system (WNIDS) for Wi-Fi networks to efficiently detect attacks against them. The proposed WNIDS consists of two stages that work together in a sequence. An ML model is developed for each stage to classify the network records into normal or one of the specific attack classes. We train and validate the ML model for WNIDS using the publicly available Aegean Wi-Fi Intrusion Dataset (AWID). Several feature selection techniques have been considered to identify the best features set for the WNIDS. Our two-stage WNIDS achieves an accuracy of 99.42\% for multi-class classification with a reduced set of features. A module for eXplainable Artificial Intelligence (XAI) is implemented as well to understand the influence of features on each type of network traffic records.},
+DOI = {10.3390/electronics9101689}
+}
+
+% -----------AWID3-----------
 
 @article{kolias2015intrusion, 
 	title={Intrusion detection in 802.11 networks: empirical evaluation of threats and a public dataset}, 
-	author={Kolias, Constantinos and Kambourakis, Georgios and Stavrou, Angelos and Gritzalis, Stefanos},
+	author={C. {Kolias} and G. {Kambourakis} and A. {Stavrou} and S. {Gritzalis}},
 	journal={IEEE Communications Surveys \& Tutorials},
 	volume={18},
 	number={1},
@@ -177,11 +263,10 @@ isbn="978-3-030-98457-1"
 	year={2016},
 	publisher={IEEE}}
 
-
 @ARTICLE{9360747, 
+	title={Empirical evaluation of attacks against IEEE 802.11 enterprise networks: The AWID3 dataset}, 
 	author={E. {Chatzoglou} and G. {Kambourakis} and C. {Kolias}},
 	journal={IEEE Access}, 
-	title={Empirical evaluation of attacks against IEEE 802.11 enterprise networks: The AWID3 dataset}, 
 	year={2021}, 
 	volume={9}, 
 	number={}, 
@@ -190,23 +275,23 @@ isbn="978-3-030-98457-1"
 
 % Pick Quality Over Quantity
 @ARTICLE{pick_quality_over,
-  author={Chatzoglou, Efstratios and Kambourakis, Georgios and Kolias, Constantinos and Smiliotopoulos, Christos},
-  journal={IEEE Access}, 
   title={Pick Quality Over Quantity: Expert Feature Selection and Data Preprocessing for 802.11 Intrusion Detection Systems}, 
-  year={2022},
+  author={E. {Chatzoglou} and G. {Kambourakis} and C. {Kolias} and C. {Smiliotopoulos}},
+  journal={IEEE Access}, 
   volume={10},
   number={},
   pages={64761-64784},
+  year={2022},
   doi={10.1109/ACCESS.2022.3183597}}
   
 % Detecting Application Layer Attacks 
 @Article{s22155633,
-AUTHOR = {Chatzoglou, Efstratios and Kambourakis, Georgios and Smiliotopoulos, Christos and Kolias, Constantinos},
 TITLE = {Best of Both Worlds: Detecting Application Layer Attacks through 802.11 and Non-802.11 Features},
+AUTHOR = {E. {Chatzoglou} and G. {Kambourakis} and C. {Kolias} and C. {Smiliotopoulos}},
 JOURNAL = {Sensors},
 VOLUME = {22},
-YEAR = {2022},
 NUMBER = {15},
+YEAR = {2022},
 ARTICLE-NUMBER = {5633},
 URL = {https://www.mdpi.com/1424-8220/22/15/5633},
 PubMedID = {35957190},
@@ -236,6 +321,30 @@ url={https://doi.org/10.1007/s11042-022-13914-9}
 }
 
 
+@INPROCEEDINGS{8455962,
+  author={Lopez Perez, Rocio and Adamsky, Florian and Soua, Ridha and Engel, Thomas},
+  booktitle={2018 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications/ 12th IEEE International Conference On Big Data Science And Engineering (TrustCom/BigDataSE)}, 
+  title={Machine Learning for Reliable Network Attack Detection in SCADA Systems}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={633-638},
+  doi={10.1109/TrustCom/BigDataSE.2018.00094}}
+
+@article{DHANYA202357,
+title = {Detection of Network Attacks using Machine Learning and Deep Learning Models},
+journal = {Procedia Computer Science},
+volume = {218},
+pages = {57-66},
+year = {2023},
+note = {International Conference on Machine Learning and Data Engineering},
+issn = {1877-0509},
+doi = {https://doi.org/10.1016/j.procs.2022.12.401},
+url = {https://www.sciencedirect.com/science/article/pii/S1877050922024942},
+author = {K.A. Dhanya and Sulakshan Vajipayajula and Kartik Srinivasan and Anjali Tibrewal and T. Senthil Kumar and T. Gireesh Kumar},
+keywords = {Network security, Random Forest, Deep Multi-Layer Perceptron, Adaboost, XGBoost},
+}
+
 @Article{Wu2020,
 author={Wu, Yirui
 and Wei, Dabao
@@ -252,6 +361,39 @@ abstract={With the development of the fifth-generation networks and artificial i
 issn={1939-0114},
 doi={10.1155/2020/8872923},
 url={https://doi.org/10.1155/2020/8872923}
+}
+
+
+@article{https://doi.org/10.1002/cpe.5402,
+author = {Santos, Reneilson and Souza, Danilo and Santo, Walter and Ribeiro, Admilson and
+Moreno, Edward},
+title = {Machine learning algorithms to detect DDoS attacks in SDN},
+journal = {Concurrency and Computation: Practice and Experience},
+volume = {32},
+number = {16},
+pages = {e5402},
+keywords = {DDoS classification, decision tree, Mininet, MLP, random forest, SDN
+environment, SVM},
+doi = {https://doi.org/10.1002/cpe.5402},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.5402},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5402},
+note = {e5402 cpe.5402},
+abstract = {Summary Summary Software-Defined Networking (SDN) is an emerging network
+paradigm that has gained significant traction from many researchers to address the
+requirement of current data centers. Although central control is the major advantage of SDN,
+it is also a single point of failure if it is made unreachable by a Distributed Denial of
+Service (DDoS) attack. Despite the large number of traditional detection solutions that
+exist currently, DDoS attacks continue to grow in frequency, volume, and severity. This
+paper brings an analysis of the problem and suggests the implementation of four machine
+learning algorithms (SVM, MLP, Decision Tree, and Random Forest) with the purpose of
+classifying DDoS attacks in an SDN simulated environment (Mininet 2.2.2). With this goal,
+the DDoS attacks were simulated using the Scapy tool with a list of valid IPs, acquiring, as
+a result, the best accuracy with the Random Forest algorithm and the best processing time
+with the Decision Tree algorithm. Moreover, it is shown the most important features to
+classify DDoS attacks and some drawbacks in the implementation of a classifier to detect the
+three kinds of DDoS attacks discussed in this paper (controller attack, flow-table attack,
+and bandwidth attack).},
+year = {2020}
 }
 
 
@@ -274,8 +416,95 @@ url={https://doi.org/10.1155/2020/8872923}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-% Software Libraries
+@INPROCEEDINGS{8746576,
+  author={Ran, Jing and Ji, Yidong and Tang, Bihua},
+  booktitle={2019 IEEE 89th Vehicular Technology Conference (VTC2019-Spring)}, 
+  title={A Semi-Supervised Learning Approach to IEEE 802.11 Network Anomaly Detection}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/VTCSpring.2019.8746576}}
 
+@article{smys2020hybrid,
+  title={Hybrid intrusion detection system for internet of things (IoT)},
+  author={Smys, S and Basar, Abul and Wang, Haoxiang and others},
+  journal={Journal of ISMAC},
+  volume={2},
+  number={04},
+  pages={190--199},
+  year={2020}
+}
+
+
+@Article{electronics12112355,
+AUTHOR = {Uszko, Krzysztof and Kasprzyk, Maciej and Natkaniec, Marek and Chołda, Piotr},
+TITLE = {Rule-Based System with Machine Learning Support for Detecting Anomalies in 5G WLANs},
+JOURNAL = {Electronics},
+VOLUME = {12},
+YEAR = {2023},
+NUMBER = {11},
+ARTICLE-NUMBER = {2355},
+URL = {https://www.mdpi.com/2079-9292/12/11/2355},
+ISSN = {2079-9292},
+ABSTRACT = {The purpose of this paper is to design and implement a complete system for monitoring and detecting attacks and anomalies in 5G wireless local area networks. Regrettably, the development of most open source systems has been stopped, making them unable to detect emerging forms of threats. The system provides a modular framework to create and add new detection rules as new attacks emerge. The system is based on packet analysis modules and rules and incorporates machine learning models to enhance its efficiency. The use of rule-based detection establishes a strong basis for the identification of recognized threats, whereas the additional implementation of machine learning models enables the detection of new and emerging attacks at an early stage. Therefore, the ultimate aim is to create a tool that constantly evolves by integrating novel attack detection techniques. The efficiency of the system is proven experimentally with accuracy levels up to 98.57\% and precision as well as recall scores as high as 92\%.},
+DOI = {10.3390/electronics12112355}
+}
+
+@inproceedings{pub.1154431160,
+ abstract = {With the advent of new IEEE 802.11ax (WiFi 6) devices, enabling security is a priority. Since previous versions were found to have security vulnerabilities, the WiFi Protected Access 3 (WPA3) was introduced to fix the most common security flaws. Although WPA3 is an improvement over its predecessor in terms of security, recently, it was found that WPA3 has a few security vulnerabilities as well. In this paper, we have mentioned the previously known vulnerabilities in WPA3 and WPA2. In addition, we have created our dataset based on WPA3 attacks. We have proposed a two-stage solution for detecting an intrusion in the network. The two-stage approach will help ease the computational processing burden of an AP and WLAN Controller. First, Access Point (AP) will perform a lightweight, simple operation for some duration (say 500ms) at a particular time interval. Upon discovering any abnormality in the flow of traffic, an ML-based solution at the controller will detect the type of attack. Our approach is to utilize resources on AP and the back-end controller with a certain optimization level. We have achieved over 99\% accuracy in attack detection using a Machine Learning (ML) based solution. We have also publicly provided our code and dataset for the open-source research community so that it can contribute to future research work.},
+ author = {Saini, Rahul and Halder, Debajyoti and Baswade, Anand M.},
+ booktitle = {GLOBECOM 2022 - 2022 IEEE Global Communications Conference},
+ doi = {10.1109/globecom48099.2022.10001501},
+ keywords = {},
+ note = {http://arxiv.org/pdf/2207.02489},
+ pages = {43-48},
+ title = {RIDS: Real-time Intrusion Detection System for WPA3 enabled Enterprise Networks},
+ url = {https://app.dimensions.ai/details/publication/pub.1154431160},
+ year = {2022}
+}
+
+@article{DBLP:journals/corr/abs-2105-15103,
+  author       = {Krishna M. Sivalingam},
+  title        = {Applications of Artificial Intelligence, Machine Learning and related
+                  techniques for Computer Networking Systems},
+  journal      = {CoRR},
+  volume       = {abs/2105.15103},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2105.15103},
+  eprinttype    = {arXiv},
+  eprint       = {2105.15103},
+  timestamp    = {Wed, 02 Jun 2021 11:46:42 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2105-15103.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% ----------- UNSW-NB15 DATASET ----------- 
+@INPROCEEDINGS{7348942,
+  author={Moustafa, Nour and Slay, Jill},
+  booktitle={2015 Military Communications and Information Systems Conference (MilCIS)}, 
+  title={UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set)}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/MilCIS.2015.7348942}}
+% ----------------------------------------- 
+
+
+% -----------  5G-NIDD DATASET----------- 
+@misc{10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361,
+author = {Siriwardhana, Yushan},
+title = {5G-NIDD: A Comprehensive Network Intrusion Detection Dataset Generated over 5G Wireless Network},
+howpublished = {\url{https://doi.org/10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361}},
+month = {12},
+year = {2022},
+note = {Yushan Siriwardhana}
+}
+&. --------------------------------------- 
+
+
+% ----------- Software Libraries ----------- 
 @misc{anaconda,
   author = {Anaconda Software Distribution},
   title = {Anacoda},
@@ -344,9 +573,10 @@ author={
     Xiaoqiang~Zheng},
   year={2015},
 }
+% ----------------------------------------- 
 
-% Models
 
+% --------------Models---------------------
 @inproceedings{XGBoost,
  author = {Chen, Tianqi and Guestrin, Carlos},
  title = {{XGBoost}: A Scalable Tree Boosting System},
@@ -364,9 +594,10 @@ author={
  address = {New York, NY, USA},
  keywords = {large-scale machine learning},
 }
+% ----------------------------------------- 
 
-% Metrics
 
+%-------------- Metrics -------------------
 @InProceedings{pmlr-v29-Koco13,
   title = 	 {On multi-class classification through the minimization of the confusion matrix norm},
   author = 	 {Koço, Sokol and Capponi, Cécile},
@@ -408,7 +639,7 @@ abstract = {Receiver operating characteristics (ROC) graphs are useful for organ
       archivePrefix={arXiv},
       primaryClass={stat.ML}
 }
-
+% ----------------------------------------- 
 
 % WiFi Anomaly Behavior Analysis Based Intrusion Detection Using Online Learning
 @MISC{10150/666297,
@@ -419,4 +650,13 @@ abstract = {Receiver operating characteristics (ROC) graphs are useful for organ
 	title = {WiFi Anomaly Behavior Analysis Based Intrusion Detection Using Online Learning},
 	publisher = {International Foundation for Telemetering},
 	url = {http://hdl.handle.net/10150/666297}
+}
+
+@misc{brownlee_2018_difference,
+  author = {Brownlee, Jason},
+  month = {07},
+  title = {Difference Between a Batch and an Epoch in a Neural Network},
+  url = {https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/},
+  year = {2018},
+  organization = {Machine Learning Mastery}
 }

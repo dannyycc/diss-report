@@ -1,6 +1,10 @@
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Training Time for KNN Classifier\relax }}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces RF Model 1 CM\relax }}{43}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces RF Model 1 FI\relax }}{44}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces XGBoost Model 10 CM\relax }}{45}{figure.caption.54}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces XGBoost Model10 Feature Importance\relax }}{46}{figure.caption.55}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces MLP Model 4 CM\relax }}{47}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Training Time for KNN Classifier\relax }}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces RF Model 1 - CM\relax }}{45}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces RF Model 1 - FI\relax }}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces XGBoost Model 10 - CM\relax }}{47}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces XGBoost Model 10 - FI\relax }}{48}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces MLP Model 4 - CM\relax }}{49}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces MLP Model 4 - Best and Worst Folds\relax }}{50}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Models Grouped By Metric\relax }}{50}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Metrics Grouped By Model\relax }}{51}{figure.caption.63}%
+\contentsline {figure}{\numberline {F.1}{\ignorespaces MLP Model 4 - Loss Curves\relax }}{104}{figure.caption.69}%

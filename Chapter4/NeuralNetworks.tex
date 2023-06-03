@@ -4,33 +4,32 @@
 \subsubsection{Multi-Layer Perceptron (MLP)}
 \label{sec: MLP Neural Network v1}
 
-As part of the neural network experiments, Multilayered Perceptron models were created and tested through an exploratory process. It should be noted a wide range of MLP models was explored, the selection presented in the results section is a curated list, chosen for performance or notability. All models evaluated and their corresponding code can be found within the codebase. Table \ref{tab:mlp-models-1} and \ref{tab:mlp-models-2} details the set of parameters used for each notable MLP model.  
+As part of the neural network experiments, Multilayered Perceptron models were created and tested through an exploratory process. A wide range of MLP models was explored, and the selection presented in the results section is a curated list chosen for performance or notability. All models evaluated and their corresponding code can be found within the codebase. Table \ref{tab:mlp-models-1} and \ref{tab:mlp-models-2} details the parameters used for each notable MLP model.  
 
-Experimentation began with a 3 hidden layered MLP model consisting of 128, 64 and 32 neurons across the different subsets of data to gauge a rough estimate of the model's performance through varying levels of data. As such, cross-validation was not utilised. Models 0-3 consist of the same parameters tested across the 60 and 80\% datasets, metrics were high, however, the models struggled to predict minority classes and resulted in low recall and F1-Scores. Performance when increasing the size of the dataset did improve the performance and can be attributed to the fact the larger dataset provided more samples of the minority class to be trained on. With this information, further models were created with increased batch sizes and epochs to train for longer.
+Experimentation began with a three-hidden layered MLP model consisting of 128, 64 and 32 neurons across the different subsets of data to gauge a rough estimate of the model's performance through varying levels of data. As such, cross-validation was not utilised. Models 0-3 consist of the exact parameters tested across the 60 and 80\% datasets; metrics were high. However, the models struggled to predict minority classes, resulting in low recall and F1-Scores. Performance when increasing the size of the dataset did improve the performance. It can be attributed to the fact the larger dataset provided more samples of the minority class to be trained on. This information was used to create further models with increased batch sizes and epochs to train for longer.
 
 \subsubsection*{Overfitting}
 
-A key aspect when training the MLP models was to prevent overfitting. To help mitigate this, techniques such as Early Stopping and Dropout were used in the majority of the models. Early Stopping was used during SCV, the training process monitors the validation AUC loss for signs of overfitting (e.g. when the model starts to learn the data and not generalising). Once the validation loss started to degrade over two defined epochs, the model would stop training. Dropout is a regularisation method that randomly sets 0.2 of the input neurons to 0. Dropout layers were used in the network architecture.
+A key aspect when training the MLP models was to prevent overfitting. To help mitigate this, techniques such as Early Stopping and Dropout were used in most models. Early Stopping was used during SCV; the training process monitors the validation AUC loss for signs of overfitting (e.g. when the model starts to learn the data and not generalise). The model would stop training once the validation loss began to degrade over two defined epochs. Dropout is a regularisation method that randomly sets 0.2 of the input neurons to 0. Dropout layers were used in the network architecture.
 
  
-\subsubsection*{Thresholds}
-Towards the latter stages of experimentation, an attempt was made to further enhance the performance of the models on the misclassified classes. The individual class weightings were adjusted using the thresholds of each class. The aim was to identify the optimal threshold level between 0-1 that would maximise the F1 score for that class. A systematic approach was followed to adjust the value in the class and evaluate the confusion matrices for changes in predictions.
- 
- 
 \subsubsection*{Activator}
-Due to the nature of the problem (multi-class classification), applying existing knowledge and experience, the softmax activator was chosen for the output layer. It provides an easy-to-interpret output of the model as a list of probabilities for each class and uses the highest probability as the predicted class.
+Due to the nature of the problem (multi-class classification), applying existing knowledge and experience, the softmax activator was chosen for the output layer. It provides an easy-to-interpret output of the model as a list of probabilities for each class and uses the highest probability as the predicted class. 
 
 \subsubsection*{Tuning}
 
-The device used to train and the experiment was the M2 Mac Mini, experiments conducted on the VM were found to be slower and would frequently cause crashes, even when utilising the dedicated GPU. As such, the hardware and time constraints restricted the level of tuning and parameter searching that could be performed. Techniques such as GridSearchCV and RandomisedSearchCV were not feasible when combined with 10 Fold S-CV. 
+The device used to train, and the experiment was the M2 Mac Mini, experiments conducted on the VM were found to be slower and would frequently cause crashes, even when utilising the dedicated GPU. As such, the hardware and time constraints restricted the level of tuning and parameter searching that could be performed. Techniques such as GridSearchCV and RandomisedSearchCV were not feasible when combined with 10 Fold S-CV. 
+
+\subsubsection*{Thresholds}
+Towards the latter stages of experimentation, further attempts were made to enhance the models' performance on the misclassified classes. The individual class weightings were adjusted using the thresholds of each class. The aim was to identify the optimal threshold level between 0-1 that would maximise the F1 score for that class. A systematic approach was followed to adjust the value in the class and evaluate the confusion matrices for prediction changes. However, this was not explored with great depth, leading the door for future work.
 
 \medskip
-Due to the complexity and computational demands of running machine learning models, practical limitations such as time constraints result in fewer tested models than desired. After conducting a vast amount of experiments and achieving high-performance results, the decision was made to conclude further model experimentation. 
+Due to the complexity and computational demands of running machine learning models, practical limitations such as time constraints result in fewer tested models than desired. After conducting many experiments and achieving high-performance results, the decision was made to conclude further model experimentation. 
  
 \medskip
 \begin{table}[H]
 \centering
-\caption{MLP Model Parameters Part 1}
+\caption{MLP Model Parameters Pt 1}
 \label{tab:mlp-models-1}
 \begin{tabular}{llll}
 \hline
@@ -54,7 +53,7 @@ Epochs: & 15 & 20 & 20 \\ \hline
 
 \begin{table}[H]
 \centering
-\caption{MLP Model Parameters Pt2}
+\caption{MLP Model Parameters Pt 2}
 \label{tab:mlp-models-2}
 \begin{tabular}{lll}
 \hline
@@ -75,7 +74,3 @@ Batch Size:       & 132           & 170             \\
 Epochs:           & 20            & 20              \\ \hline
 \end{tabular}
 \end{table}
-
-%Table \ref{tab:seq_nn} specifies the parameter values for a multi-layered feed-forward neural network model, consisting of one input layer (128 neurons) and one hidden layer (64 neurons) using the ReLu activator function. The output layer has a subsequent 7 neurons corresponding to the 7 different output classes, using a soft-max activation function to produce the class probabilities. See Appendix \ref{appx: MLP NN v1} for the full code.
-%
-

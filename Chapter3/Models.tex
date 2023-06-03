@@ -1,2 +1,21 @@
 
 \subsection{Machine Learning Algorithms}
+
+A key area of the work was deciding the machine learning algorithms to use; a combination of classifiers and neural networks were considered in their context of suitability, efficiency and performance. A review of existing literature and research in Section \ref{sec: Literature Review} shows that a wide range of machine learning algorithms has been used for the purposes of classifying network attacks. There exists a research gap in the unexplored machine learning algorithms. As such, this study aims to explore the effectiveness of a few algorithms. AWID3 is a labelled dataset; as such, only supervised algorithms were used for this work. The following algorithms were employed due to their effectiveness in existing literature, reproducibility and the identified research gap in current research regarding their application to this specific task. These algorithms have been established and shown success in other machine-learning tasks and have been adopted within the existing literature; their implementation is readily available from well-known ML libraries such as TensorFlow, Sci-Kit learn and XGBoost \parencite{scikit-learn, tensorflow2015-whitepaper, XGBoost}. The models were coded using prior module knowledge and relevant libraries' documentation.
+
+
+\subsubsection{Random Forest}
+
+Random Forest is an ensemble learning algorithm combining multiple decision trees during its training process; at each node, the best features are selected to split the tree with additional pruning to help prevent overfitting. The individual decision trees' predictions are combined to make a final prediction.
+
+\subsubsection{K-Nearest Neighbor}
+
+K-Nearest Neighbor is a non-parametric algorithm that finds the k-closest neighbours to a given input. It classifies it based on the majority class within the k neighbours from a chosen metric, for example, the Euclidean distance. It is considered a more computationally intensive algorithm, requiring observing the training data during evaluation to make predictions. 
+
+\subsubsection{XGBoost}
+
+XGBoost, short for eXtreme Gradient Boosting, is a type of gradient-boosted decision tree. It was developed by \textcite{XGBoost} and is considered an efficient and scalable algorithm capable of handling large datasets and models. It utilises a collection, referred to as an ensemble, of decision trees combined to create a model capable of learning from the errors of the previous tree in a sequence. 
+
+\subsubsection{Multi-Layer Perceptron}
+
+A Multi-Layer Perceptron (MLP) works using a feed-forward artificial neural network that consists of an input layer, one or more hidden layers, and an output layer. Each layer within contains a given number of neurons connected to additional layers through weighted connections. During training, the gradient of the loss function (difference between the predicted values with the actual values) is calculated and the weights and biases are updated with an optimiser to ensure the model is able to generalise and learn from the data.
